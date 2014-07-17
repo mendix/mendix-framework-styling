@@ -1,0 +1,74 @@
+/* ========================================================================== 
+
+	Title
+   
+   ========================================================================== */
+p {
+	margin: 0;
+	line-height: 1.6;
+}
+label { 
+	padding-top: 0; 
+}
+
+// Headers
+.mx-title {
+	@include font(bold);
+	color: $color-header;
+	font-size: $font-size-h1;
+}
+
+h1, .h1, .h1 > * { font-size: $font-size-h1; } 
+h2, .h2, .h2 > * { font-size: $font-size-h2; }
+h3, .h3, .h3 > * { font-size: $font-size-h3; }
+h4, .h4, .h4 > * { font-size: $font-size-h4; }
+h5, .h5, .h5 > * { font-size: $font-size-h5; }
+h6, .h6, .h6 > * { font-size: $font-size-h6; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: $color-header;
+	@include font(normal);
+	margin: 0;
+}
+
+h1.spacing, h2, h3, 
+.h1, .h2, .h3 {
+
+}
+
+h4, h5, h6,
+.h4, .h5, .h6 {
+
+}
+
+// Font Weights
+.text-light, .text-light > *, .text-light label { 
+	@include font(light);
+}
+.text-normal, .text-normal > *, .text-normal label  { 
+	@include font(normal);
+}
+.text-semibold, .text-semibold > *, .text-semibold label  { 
+	@include font(semibold);
+}
+.text-bold, .text-bold > *, .text-bold label  { 
+	@include font(bold);
+}
+
+
+// Utility
+// Margin top and below for a title
+.text-spacing {
+	margin-top: 1em;
+	margin-bottom: 1em;	
+}
+.text-lined {
+	padding-bottom: 10px;
+	border-bottom: 1px solid $gray-primary;
+}
+
+// Breaking sentances
+.text-break {
+	word-break: break-all;
+}

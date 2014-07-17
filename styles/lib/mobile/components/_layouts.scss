@@ -1,0 +1,37 @@
+/* ==========================================================================
+
+   Layouts
+
+   ========================================================================== */
+.profile-phone,
+.profile-tablet {
+	.mx-layoutcontainer-top {
+		> .mx-layoutcontainer-wrapper {
+			padding: 0;
+		}
+	}
+	.mx-header {
+		padding: 9px;
+		background-color: $color-brand-primary;
+		.mx-link a {
+			color: #FFF;
+			font-size: 14px;
+		}
+	}
+	.mx-layoutcontainer-center {
+		> .mx-layoutcontainer-wrapper {
+			padding: 0;
+		}
+	}
+
+   /*	Header
+		========================================================================== */
+	.mx-header {
+
+		// Navitems
+		.btn.glyphicon {
+			color: #FFF;
+			font-size: 1.7em;
+		}
+	}
+}

@@ -1,0 +1,213 @@
+/* ==========================================================================
+
+   Navigation
+
+   ========================================================================== */
+
+/* Navigation Bar
+========================================================================== */
+.mx-navbar {
+	@include border-radius(0);
+	margin: 0;
+	border-style: none;
+	background-color: $color-nav-bg;
+
+	ul.nav { 
+
+		margin: 0; // weird -margin if screen gets small (bootstrap)
+		/* Navigation item */
+		> li.mx-navbar-item > a {
+			@include font(normal);
+			@include border-radius(0);
+			padding: 15px 20px;
+			color: $color-nav-text;
+			font-size: 13px;
+			vertical-align: bottom;
+
+			/* Dropdown arrow */
+			.caret {
+				border-top-color: $color-nav-text;
+				border-bottom-color: $color-nav-text;
+			}
+
+			/* Dropdown */
+			.mx-navbar-submenu:before {
+				position: absolute;
+				top: -9px;
+				left: 15px;
+				width: 0;
+				height: 0;
+				border-width: 0 9px 9px 9px;
+				border-style: solid;
+				border-color: transparent transparent $color-nav-border transparent;
+				content: "";
+				-webkit-transform: rotate(360deg);
+			}
+
+			// Image
+			img {
+				width: 20px; // Default size (so it looks good)
+				height: auto;
+			}
+		}
+
+		/* When hovering or the dropdown is open */
+		> .mx-navbar-item > a:hover, 
+		> .mx-navbar-item > a:focus,
+		> .mx-navbar-item.open > a, 
+		> .mx-navbar-item.open > a:hover, 
+		> .mx-navbar-item.open > a:focus {
+			background-color: $color-nav-bg-hover;
+			color: $color-nav-text-active;
+			text-decoration: none;
+
+			.caret {
+				border-top-color: $color-nav-text-active;
+				border-bottom-color: $color-nav-text-active;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		.mx-navbar-item.open .dropdown-menu {
+			background-color: $color-nav-sub-bg;
+			
+			> li.mx-navbar-subitem > a {
+				@include font(normal);
+				padding: 15px 20px;
+				border-radius: 0;
+				color: $color-nav-text;
+				font-size: 13px;
+
+				&:hover,
+				&:focus {
+					color: $color-nav-text-active;
+				}
+			}
+		}
+	}
+
+	/* remove focus */
+	&:focus {
+		outline: 0;
+	}
+}
+
+
+
+/* Navigation Tree
+========================================================================== */
+.mx-navigationtree {
+	background-color: $color-nav-bg;
+
+	/* Every navigation item */
+	.navbar-inner ul {
+		margin: 0;
+		padding-left: 0;
+
+		li {
+			padding: 0;
+
+			a {
+				@include font(normal);
+				display: block;
+				padding: 15px 20px;
+				border-bottom: 1px solid $color-nav-border;
+				border-radius: 0;
+				color: $color-nav-text;
+				text-shadow: none;
+				font-size: 13px;
+				vertical-align: bottom;
+
+				.caret {
+					border-top-color: $color-nav-text;
+					border-bottom-color: $color-nav-text;
+				}
+
+				// Alignment image
+				img {
+					margin-right: 4px;
+					width: 20px; // Default size (so it looks good)
+					height: auto;
+				}
+			}
+
+			a:hover,
+			a:focus {
+				background-color: $color-nav-bg-hover;
+				color: $color-nav-text-active;
+				text-decoration: none;
+
+				.caret {
+					border-top-color: $color-nav-text-active;
+					border-bottom-color: $color-nav-text-active;
+				}
+			}
+		}
+	}
+
+	/* Sub navigation item specific */
+	li.mx-navigationtree-has-items {
+		> ul {
+			margin: 0;
+			padding-left: 0;
+			background-color: $color-nav-sub-bg;
+
+			li {
+				margin: 0;
+				padding: 0;
+				a {
+					@include font(normal);
+					padding: 12px 20px 12px 25px;
+					border: 0;
+					background-color: transparent;
+
+					&:hover {
+						background-color: transparent;
+						color: $color-nav-text-active;
+					}
+				}
+			}
+		}
+	}
+
+	/* remove focus */
+	&:focus {
+		outline: 0;
+	}
+}
+
+
+/* Simple Menu Bar
+========================================================================== */
+.mx-menubar {
+	padding: 0;
+	background-color: $color-nav-bg;
+	ul.mx-menubar-list {
+		li.mx-menubar-item {
+			margin: 0;
+			a {
+				@include font(normal);
+				padding: 15px 20px;
+				border-radius: 0;
+				color: $color-nav-text;
+				font-size: 13px;
+
+				&:hover,
+				&:focus {
+					background-color: $color-nav-bg-hover;
+					color: $color-nav-text-active;
+				}
+			}
+		}
+	}
+
+	/* remove focus */
+	&:focus {
+		outline: 0;
+	}
+}
+/* Vertical variation specifics */
+.mx-menubar-vertical li.mx-menubar-item > a {
+	border-bottom: 1px solid $color-nav-border;
+}

@@ -1,0 +1,309 @@
+/* ========================================================================== 
+
+	Tables
+   
+   ========================================================================== */
+th { @include font(bold);}
+table.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			> th {
+				padding: 8px;
+				* { @include font(bold); }
+				> label { 
+					padding-top: 7px;
+					padding-bottom: 6px; // Aligns label in the middle if there is no input field next to it.
+				}
+			}
+			
+			// Table data
+			> td {
+				padding: 8px;
+				> div > label { 
+					padding-top: 7px;
+					padding-bottom: 6px; // Aligns label in the middle if there is no input field next to it.
+				}		
+			}
+		}
+	}
+}
+
+
+
+/*	Table Spacing Listview
+   ========================================================================== */
+.mx-list table.mx-table {
+	> tbody {
+		> tr {
+			> th,
+			> td {
+				padding: 8px;
+			}
+		}
+	}
+}
+
+/*	Table Lined
+   ========================================================================== */
+table.table-lined.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th,
+			> td {
+				border-width: 1px 0;
+				border-style: solid;
+				border-color: $color-grid-border;
+			}
+		}
+	}
+}
+
+
+
+/*	Table Bordered
+   ========================================================================== */
+table.table-bordered.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th ,
+			> td {
+				border-width: 1px;
+				border-style: solid;
+				border-color: $color-grid-border;
+			}
+		}
+	}
+}
+
+
+/*	Table Compact
+   ========================================================================== */
+table.table-compact.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th,
+			> td {
+				padding-top: 2px;
+				padding-bottom: 2px;
+			}
+		}
+	}
+}
+
+
+
+/*	Table Sideless
+   ========================================================================== */
+table.table-sideless.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> td,
+			> th {
+				padding-right: 0;
+			}
+			> th:first-child,
+			> td:first-child {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+
+
+/*	Table Spaceless
+   ========================================================================== */
+table.table-spaceless.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th,
+			> td {
+				padding: 0;
+			}
+		}
+	}
+}
+
+
+
+
+/*	Table Vertical (labels above input)
+   ========================================================================== */
+table.table-vertical.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			> th {
+				padding-bottom: 0;
+				> label { padding: 0; }
+				> div > label { padding: 0; }
+			}
+		}
+	}
+}
+
+
+
+/*	Table Vertical aligned in middle
+   ========================================================================== */
+table.table-align-vertical-middle.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th,
+			> td {
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+
+
+
+/*	Table Where the labels have no spacing
+   ========================================================================== */
+table.table-label-compact.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th,
+			> td {
+				> label { 
+					padding: 0;
+					margin: 0;
+				}
+				> div > label { 
+					padding: 0; 
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+
+html body .mx-page table.mx-table {
+	th,
+	td {
+		&.nopadding {
+			padding: 0;
+		}
+	}
+} 
+
+
+
+
+
+/* ========================================================================== 
+
+	Table option - Row sizes
+   
+   ========================================================================== */
+
+$height-row-s:		40px;
+$height-row-m:		70px;
+$height-row-l:		120px;
+
+/*  Small rows
+	========================================================================== */
+table.table-row-s.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th,
+			> td {
+				height: $height-row-s;
+			}
+		}
+	}				
+}
+
+
+/*  Medium rows
+	========================================================================== */
+table.table-row-m.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th,
+			> td {
+				height: $height-row-m;
+			}
+		}
+	}	
+}
+
+/*  Large rows
+	========================================================================== */
+table.table-row-l.mx-table {
+	> tbody {
+
+		// Table row
+		> tr {
+
+			// Table header
+			// Table data
+			> th,
+			> td {
+				height: $height-row-l;
+			}
+		}
+	}	
+}
+
+
+/*	Table Fixed
+   ========================================================================== */
+table.table-fixed {
+	table-layout: fixed;
+}

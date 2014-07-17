@@ -1,0 +1,192 @@
+
+/* ==========================================================================
+
+   Group Box
+
+   ========================================================================== */
+.mx-groupbox  {
+	margin: 0;
+	> .mx-groupbox-header {
+		@include font(bold);
+		margin: 0;
+		background: $color-groupbox-default;
+		color: $color-groupbox-text-default;
+		font-size: $font-size-h4;
+		.mx-groupbox-collapse-icon {
+			margin-top: 0.1em;
+		}
+	}
+	> .mx-groupbox-body {
+    	padding: 10px 15px;
+    	border-color: $color-groupbox-default;
+    	background-color: #FFF;
+  	}
+}
+
+
+/*  Alternate Groupboxes
+   ========================================================================== */
+.mx-groupbox {
+
+	// Stylingless has no stlying or padding (used for wrapper)
+	&.groupbox-stylingless  {
+		> .mx-groupbox-header {
+			@include border-radius(0);
+			padding: 0;
+			background-color: transparent;
+		}
+		> .mx-groupbox-body {
+			@include border-radius(0);
+	    	padding: 0;
+	    	border: 0;
+	    	background-color: transparent;
+	  	}
+	}
+
+	&.groupbox-sideless  {
+		> .mx-groupbox-header {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		> .mx-groupbox-body {
+			padding-right: 0;
+			padding-left: 0;
+	  	}
+	}
+
+	&.groupbox-bodyless  {
+		> .mx-groupbox-header {
+
+		}
+		> .mx-groupbox-body {
+			padding: 0;
+	  	}
+	}
+
+
+	&.groupbox-lined {
+		> .mx-groupbox-header {
+			@include border-radius(0);
+			border-bottom: 1px solid $color-groupbox-default;
+			background-color: #FFF;
+		}
+		> .mx-groupbox-body {
+			@include border-radius(0);
+			border: 0;
+			background-color: #FFF;
+  		}
+	}
+
+
+	// Color variations 
+	&.groupbox-default {
+		 @include groupbox-variant($color-groupbox-text-default, $color-groupbox-default);
+	}
+	&.groupbox-primary {
+		@include groupbox-variant($color-groupbox-text-primary, $color-groupbox-primary);
+	}
+	&.groupbox-inverse {
+		@include groupbox-variant($color-groupbox-text-inverse, $color-groupbox-inverse);
+	}
+	// Success appears as green
+	&.groupbox-success {
+		@include groupbox-variant($color-groupbox-text-success, $color-groupbox-success);
+	}
+	// Info appears as blue-green
+	&.groupbox-info {
+		@include groupbox-variant($color-groupbox-text-info, $color-groupbox-info);
+	}
+	// Warning appears as orange
+	&.groupbox-warning {
+		@include groupbox-variant($color-groupbox-text-warning, $color-groupbox-warning);
+	}
+	// Danger and error appear as red
+	&.groupbox-danger {
+		@include groupbox-variant($color-groupbox-text-danger, $color-groupbox-danger);
+	}
+	// Blank appears as full white	
+	&.groupbox-blank {
+		@include groupbox-variant($color-groupbox-text-blank, $color-groupbox-blank);
+    	> .mx-groupbox-body {
+			border: 0;
+		}
+	}
+	&.groupbox-transparent  {
+		background-color: transparent;
+		> .mx-groupbox-header {
+			@include border-radius(0);
+			background-color: transparent;
+		}
+		> .mx-groupbox-body {
+    		@include border-radius(0);
+			border: 0;
+    		background-color: transparent;
+  		}
+	}
+
+}
+
+
+
+/*  Groupboxe Headers
+   ========================================================================== */
+.mx-groupbox {	
+	&.groupbox-h1 > .mx-groupbox-header { font-size: $font-size-h1; } 
+	&.groupbox-h2 > .mx-groupbox-header { font-size: $font-size-h2; }
+	&.groupbox-h3 > .mx-groupbox-header { font-size: $font-size-h3; }
+	&.groupbox-h4 > .mx-groupbox-header { font-size: $font-size-h4; }
+	&.groupbox-h5 > .mx-groupbox-header { font-size: $font-size-h5; }
+	&.groupbox-h6 > .mx-groupbox-header { font-size: $font-size-h6; }
+}
+
+
+
+
+/*  Groupboxe Callouts
+   ========================================================================== */
+.mx-groupbox {	
+	&.groupbox-callout {
+		border-left-width: 3px;
+		border-left-style: solid;
+		border-left-color: transparent;
+		> .mx-groupbox-header {
+			background: transparent;
+		}
+		> .mx-groupbox-body {
+	    	@include border-radius(0);
+	    	border: 0;
+	    	background: transparent;
+	  	}
+	  	.mx-groupbox-header + .mx-groupbox-body {
+	  		padding-top: 0;
+	  	}
+	}
+	&.groupbox-callout-info {
+		border-left-color: $color-callout-info;
+		background: $color-callout-bg-info;
+		> .mx-groupbox-header {
+			color: $color-callout-info;
+		}
+	}
+	&.groupbox-callout-success {
+		border-left-color: $color-callout-success;
+		background: $color-callout-bg-success;
+		> .mx-groupbox-header {
+			color: $color-callout-success;
+		}
+	}
+	&.groupbox-callout-warning {
+		border-left-color: $color-callout-warning;
+		background: $color-callout-bg-warning;
+		> .mx-groupbox-header {
+			color: $color-groupbox-warning;
+		}
+	}
+	&.groupbox-callout-danger {
+		border-left-color: $color-callout-danger;
+		background: $color-callout-bg-danger;
+		> .mx-groupbox-header {
+			color: $color-callout-danger;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.profile-phone,
+.profile-tablet {
+	.mx-listview {
+		.mx-listview-searchbar {
+			padding: 10px;
+			margin-bottom: 0;
+			// Reset Search Button
+			button {
+				display: none;
+			}
+			// Search Field
+			.mx-listview-search-input {
+				input {
+					@include box-shadow(none);
+					border-style: none;
+					background-color: $gray-primary;
+					text-align: center;
+				}
+			}
+		}
+		.mx-list {
+			.mx-listview-item {
+				&:first-child {
+					@include border-radius(0);
+				}
+				&:last-child {
+					@include border-radius(0);
+				}
+			}
+		}
+	}
+}

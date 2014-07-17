@@ -1,0 +1,13 @@
+/* ==========================================================================
+
+   Sidebar Layout
+
+   ========================================================================== */
+.layout-sidebar {
+	.layout-sidebar-sidebar {
+		background-color: $color-nav-bg;
+		> .mx-layoutcontainer-wrapper {
+			padding: 0;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+/* ========================================================================== 
+
+	Alerts
+   
+   ========================================================================== */
+
+.alert {
+	@include border-radius(4px);
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 15px;
+}
+.alert-success { 
+	border-color: $color-alert-border-success;
+	background-color: $color-alert-bg-success; 
+	color: $color-alert-text-success;
+}
+.alert-info { 
+	border-color: $color-alert-border-info;
+	background-color: $color-alert-bg-info;	
+	color: $color-alert-text-info; 
+}
+.alert-warning { 
+	border-color: $color-alert-border-warning; 
+	background-color: $color-alert-bg-warning;
+	color: $color-alert-text-warning;
+}
+.alert-danger { 
+	border-color: $color-alert-border-danger;
+	background-color: $color-alert-bg-danger; 
+	color: $color-alert-text-danger;
+}

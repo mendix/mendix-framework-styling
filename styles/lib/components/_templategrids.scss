@@ -1,0 +1,105 @@
+/* ========================================================================== 
+	
+	Template Grids
+
+   ========================================================================== */
+.mx-templategrid {
+	//Gives break in 5.4.1
+	.mx-templategrid-empty {
+		display: none;
+	}
+	.mx-templategrid-item {
+		background-color: $color-grid-bg;
+		padding: 10px;
+		cursor: default;
+
+		&:hover {
+			background-color: #FFF;
+		}
+		&.selected {
+			background-color: $color-grid-bg-selected !important;
+
+			&:hover {
+				background-color: $color-grid-bg-selected-hover !important;
+			}
+		}
+	}
+}	
+
+
+
+/*	Template Grid Hover
+   ========================================================================== */
+.templategrid-hover.mx-templategrid {
+	.mx-templategrid-item {
+		&:hover {
+			background-color: $color-grid-bg-hover !important;
+		}
+	}
+}
+
+
+
+
+
+/*	Template Grid Selectable
+   ========================================================================== */
+.templategrid-selectable.mx-templategrid {
+	.mx-templategrid-item {
+		cursor: pointer;
+	}
+}
+
+
+
+
+/*	Template Grid Lined
+   ========================================================================== */
+.templategrid-lined.mx-templategrid {
+	.mx-grid-content {
+		border-top-style: solid;
+		border-top-color: $color-grid-border;
+		border-top-width: 2px;
+	}
+	.mx-templategrid-item {
+		border-left: none;
+		border-right: none;
+		border-top: 1px solid $color-grid-border;
+		border-bottom: 1px solid $color-grid-border;
+	}
+}
+
+
+
+/*	Template Grid Striped
+   ========================================================================== */
+.templategrid-striped.mx-templategrid {
+	.mx-templategrid-row:nth-child(odd) .mx-templategrid-item{
+		background-color: #f9f9f9;
+	}
+}
+
+
+
+
+/*	Template Grid no styling
+   ========================================================================== */
+.templategrid-stylingless.mx-templategrid {
+	.mx-templategrid-item {
+		background-color: transparent;
+		border: 0;
+		padding: 0;
+		cursor: default;
+		
+		&:hover {
+			background-color: transparent;
+		}
+		&.selected {
+			background-color: transparent !important;
+
+			&:hover {
+				background-color: transparent !important;
+			}
+		}
+	}
+}		

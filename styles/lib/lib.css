@@ -1,0 +1,2739 @@
+/* ==========================================================================
+
+   Base
+
+   ========================================================================== */
+/* line 13, base/_all.scss */
+body {
+  color: #2c3e50;
+  font-size: 12px;
+}
+
+/* line 18, base/_all.scss */
+a {
+  color: #2980b9;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 26, base/_all.scss */
+a:hover {
+  text-decoration: underline;
+  color: #1b557a;
+}
+
+/* line 31, base/_all.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 36, base/_all.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 42, base/_all.scss */
+input:focus,
+button:focus,
+.mx-link:focus {
+  outline: 0;
+}
+
+/* line 46, base/_all.scss */
+div[tabindex] {
+  outline: 0;
+}
+
+/* ==========================================================================
+
+   Dijit Widgets
+
+   ========================================================================== */
+/* Calendar
+========================================================================== */
+/* line 10, components/_dijit-widgets.scss */
+.dijitCalendarContainer {
+  background-color: #eff0f2;
+}
+/* line 14, components/_dijit-widgets.scss */
+.dijitCalendarContainer tr th {
+  background-color: #26323D;
+  color: #FFF;
+  text-align: center;
+}
+/* line 20, components/_dijit-widgets.scss */
+.dijitCalendarContainer tr th,
+.dijitCalendarContainer tr td {
+  padding: 6px;
+  text-align: center;
+}
+/* line 24, components/_dijit-widgets.scss */
+.dijitCalendarContainer tr tfoot h3 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+/* line 31, components/_dijit-widgets.scss */
+.dijitCalendarContainer .dijitCalendarMonthLabel {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+/* line 34, components/_dijit-widgets.scss */
+.dijitCalendarContainer .dijitButtonNode {
+  border: 0;
+}
+/* line 37, components/_dijit-widgets.scss */
+.dijitCalendarContainer .dijitCalendarArrow {
+  cursor: pointer;
+}
+/* line 41, components/_dijit-widgets.scss */
+.dijitCalendarContainer .dijitCalendarSelectedDate,
+.dijitCalendarContainer .dijitCalendarSelectedDate:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: #2980b9;
+  color: #FFF;
+}
+/* line 49, components/_dijit-widgets.scss */
+.dijitCalendarContainer .dijitCalendarHoveredDate,
+.dijitCalendarContainer .dijitCalendarPreviousYearHover,
+.dijitCalendarContainer .dijitCalendarNextYearHover,
+.dijitCalendarContainer .dijitCalendarMonthLabelHover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #dbdcdd;
+}
+/* line 53, components/_dijit-widgets.scss */
+.dijitCalendarContainer .dijitCalendarYearContainer td {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top: 1px solid #dddddd;
+  text-align: center;
+}
+/* line 59, components/_dijit-widgets.scss */
+.dijitCalendarContainer .dijitCalendarMonthContainer th:first-child {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+/* line 62, components/_dijit-widgets.scss */
+.dijitCalendarContainer .dijitCalendarMonthContainer th:last-child {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 72, components/_dijit-widgets.scss */
+.dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:first-child {
+  -moz-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/* line 76, components/_dijit-widgets.scss */
+.dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:last-child {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+/* Tooltip
+========================================================================== */
+/* line 89, components/_dijit-widgets.scss */
+.mx-tooltip .dijitTooltipContainer {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border-width: 1px;
+  border-color: #26323D;
+  background: #FFF;
+}
+/* line 97, components/_dijit-widgets.scss */
+.mx-tooltip .dijitTooltipContainer .mx-tooltip-content {
+  padding: 5px;
+}
+/* line 102, components/_dijit-widgets.scss */
+.mx-tooltip .dijitTooltipConnector {
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent;
+  border-right-color: #26323D;
+}
+
+/* Split Container
+========================================================================== */
+/* line 115, components/_dijit-widgets.scss */
+.dijitBorderContainer {
+  padding: 5px;
+  background-color: #fcfcfc;
+}
+/* line 120, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitSplitterV,
+.dijitBorderContainer .dijitGutterV {
+  width: 5px;
+  border: 0;
+  background: #fcfcfc;
+}
+/* line 126, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitSplitterH,
+.dijitBorderContainer .dijitGutterH {
+  height: 5px;
+  border: 0;
+  background: #fcfcfc;
+}
+/* line 132, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitSplitterH .dijitSplitterThumb {
+  top: 2px;
+  width: 19px;
+  height: 1px;
+  background: #B0B0B0;
+}
+/* line 140, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitSplitterV .dijitSplitterThumb {
+  left: 2px;
+  width: 1px;
+  height: 19px;
+  background: #B0B0B0;
+}
+/* line 148, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitSplitContainer-child,
+.dijitBorderContainer .dijitBorderContainer-child {
+  border: 1px solid #ccc;
+}
+/* line 154, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitBorderContainer-dijitTabContainerTop,
+.dijitBorderContainer .dijitBorderContainer-dijitTabContainerBottom,
+.dijitBorderContainer .dijitBorderContainer-dijitTabContainerLeft,
+.dijitBorderContainer .dijitBorderContainer-dijitTabContainerRight {
+  border: none;
+}
+/* line 157, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitBorderContainer-dijitBorderContainer {
+  padding: 0;
+  border: none;
+}
+/* line 161, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitSplitterActive {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  margin: 0;
+  background-color: #aaa;
+  background-image: none;
+  font-size: 1px;
+}
+/* line 170, components/_dijit-widgets.scss */
+.dijitBorderContainer .dijitSplitContainer-dijitContentPane,
+.dijitBorderContainer .dijitBorderContainer-dijitContentPane {
+  padding: 5px;
+  background-color: #fff;
+}
+
+/*  Dropdown menu
+    ========================================================================== */
+/* line 182, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  margin-top: 0;
+  padding: 12px 10px;
+  background: #2c3e50;
+  width: 200px !important;
+}
+/* line 190, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu:after {
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
+  margin-left: -10px;
+  width: 0px;
+  height: 0px;
+  border: medium solid transparent;
+  border-width: 10px;
+  border-bottom-color: #2c3e50;
+  content: " ";
+  pointer-events: none;
+}
+/* line 205, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu .dijitMenuItem {
+  background: transparent;
+}
+/* line 207, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu .dijitMenuItem .dijitMenuItemLabel {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  color: #FFF;
+  width: 180px !important;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 217, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu .dijitMenuItem.dijitMenuItemHover {
+  background: none;
+}
+/* line 219, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu .dijitMenuItem.dijitMenuItemHover .dijitMenuItemLabel {
+  background: #2980b9;
+}
+/* line 227, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu .tg_newlabelmenuitem .dijitMenuItemLabel {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+/* line 234, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu .dijitMenuSeparator td {
+  padding: 0;
+  border-bottom-width: 3px;
+}
+/* line 239, components/_dijit-widgets.scss */
+.dijitMenuPopup .dijitMenu .dijitMenuSeparator .dijitMenuSeparatorIconCell > div {
+  margin: 0;
+}
+
+/* line 1, components/_helpers.scss */
+.show {
+  display: block !important;
+}
+
+/* line 4, components/_helpers.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* line 8, components/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 11, components/_helpers.scss */
+.display-ie8-only:not([attr*='']) {
+  display: none;
+  padding: 0;
+}
+
+/* line 16, components/_helpers.scss */
+.list-nostyle ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 19, components/_helpers.scss */
+.list-nostyle ul li {
+  list-style-type: none!important;
+}
+
+/* line 25, components/_helpers.scss */
+.nowrap,
+.nowrap * {
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+
+   Buttons
+
+   ========================================================================== */
+/*  Base styles
+   ========================================================================== */
+/* line 11, components/_buttons.scss */
+.btn,
+.mx-button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0.5em 1em;
+  background-color: #dddddd;
+  color: #2c3e50;
+  text-shadow: none;
+  font-size: 12px;
+  line-height: 1.4;
+}
+/* line 26, components/_buttons.scss */
+.btn:hover, .btn:focus, .btn:active,
+.mx-button:hover,
+.mx-button:focus,
+.mx-button:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* line 33, components/_buttons.scss */
+.mx-link {
+  padding: 0;
+}
+
+/* line 41, components/_buttons.scss */
+.btn img,
+.mx-button img,
+.mx-link img {
+  margin-top: -1px;
+  height: auto;
+}
+
+/* line 48, components/_buttons.scss */
+.dj_ie8 .mx-link {
+  margin-right: 0;
+  white-space: normal;
+}
+
+/*  Global Button Overrides
+   ========================================================================== */
+/* line 60, components/_buttons.scss */
+.btn-block + .btn-block {
+  margin-top: 0;
+}
+
+/*  Alternate button styles
+   ========================================================================== */
+/* line 70, components/_buttons.scss */
+.btn-default {
+  border-color: #dddddd;
+  background-color: #dddddd;
+  color: #2c3e50;
+}
+/* line 10, base/mixins/_buttons.scss */
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  border-color: #c4c4c4;
+  background-color: #c4c4c4;
+  color: #2c3e50;
+}
+/* line 17, base/mixins/_buttons.scss */
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  background-image: none;
+}
+/* line 27, base/mixins/_buttons.scss */
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+  border-color: #dddddd;
+  background-color: #dddddd;
+}
+/* line 33, base/mixins/_buttons.scss */
+.btn-default.btn-transparent {
+  background-color: transparent;
+  color: #dddddd;
+}
+/* line 41, base/mixins/_buttons.scss */
+.btn-default.btn-transparent:hover, .btn-default.btn-transparent:focus, .btn-default.btn-transparent:active, .btn-default.btn-transparent.active, .open > .btn-default.btn-transparent.dropdown-toggle {
+  background-color: #dddddd;
+  border-color: #dddddd;
+  color: #2c3e50;
+}
+/* line 72, components/_buttons.scss */
+.btn-default.btn-transparent {
+  color: #2c3e50;
+}
+
+/* line 76, components/_buttons.scss */
+.btn-primary {
+  border-color: #2980b9;
+  background-color: #2980b9;
+  color: white;
+}
+/* line 10, base/mixins/_buttons.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  border-color: #20638f;
+  background-color: #20638f;
+  color: white;
+}
+/* line 17, base/mixins/_buttons.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+/* line 27, base/mixins/_buttons.scss */
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  border-color: #2980b9;
+  background-color: #2980b9;
+}
+/* line 33, base/mixins/_buttons.scss */
+.btn-primary.btn-transparent {
+  background-color: transparent;
+  color: #2980b9;
+}
+/* line 41, base/mixins/_buttons.scss */
+.btn-primary.btn-transparent:hover, .btn-primary.btn-transparent:focus, .btn-primary.btn-transparent:active, .btn-primary.btn-transparent.active, .open > .btn-primary.btn-transparent.dropdown-toggle {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  color: white;
+}
+
+/* line 79, components/_buttons.scss */
+.btn-inverse {
+  border-color: #2c3e50;
+  background-color: #2c3e50;
+  color: white;
+}
+/* line 10, base/mixins/_buttons.scss */
+.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
+  border-color: #1a242f;
+  background-color: #1a242f;
+  color: white;
+}
+/* line 17, base/mixins/_buttons.scss */
+.btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
+  background-image: none;
+}
+/* line 27, base/mixins/_buttons.scss */
+.btn-inverse.disabled, .btn-inverse.disabled:hover, .btn-inverse.disabled:focus, .btn-inverse.disabled:active, .btn-inverse.disabled.active, .btn-inverse[disabled], .btn-inverse[disabled]:hover, .btn-inverse[disabled]:focus, .btn-inverse[disabled]:active, .btn-inverse[disabled].active, fieldset[disabled] .btn-inverse, fieldset[disabled] .btn-inverse:hover, fieldset[disabled] .btn-inverse:focus, fieldset[disabled] .btn-inverse:active, fieldset[disabled] .btn-inverse.active {
+  border-color: #2c3e50;
+  background-color: #2c3e50;
+}
+/* line 33, base/mixins/_buttons.scss */
+.btn-inverse.btn-transparent {
+  background-color: transparent;
+  color: #2c3e50;
+}
+/* line 41, base/mixins/_buttons.scss */
+.btn-inverse.btn-transparent:hover, .btn-inverse.btn-transparent:focus, .btn-inverse.btn-transparent:active, .btn-inverse.btn-transparent.active, .open > .btn-inverse.btn-transparent.dropdown-toggle {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+  color: white;
+}
+/* line 85, components/_buttons.scss */
+.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
+  background-color: #3e5771;
+  border-color: #3e5771;
+}
+
+/* line 91, components/_buttons.scss */
+.btn-success {
+  border-color: #27ae60;
+  background-color: #27ae60;
+  color: white;
+}
+/* line 10, base/mixins/_buttons.scss */
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  border-color: #1e8449;
+  background-color: #1e8449;
+  color: white;
+}
+/* line 17, base/mixins/_buttons.scss */
+.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+  background-image: none;
+}
+/* line 27, base/mixins/_buttons.scss */
+.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
+  border-color: #27ae60;
+  background-color: #27ae60;
+}
+/* line 33, base/mixins/_buttons.scss */
+.btn-success.btn-transparent {
+  background-color: transparent;
+  color: #27ae60;
+}
+/* line 41, base/mixins/_buttons.scss */
+.btn-success.btn-transparent:hover, .btn-success.btn-transparent:focus, .btn-success.btn-transparent:active, .btn-success.btn-transparent.active, .open > .btn-success.btn-transparent.dropdown-toggle {
+  background-color: #27ae60;
+  border-color: #27ae60;
+  color: white;
+}
+
+/* line 95, components/_buttons.scss */
+.btn-info {
+  border-color: #52b3d9;
+  background-color: #52b3d9;
+  color: white;
+}
+/* line 10, base/mixins/_buttons.scss */
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+  border-color: #2d9fcb;
+  background-color: #2d9fcb;
+  color: white;
+}
+/* line 17, base/mixins/_buttons.scss */
+.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
+  background-image: none;
+}
+/* line 27, base/mixins/_buttons.scss */
+.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
+  border-color: #52b3d9;
+  background-color: #52b3d9;
+}
+/* line 33, base/mixins/_buttons.scss */
+.btn-info.btn-transparent {
+  background-color: transparent;
+  color: #52b3d9;
+}
+/* line 41, base/mixins/_buttons.scss */
+.btn-info.btn-transparent:hover, .btn-info.btn-transparent:focus, .btn-info.btn-transparent:active, .btn-info.btn-transparent.active, .open > .btn-info.btn-transparent.dropdown-toggle {
+  background-color: #52b3d9;
+  border-color: #52b3d9;
+  color: white;
+}
+
+/* line 99, components/_buttons.scss */
+.btn-warning {
+  border-color: #f39c12;
+  background-color: #f39c12;
+  color: white;
+}
+/* line 10, base/mixins/_buttons.scss */
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+  border-color: #c87f0a;
+  background-color: #c87f0a;
+  color: white;
+}
+/* line 17, base/mixins/_buttons.scss */
+.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+  background-image: none;
+}
+/* line 27, base/mixins/_buttons.scss */
+.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
+  border-color: #f39c12;
+  background-color: #f39c12;
+}
+/* line 33, base/mixins/_buttons.scss */
+.btn-warning.btn-transparent {
+  background-color: transparent;
+  color: #f39c12;
+}
+/* line 41, base/mixins/_buttons.scss */
+.btn-warning.btn-transparent:hover, .btn-warning.btn-transparent:focus, .btn-warning.btn-transparent:active, .btn-warning.btn-transparent.active, .open > .btn-warning.btn-transparent.dropdown-toggle {
+  background-color: #f39c12;
+  border-color: #f39c12;
+  color: white;
+}
+
+/* line 103, components/_buttons.scss */
+.btn-danger {
+  border-color: #c0392b;
+  background-color: #c0392b;
+  color: white;
+}
+/* line 10, base/mixins/_buttons.scss */
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+  border-color: #962d22;
+  background-color: #962d22;
+  color: white;
+}
+/* line 17, base/mixins/_buttons.scss */
+.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+  background-image: none;
+}
+/* line 27, base/mixins/_buttons.scss */
+.btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
+  border-color: #c0392b;
+  background-color: #c0392b;
+}
+/* line 33, base/mixins/_buttons.scss */
+.btn-danger.btn-transparent {
+  background-color: transparent;
+  color: #c0392b;
+}
+/* line 41, base/mixins/_buttons.scss */
+.btn-danger.btn-transparent:hover, .btn-danger.btn-transparent:focus, .btn-danger.btn-transparent:active, .btn-danger.btn-transparent.active, .open > .btn-danger.btn-transparent.dropdown-toggle {
+  background-color: #c0392b;
+  border-color: #c0392b;
+  color: white;
+}
+
+/* line 106, components/_buttons.scss */
+.btn-white {
+  border-color: white;
+  background-color: white;
+  color: #2c3e50;
+}
+/* line 10, base/mixins/_buttons.scss */
+.btn-white:hover, .btn-white:focus, .btn-white:active, .btn-white.active, .open > .btn-white.dropdown-toggle {
+  border-color: #e6e6e6;
+  background-color: #e6e6e6;
+  color: #2c3e50;
+}
+/* line 17, base/mixins/_buttons.scss */
+.btn-white:active, .btn-white.active, .open > .btn-white.dropdown-toggle {
+  background-image: none;
+}
+/* line 27, base/mixins/_buttons.scss */
+.btn-white.disabled, .btn-white.disabled:hover, .btn-white.disabled:focus, .btn-white.disabled:active, .btn-white.disabled.active, .btn-white[disabled], .btn-white[disabled]:hover, .btn-white[disabled]:focus, .btn-white[disabled]:active, .btn-white[disabled].active, fieldset[disabled] .btn-white, fieldset[disabled] .btn-white:hover, fieldset[disabled] .btn-white:focus, fieldset[disabled] .btn-white:active, fieldset[disabled] .btn-white.active {
+  border-color: white;
+  background-color: white;
+}
+/* line 33, base/mixins/_buttons.scss */
+.btn-white.btn-transparent {
+  background-color: transparent;
+  color: white;
+}
+/* line 41, base/mixins/_buttons.scss */
+.btn-white.btn-transparent:hover, .btn-white.btn-transparent:focus, .btn-white.btn-transparent:active, .btn-white.btn-transparent.active, .open > .btn-white.btn-transparent.dropdown-toggle {
+  background-color: white;
+  border-color: white;
+  color: #2c3e50;
+}
+
+/* line 110, components/_buttons.scss */
+.btn-link {
+  border: 0;
+  background-color: transparent;
+  color: #2980b9;
+}
+/* line 115, components/_buttons.scss */
+.btn-link:hover {
+  background-color: transparent;
+  color: #1b557a;
+}
+
+/* line 121, components/_buttons.scss */
+.btn-disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/*  Button sizes
+   ========================================================================== */
+/* line 133, components/_buttons.scss */
+.btn-lg {
+  font-size: 15px;
+}
+
+/* line 136, components/_buttons.scss */
+.btn-sm {
+  font-size: 11px;
+}
+
+/* line 139, components/_buttons.scss */
+.btn-xs {
+  font-size: 11px;
+}
+
+/*  Button sort
+   ========================================================================== */
+/* line 149, components/_buttons.scss */
+.btn-image {
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+  text-indent: -9999;
+}
+/* line 155, components/_buttons.scss */
+.btn-image img {
+  display: block;
+}
+/* line 160, components/_buttons.scss */
+.btn-image:hover, .btn-image:focus {
+  background-color: transparent;
+}
+
+/*  Button positioning
+   ========================================================================== */
+/* line 171, components/_buttons.scss */
+.btn-right {
+  float: right;
+}
+
+/* line 174, components/_buttons.scss */
+.btn-left {
+  float: left;
+}
+
+/*  Button attached
+   ========================================================================== */
+/* line 184, components/_buttons.scss */
+.btn-attached-right {
+  margin-left: 5px;
+}
+
+/* line 187, components/_buttons.scss */
+.btn-attached-left {
+  margin-right: 5px;
+}
+
+/* line 190, components/_buttons.scss */
+.btn-attached-bottom {
+  margin-top: 5px;
+}
+
+/* line 193, components/_buttons.scss */
+.btn-attached-top {
+  margin-bottom: 5px;
+}
+
+/* ==========================================================================
+
+   Data view
+
+   ========================================================================== */
+/* line 6, components/_dataview.scss */
+.mx-dataview {
+  /* Control bar */
+}
+/* line 9, components/_dataview.scss */
+.mx-dataview .mx-dataview-controls {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  margin-top: 10px;
+  padding: 8px 0;
+  border-top: 1px solid #dddddd;
+  background-color: transparent;
+  /* Buttons */
+}
+/* line 17, components/_dataview.scss */
+.mx-dataview .mx-dataview-controls .mx-button {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+
+   Basic of Mendix Grids (datagrid / templategrid)
+
+   ========================================================================== */
+/* line 6, components/_grid.scss */
+.mx-grid {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  padding: 0px;
+  border: 0;
+  margin: 0;
+}
+/* line 12, components/_grid.scss */
+.mx-grid .mx-grid-controlbar {
+  margin: 10px 0;
+  /* Paging */
+}
+/* line 15, components/_grid.scss */
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar {
+  /* Buttons */
+  /* Text .. to .. to .. */
+}
+/* line 18, components/_grid.scss */
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button {
+  padding: 6px;
+  background-color: transparent;
+  color: #999999;
+  border-color: transparent;
+}
+/* line 24, components/_grid.scss */
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button:hover {
+  background-color: transparent;
+  color: #2980b9;
+  border-color: transparent;
+}
+/* line 31, components/_grid.scss */
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button.disabled, .mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 37, components/_grid.scss */
+.mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-grid-paging-status {
+  padding: 0 8px 8px;
+}
+/* line 43, components/_grid.scss */
+.mx-grid .mx-grid-searchbar {
+  margin: 10px 0;
+}
+/* line 46, components/_grid.scss */
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label {
+  vertical-align: middle;
+}
+/* line 48, components/_grid.scss */
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label label {
+  padding-top: 5px;
+}
+/* line 51, components/_grid.scss */
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input .form-control, .mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input .readonly-input {
+  height: 25px;
+  font-size: 11px;
+}
+
+/* line 59, components/_grid.scss */
+.mx-dataview .mx-grid {
+  border: 0;
+}
+
+/* ========================================================================== 
+
+	Data Grid
+   
+   ========================================================================== */
+/* line 7, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-head-table {
+  border: 0;
+}
+/* line 10, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-head-table th {
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 2px;
+  border-color: #dddddd;
+  background-color: transparent;
+}
+/* line 18, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-head-table .mx-datagrid-head-wrapper {
+  padding: 10px;
+}
+/* line 22, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-body-table {
+  border: 0;
+  /* Body */
+  /* Footer */
+}
+/* line 27, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  padding: 10px;
+  background-color: white;
+  border: 0;
+  border-top: 1px solid;
+  border-color: #dddddd;
+}
+/* line 34, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td:focus {
+  outline: none;
+}
+/* line 38, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td .mx-datagrid-data-wrapper {
+  text-overflow: ellipsis;
+}
+/* line 46, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr.selected td, .mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr.selected:hover td {
+  background-color: #f9f9d1 !important;
+  color: #2c3e50;
+}
+/* line 55, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-foot > tr > th {
+  padding: 1px;
+  background-color: #dddddd;
+  border: 0;
+}
+/* line 61, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-body-table .mx-datagrid-foot > tr > td {
+  border: 0;
+}
+/* line 66, components/_datagrids.scss */
+.mx-datagrid .mx-datagrid-body-table *:focus {
+  outline: 0;
+}
+
+/*	Data Grid Striped
+   ========================================================================== */
+/* line 78, components/_datagrids.scss */
+.datagrid-striped.mx-datagrid .mx-datagrid-head-table th {
+  border: 0;
+}
+/* line 83, components/_datagrids.scss */
+.datagrid-striped.mx-datagrid .mx-datagrid-body-table {
+  /* Body */
+}
+/* line 86, components/_datagrids.scss */
+.datagrid-striped.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  border-top: 0;
+}
+/* line 89, components/_datagrids.scss */
+.datagrid-striped.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr:nth-child(odd) td {
+  background-color: #eaeaea;
+}
+
+/*	Data Grid Bordered
+   ========================================================================== */
+/* line 102, components/_datagrids.scss */
+.datagrid-bordered.mx-datagrid .mx-datagrid-head-table th {
+  border: 1px solid #dddddd;
+  border-bottom: 1px;
+}
+/* line 110, components/_datagrids.scss */
+.datagrid-bordered.mx-datagrid .mx-datagrid-body-table {
+  border: 1px solid;
+}
+/* line 113, components/_datagrids.scss */
+.datagrid-bordered.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+  border: 1px solid #dddddd;
+}
+
+/*	Data Grid Hoverd
+   ========================================================================== */
+/* line 128, components/_datagrids.scss */
+.datagrid-hover.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr:hover td {
+  background-color: #ffffd6 !important;
+}
+/* line 131, components/_datagrids.scss */
+.datagrid-hover.mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr.selected:hover td {
+  background-color: #f8f8c8 !important;
+}
+
+/* ========================================================================== 
+	
+	Template Grids
+
+   ========================================================================== */
+/* line 8, components/_templategrids.scss */
+.mx-templategrid .mx-templategrid-empty {
+  display: none;
+}
+/* line 11, components/_templategrids.scss */
+.mx-templategrid .mx-templategrid-item {
+  background-color: white;
+  padding: 10px;
+  cursor: default;
+}
+/* line 16, components/_templategrids.scss */
+.mx-templategrid .mx-templategrid-item:hover {
+  background-color: #FFF;
+}
+/* line 19, components/_templategrids.scss */
+.mx-templategrid .mx-templategrid-item.selected {
+  background-color: #f9f9d1 !important;
+}
+/* line 22, components/_templategrids.scss */
+.mx-templategrid .mx-templategrid-item.selected:hover {
+  background-color: #f8f8c8 !important;
+}
+
+/*	Template Grid Hover
+   ========================================================================== */
+/* line 35, components/_templategrids.scss */
+.templategrid-hover.mx-templategrid .mx-templategrid-item:hover {
+  background-color: #ffffd6 !important;
+}
+
+/*	Template Grid Selectable
+   ========================================================================== */
+/* line 48, components/_templategrids.scss */
+.templategrid-selectable.mx-templategrid .mx-templategrid-item {
+  cursor: pointer;
+}
+
+/*	Template Grid Lined
+   ========================================================================== */
+/* line 59, components/_templategrids.scss */
+.templategrid-lined.mx-templategrid .mx-grid-content {
+  border-top-style: solid;
+  border-top-color: #dddddd;
+  border-top-width: 2px;
+}
+/* line 64, components/_templategrids.scss */
+.templategrid-lined.mx-templategrid .mx-templategrid-item {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+/*	Template Grid Striped
+   ========================================================================== */
+/* line 77, components/_templategrids.scss */
+.templategrid-striped.mx-templategrid .mx-templategrid-row:nth-child(odd) .mx-templategrid-item {
+  background-color: #f9f9f9;
+}
+
+/*	Template Grid no styling
+   ========================================================================== */
+/* line 88, components/_templategrids.scss */
+.templategrid-stylingless.mx-templategrid .mx-templategrid-item {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: default;
+}
+/* line 94, components/_templategrids.scss */
+.templategrid-stylingless.mx-templategrid .mx-templategrid-item:hover {
+  background-color: transparent;
+}
+/* line 97, components/_templategrids.scss */
+.templategrid-stylingless.mx-templategrid .mx-templategrid-item.selected {
+  background-color: transparent !important;
+}
+/* line 100, components/_templategrids.scss */
+.templategrid-stylingless.mx-templategrid .mx-templategrid-item.selected:hover {
+  background-color: transparent !important;
+}
+
+/* ==========================================================================
+
+   Group Box
+
+   ========================================================================== */
+/* line 7, components/_groupbox.scss */
+.mx-groupbox {
+  margin: 0;
+}
+/* line 9, components/_groupbox.scss */
+.mx-groupbox > .mx-groupbox-header {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  background: #dddddd;
+  color: #2c3e50;
+  font-size: 15px;
+}
+/* line 15, components/_groupbox.scss */
+.mx-groupbox > .mx-groupbox-header .mx-groupbox-collapse-icon {
+  margin-top: 0.1em;
+}
+/* line 19, components/_groupbox.scss */
+.mx-groupbox > .mx-groupbox-body {
+  padding: 10px 15px;
+  border-color: #dddddd;
+  background-color: #FFF;
+}
+
+/*  Alternate Groupboxes
+   ========================================================================== */
+/* line 33, components/_groupbox.scss */
+.mx-groupbox.groupbox-stylingless > .mx-groupbox-header {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+}
+/* line 38, components/_groupbox.scss */
+.mx-groupbox.groupbox-stylingless > .mx-groupbox-body {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+/* line 47, components/_groupbox.scss */
+.mx-groupbox.groupbox-sideless > .mx-groupbox-header {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 51, components/_groupbox.scss */
+.mx-groupbox.groupbox-sideless > .mx-groupbox-body {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 61, components/_groupbox.scss */
+.mx-groupbox.groupbox-bodyless > .mx-groupbox-body {
+  padding: 0;
+}
+/* line 68, components/_groupbox.scss */
+.mx-groupbox.groupbox-lined > .mx-groupbox-header {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #dddddd;
+  background-color: #FFF;
+}
+/* line 73, components/_groupbox.scss */
+.mx-groupbox.groupbox-lined > .mx-groupbox-body {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: #FFF;
+}
+/* line 2, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-default > .mx-groupbox-header {
+  background: #dddddd;
+  color: #2c3e50;
+}
+/* line 6, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-default > .mx-groupbox-body {
+  border-color: #dddddd;
+}
+/* line 2, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-primary > .mx-groupbox-header {
+  background: #2980b9;
+  color: white;
+}
+/* line 6, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-primary > .mx-groupbox-body {
+  border-color: #2980b9;
+}
+/* line 2, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-inverse > .mx-groupbox-header {
+  background: #2c3e50;
+  color: white;
+}
+/* line 6, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-inverse > .mx-groupbox-body {
+  border-color: #2c3e50;
+}
+/* line 2, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-success > .mx-groupbox-header {
+  background: #27ae60;
+  color: white;
+}
+/* line 6, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-success > .mx-groupbox-body {
+  border-color: #27ae60;
+}
+/* line 2, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-info > .mx-groupbox-header {
+  background: #52b3d9;
+  color: white;
+}
+/* line 6, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-info > .mx-groupbox-body {
+  border-color: #52b3d9;
+}
+/* line 2, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-warning > .mx-groupbox-header {
+  background: #f39c12;
+  color: white;
+}
+/* line 6, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-warning > .mx-groupbox-body {
+  border-color: #f39c12;
+}
+/* line 2, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-danger > .mx-groupbox-header {
+  background: #c0392b;
+  color: white;
+}
+/* line 6, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-danger > .mx-groupbox-body {
+  border-color: #c0392b;
+}
+/* line 2, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-blank > .mx-groupbox-header {
+  background: white;
+  color: #2c3e50;
+}
+/* line 6, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-blank > .mx-groupbox-body {
+  border-color: white;
+}
+/* line 110, components/_groupbox.scss */
+.mx-groupbox.groupbox-blank > .mx-groupbox-body {
+  border: 0;
+}
+/* line 114, components/_groupbox.scss */
+.mx-groupbox.groupbox-transparent {
+  background-color: transparent;
+}
+/* line 116, components/_groupbox.scss */
+.mx-groupbox.groupbox-transparent > .mx-groupbox-header {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+/* line 120, components/_groupbox.scss */
+.mx-groupbox.groupbox-transparent > .mx-groupbox-body {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+/*  Groupboxe Headers
+   ========================================================================== */
+/* line 134, components/_groupbox.scss */
+.mx-groupbox.groupbox-h1 > .mx-groupbox-header {
+  font-size: 31px;
+}
+/* line 135, components/_groupbox.scss */
+.mx-groupbox.groupbox-h2 > .mx-groupbox-header {
+  font-size: 25px;
+}
+/* line 136, components/_groupbox.scss */
+.mx-groupbox.groupbox-h3 > .mx-groupbox-header {
+  font-size: 21px;
+}
+/* line 137, components/_groupbox.scss */
+.mx-groupbox.groupbox-h4 > .mx-groupbox-header {
+  font-size: 15px;
+}
+/* line 138, components/_groupbox.scss */
+.mx-groupbox.groupbox-h5 > .mx-groupbox-header {
+  font-size: 12px;
+}
+/* line 139, components/_groupbox.scss */
+.mx-groupbox.groupbox-h6 > .mx-groupbox-header {
+  font-size: 11px;
+}
+
+/*  Groupboxe Callouts
+   ========================================================================== */
+/* line 148, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout {
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: transparent;
+}
+/* line 152, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout > .mx-groupbox-header {
+  background: transparent;
+}
+/* line 155, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout > .mx-groupbox-body {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+}
+/* line 160, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout .mx-groupbox-header + .mx-groupbox-body {
+  padding-top: 0;
+}
+/* line 164, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout-info {
+  border-left-color: #52b3d9;
+  background: #cfeaf5;
+}
+/* line 167, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout-info > .mx-groupbox-header {
+  color: #52b3d9;
+}
+/* line 171, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout-success {
+  border-left-color: #27ae60;
+  background: #9ee9be;
+}
+/* line 174, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout-success > .mx-groupbox-header {
+  color: #27ae60;
+}
+/* line 178, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout-warning {
+  border-left-color: #f39c12;
+  background: #fce3bc;
+}
+/* line 181, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout-warning > .mx-groupbox-header {
+  color: #f39c12;
+}
+/* line 185, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout-danger {
+  border-left-color: #c0392b;
+  background: #edb6b0;
+}
+/* line 188, components/_groupbox.scss */
+.mx-groupbox.groupbox-callout-danger > .mx-groupbox-header {
+  color: #c0392b;
+}
+
+/* ==========================================================================
+
+   Inputs
+
+   ========================================================================== */
+/* line 7, components/_inputs.scss */
+.form-control, .readonly-input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color ease-in-out, box-shadow ease-in-out;
+  -webkit-transition-delay: 0.15s, 0.15s;
+  -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  display: block;
+  padding: 6px 8px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background-color: white;
+  background-image: none;
+  color: #555555;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 1.428571429;
+}
+
+/* line 24, components/_inputs.scss */
+textarea.form-control, textarea.readonly-input {
+  height: auto;
+}
+
+/* line 27, components/_inputs.scss */
+.form-control:focus, .readonly-input:focus {
+  border-color: #2980b9;
+  background-color: white;
+  outline: 0;
+}
+
+/*	Readonly input field
+   ========================================================================== */
+/* line 36, components/_inputs.scss */
+.readonly-input {
+  background-color: #eeeeee !important;
+}
+/* line 39, components/_inputs.scss */
+.readonly-input label {
+  padding: 0 !important;
+}
+
+/* line 43, components/_inputs.scss */
+.readonly-input-alert label {
+  color: #c0392b;
+}
+
+/*	File upload input field
+   ========================================================================== */
+/* line 51, components/_inputs.scss */
+.mx-fileinput .mx-wrapped-label {
+  display: inline-block;
+  width: 200px;
+}
+/* line 57, components/_inputs.scss */
+.mx-fileinput .mx-wrapped-form .mx-wrapped-input {
+  cursor: pointer;
+}
+/* line 60, components/_inputs.scss */
+.mx-fileinput .mx-wrapped-form .mx-fileinput-upload-button:hover {
+  background-color: #dddddd;
+}
+
+/* ========================================================================== 
+	
+	List View
+
+   ========================================================================== */
+/* line 6, components/_listview.scss */
+.mx-listview {
+  /* remove widget padding */
+  padding: 0;
+  /* Clear search button (overrides load more button stying) */
+  /* Load more button */
+}
+/* line 11, components/_listview.scss */
+.mx-listview .mx-button.mx-listview-clear-button {
+  width: auto;
+}
+/* line 16, components/_listview.scss */
+.mx-listview > .mx-button {
+  width: 100%;
+  margin: 0;
+}
+/* line 20, components/_listview.scss */
+.mx-listview .mx-listview-list {
+  margin: 0;
+}
+/* line 23, components/_listview.scss */
+.mx-listview .mx-listview-item {
+  background-color: white;
+  padding: 10px;
+}
+/* line 26, components/_listview.scss */
+.mx-listview .mx-listview-item:hover {
+  background-color: white;
+}
+/* line 29, components/_listview.scss */
+.mx-listview .mx-listview-item.selected {
+  background-color: #f9f9d1 !important;
+}
+/* line 32, components/_listview.scss */
+.mx-listview .mx-listview-item.selected:hover {
+  background-color: #f8f8c8 !important;
+}
+/* line 36, components/_listview.scss */
+.mx-listview .mx-listview-item:nth-child(2n+1) {
+  background-color: white;
+}
+
+/*	List View Hover
+   ========================================================================== */
+/* line 48, components/_listview.scss */
+.listview-hover.mx-listview .mx-listview-item:hover {
+  background-color: #ffffd6 !important;
+}
+
+/*	List View Lined
+   ========================================================================== */
+/* line 59, components/_listview.scss */
+.listview-lined.mx-listview .mx-listview-item {
+  border-top: 1px solid #dddddd;
+  border-right: none;
+  border-left: none;
+}
+/* line 64, components/_listview.scss */
+.listview-lined.mx-listview .mx-listview-item:first-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 67, components/_listview.scss */
+.listview-lined.mx-listview .mx-listview-item:last-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+/*	List View Striped
+   ========================================================================== */
+/* line 79, components/_listview.scss */
+.listview-striped.mx-listview .mx-listview-item:nth-child(2n+1) {
+  background-color: #eaeaea;
+}
+
+/*	List View Seperated
+   ========================================================================== */
+/* line 89, components/_listview.scss */
+.listview-seperated.mx-listview .mx-listview-item {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border-style: solid;
+}
+
+/*	List View no styling
+   ========================================================================== */
+/* line 101, components/_listview.scss */
+.listview-stylingless.mx-listview .mx-listview-item {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: default;
+}
+/* line 107, components/_listview.scss */
+.listview-stylingless.mx-listview .mx-listview-item:hover {
+  background-color: transparent;
+}
+/* line 110, components/_listview.scss */
+.listview-stylingless.mx-listview .mx-listview-item.selected {
+  background-color: transparent !important;
+}
+/* line 113, components/_listview.scss */
+.listview-stylingless.mx-listview .mx-listview-item.selected:hover {
+  background-color: transparent !important;
+}
+
+/* ==========================================================================
+
+   Navigation
+
+   ========================================================================== */
+/* Navigation Bar
+========================================================================== */
+/* line 9, components/_navigation.scss */
+.mx-navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  border-style: none;
+  background-color: #2c3e50;
+  /* remove focus */
+}
+/* line 15, components/_navigation.scss */
+.mx-navbar ul.nav {
+  margin: 0;
+  /* Navigation item */
+  /* When hovering or the dropdown is open */
+}
+/* line 19, components/_navigation.scss */
+.mx-navbar ul.nav > li.mx-navbar-item > a {
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  padding: 15px 20px;
+  color: #aabdd1;
+  font-size: 13px;
+  vertical-align: bottom;
+  /* Dropdown arrow */
+  /* Dropdown */
+}
+/* line 28, components/_navigation.scss */
+.mx-navbar ul.nav > li.mx-navbar-item > a .caret {
+  border-top-color: #aabdd1;
+  border-bottom-color: #aabdd1;
+}
+/* line 34, components/_navigation.scss */
+.mx-navbar ul.nav > li.mx-navbar-item > a .mx-navbar-submenu:before {
+  position: absolute;
+  top: -9px;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border-width: 0 9px 9px 9px;
+  border-style: solid;
+  border-color: transparent transparent #33485d transparent;
+  content: "";
+  -webkit-transform: rotate(360deg);
+}
+/* line 48, components/_navigation.scss */
+.mx-navbar ul.nav > li.mx-navbar-item > a img {
+  width: 20px;
+  height: auto;
+}
+/* line 59, components/_navigation.scss */
+.mx-navbar ul.nav > .mx-navbar-item > a:hover,
+.mx-navbar ul.nav > .mx-navbar-item > a:focus,
+.mx-navbar ul.nav > .mx-navbar-item.open > a,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:hover,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:focus {
+  background-color: #33485d;
+  color: white;
+  text-decoration: none;
+}
+/* line 64, components/_navigation.scss */
+.mx-navbar ul.nav > .mx-navbar-item > a:hover .caret,
+.mx-navbar ul.nav > .mx-navbar-item > a:focus .caret,
+.mx-navbar ul.nav > .mx-navbar-item.open > a .caret,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:hover .caret,
+.mx-navbar ul.nav > .mx-navbar-item.open > a:focus .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+@media (max-width: 767px) {
+  /* line 72, components/_navigation.scss */
+  .mx-navbar .mx-navbar-item.open .dropdown-menu {
+    background-color: #253443;
+  }
+  /* line 75, components/_navigation.scss */
+  .mx-navbar .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem > a {
+    font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    padding: 15px 20px;
+    border-radius: 0;
+    color: #aabdd1;
+    font-size: 13px;
+  }
+  /* line 83, components/_navigation.scss */
+  .mx-navbar .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem > a:hover, .mx-navbar .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem > a:focus {
+    color: white;
+  }
+}
+/* line 91, components/_navigation.scss */
+.mx-navbar:focus {
+  outline: 0;
+}
+
+/* Navigation Tree
+========================================================================== */
+/* line 100, components/_navigation.scss */
+.mx-navigationtree {
+  background-color: #2c3e50;
+  /* Every navigation item */
+  /* Sub navigation item specific */
+  /* remove focus */
+}
+/* line 104, components/_navigation.scss */
+.mx-navigationtree .navbar-inner ul {
+  margin: 0;
+  padding-left: 0;
+}
+/* line 108, components/_navigation.scss */
+.mx-navigationtree .navbar-inner ul li {
+  padding: 0;
+}
+/* line 111, components/_navigation.scss */
+.mx-navigationtree .navbar-inner ul li a {
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  display: block;
+  padding: 15px 20px;
+  border-bottom: 1px solid #33485d;
+  border-radius: 0;
+  color: #aabdd1;
+  text-shadow: none;
+  font-size: 13px;
+  vertical-align: bottom;
+}
+/* line 122, components/_navigation.scss */
+.mx-navigationtree .navbar-inner ul li a .caret {
+  border-top-color: #aabdd1;
+  border-bottom-color: #aabdd1;
+}
+/* line 128, components/_navigation.scss */
+.mx-navigationtree .navbar-inner ul li a img {
+  margin-right: 4px;
+  width: 20px;
+  height: auto;
+}
+/* line 136, components/_navigation.scss */
+.mx-navigationtree .navbar-inner ul li a:hover,
+.mx-navigationtree .navbar-inner ul li a:focus {
+  background-color: #33485d;
+  color: white;
+  text-decoration: none;
+}
+/* line 141, components/_navigation.scss */
+.mx-navigationtree .navbar-inner ul li a:hover .caret,
+.mx-navigationtree .navbar-inner ul li a:focus .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+/* line 151, components/_navigation.scss */
+.mx-navigationtree li.mx-navigationtree-has-items > ul {
+  margin: 0;
+  padding-left: 0;
+  background-color: #253443;
+}
+/* line 156, components/_navigation.scss */
+.mx-navigationtree li.mx-navigationtree-has-items > ul li {
+  margin: 0;
+  padding: 0;
+}
+/* line 159, components/_navigation.scss */
+.mx-navigationtree li.mx-navigationtree-has-items > ul li a {
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding: 12px 20px 12px 25px;
+  border: 0;
+  background-color: transparent;
+}
+/* line 165, components/_navigation.scss */
+.mx-navigationtree li.mx-navigationtree-has-items > ul li a:hover {
+  background-color: transparent;
+  color: white;
+}
+/* line 175, components/_navigation.scss */
+.mx-navigationtree:focus {
+  outline: 0;
+}
+
+/* Simple Menu Bar
+========================================================================== */
+/* line 183, components/_navigation.scss */
+.mx-menubar {
+  padding: 0;
+  background-color: #2c3e50;
+  /* remove focus */
+}
+/* line 187, components/_navigation.scss */
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item {
+  margin: 0;
+}
+/* line 189, components/_navigation.scss */
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item a {
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding: 15px 20px;
+  border-radius: 0;
+  color: #aabdd1;
+  font-size: 13px;
+}
+/* line 197, components/_navigation.scss */
+.mx-menubar ul.mx-menubar-list li.mx-menubar-item a:hover, .mx-menubar ul.mx-menubar-list li.mx-menubar-item a:focus {
+  background-color: #33485d;
+  color: white;
+}
+/* line 206, components/_navigation.scss */
+.mx-menubar:focus {
+  outline: 0;
+}
+
+/* Vertical variation specifics */
+/* line 211, components/_navigation.scss */
+.mx-menubar-vertical li.mx-menubar-item > a {
+  border-bottom: 1px solid #33485d;
+}
+
+/* ==========================================================================
+
+   Navigation List
+
+   ========================================================================== */
+/* line 6, components/_navigationlist.scss */
+.mx-navigationlist {
+  padding: 0;
+  margin: 0;
+}
+/* line 10, components/_navigationlist.scss */
+.mx-navigationlist .mx-navigationlist-item {
+  padding: 10px;
+}
+/* line 12, components/_navigationlist.scss */
+.mx-navigationlist .mx-navigationlist-item:hover {
+  background-color: #FFF!important;
+}
+
+/* Hover
+   ========================================================================== */
+/* line 25, components/_navigationlist.scss */
+.navigationlist-hover.mx-navigationlist .mx-navigationlist-item:hover {
+  background-color: #ffffd6 !important;
+}
+
+/*	Lined
+   ========================================================================== */
+/* line 36, components/_navigationlist.scss */
+.navigationlist-lined.mx-navigationlist .mx-navigationlist-item {
+  border-top: 1px solid #dddddd;
+  border-right: none;
+  border-left: none;
+}
+/* line 41, components/_navigationlist.scss */
+.navigationlist-lined.mx-navigationlist .mx-navigationlist-item:first-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 44, components/_navigationlist.scss */
+.navigationlist-lined.mx-navigationlist .mx-navigationlist-item:last-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* ==========================================================================
+
+   Popups
+
+   ========================================================================== */
+/* line 8, components/_popups.scss */
+.modal-dialog .modal-content {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-style: none;
+}
+/* line 12, components/_popups.scss */
+.modal-dialog .modal-content .modal-header {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  padding: 20px;
+  background-color: #2980b9;
+}
+/* line 16, components/_popups.scss */
+.modal-dialog .modal-content .modal-header h4 {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+}
+/* line 21, components/_popups.scss */
+.modal-dialog .modal-content .modal-header .close {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  color: white;
+  text-shadow: none;
+}
+/* line 27, components/_popups.scss */
+.modal-dialog .modal-content .modal-footer {
+  padding: 20px;
+  margin-top: 10px;
+  border-style: none;
+  text-align: left;
+}
+/* line 36, components/_popups.scss */
+.modal-dialog .mx-dataview-controls {
+  padding: 20px;
+  margin-top: 10px;
+  border-style: none;
+  text-align: left;
+}
+/* line 47, components/_popups.scss */
+.modal-dialog .mx-page > .mx-dataview > .mx-dataview-content {
+  padding: 20px;
+}
+
+/* 	Default Login Modal
+   ========================================================================== */
+/* line 62, components/_popups.scss */
+.mx-login .modal-body {
+  padding: 0 15px;
+}
+/* line 66, components/_popups.scss */
+.mx-login .modal-content input {
+  -webkit-box-shadow: 0;
+  -moz-box-shadow: 0;
+  box-shadow: 0;
+  padding: 12px 12px;
+  height: 56px;
+  border: 1px solid #EEE;
+  background: #eee;
+  font-size: 16px;
+}
+/* line 74, components/_popups.scss */
+.mx-login .modal-content input:focus {
+  border-color: #66afe9;
+}
+/* line 80, components/_popups.scss */
+.mx-login .modal-header,
+.mx-login .modal-footer {
+  border: 0;
+}
+/* line 83, components/_popups.scss */
+.mx-login button {
+  font-size: 16px;
+}
+/* line 86, components/_popups.scss */
+.mx-login h4 {
+  color: #aaa;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* ==========================================================================
+
+   Tab Container
+
+   ========================================================================== */
+/* line 7, components/_tabcontainer.scss */
+.mx-tabcontainer .mx-tabcontainer-tabs {
+  margin-bottom: 20px;
+  border-color: #dddddd;
+}
+/* line 10, components/_tabcontainer.scss */
+.mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-right: 0;
+  color: #2980b9;
+}
+/* line 19, components/_tabcontainer.scss */
+.mx-tabcontainer .mx-tabcontainer-tabs > li > a:hover, .mx-tabcontainer .mx-tabcontainer-tabs > li > a:focus {
+  background-color: #eaeaea;
+}
+/* line 26, components/_tabcontainer.scss */
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  background-color: #FFF;
+  color: #2c3e50;
+}
+/* line 33, components/_tabcontainer.scss */
+.mx-tabcontainer .mx-tabcontainer-content {
+  overflow: auto;
+}
+
+/*	Tab Container Pils
+   ========================================================================== */
+/* line 43, components/_tabcontainer.scss */
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs {
+  border: 0;
+}
+/* line 45, components/_tabcontainer.scss */
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin-right: 2px;
+  border: 0;
+  color: #2980b9;
+}
+/* line 52, components/_tabcontainer.scss */
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li > a:hover, .tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li > a:focus {
+  background-color: #eaeaea;
+}
+/* line 59, components/_tabcontainer.scss */
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a,
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover,
+.tab-pills.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+  border: 0;
+  background-color: #2980b9;
+  color: #FFF;
+}
+
+/*	Tab Container Lined
+   ========================================================================== */
+/* line 73, components/_tabcontainer.scss */
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs {
+  border-width: 3px;
+}
+/* line 76, components/_tabcontainer.scss */
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li {
+  margin-bottom: -3px;
+}
+/* line 79, components/_tabcontainer.scss */
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li > a {
+  padding: 0.6em 1.2em;
+  border: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 3px;
+  border-radius: 0;
+  color: #2980b9;
+}
+/* line 89, components/_tabcontainer.scss */
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li > a:hover, .tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li > a:focus {
+  border: 0;
+  border-color: transparent;
+  background: transparent;
+  color: #2980b9;
+}
+/* line 100, components/_tabcontainer.scss */
+.tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li.active > a, .tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li.active > a:hover, .tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li.active > a:focus {
+  border: 0;
+  border-bottom: 3px solid #2980b9;
+  background-color: transparent;
+  color: #2980b9;
+}
+
+/*	Tab Container justified
+   ========================================================================== */
+/* line 114, components/_tabcontainer.scss */
+.tab-justified.mx-tabcontainer .mx-tabcontainer-tabs {
+  width: 100%;
+  border-bottom: 0;
+}
+/* line 118, components/_tabcontainer.scss */
+.tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li {
+  display: table-cell;
+  float: none;
+  margin: 0;
+  width: 1%;
+}
+@media (max-width: 768px) {
+  /* line 118, components/_tabcontainer.scss */
+  .tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 127, components/_tabcontainer.scss */
+.tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+}
+/* line 133, components/_tabcontainer.scss */
+.tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom-color: transparent;
+}
+@media (max-width: 768px) {
+  /* line 133, components/_tabcontainer.scss */
+  .tab-justified.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a {
+    border-bottom-color: #dddddd;
+  }
+}
+/* line 142, components/_tabcontainer.scss */
+.tab-justified.mx-tabcontainer.tab-pills .mx-tabcontainer-tabs > li > a {
+  border-bottom: 0;
+}
+
+/*	Tab Borderd
+   ========================================================================== */
+/* line 150, components/_tabcontainer.scss */
+.tab-bordered.mx-tabcontainer .mx-tabcontainer-tabs {
+  margin: 0;
+}
+/* line 154, components/_tabcontainer.scss */
+.tab-bordered.mx-tabcontainer .mx-tabcontainer-content {
+  padding: 10px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #dddddd;
+  background-color: #FFF;
+}
+
+/* ========================================================================== 
+
+	Title
+   
+   ========================================================================== */
+/* line 6, components/_typography.scss */
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* line 10, components/_typography.scss */
+label {
+  padding-top: 0;
+}
+
+/* line 15, components/_typography.scss */
+.mx-title {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 31px;
+}
+
+/* line 21, components/_typography.scss */
+h1, .h1, .h1 > * {
+  font-size: 31px;
+}
+
+/* line 22, components/_typography.scss */
+h2, .h2, .h2 > * {
+  font-size: 25px;
+}
+
+/* line 23, components/_typography.scss */
+h3, .h3, .h3 > * {
+  font-size: 21px;
+}
+
+/* line 24, components/_typography.scss */
+h4, .h4, .h4 > * {
+  font-size: 15px;
+}
+
+/* line 25, components/_typography.scss */
+h5, .h5, .h5 > * {
+  font-size: 12px;
+}
+
+/* line 26, components/_typography.scss */
+h6, .h6, .h6 > * {
+  font-size: 11px;
+}
+
+/* line 29, components/_typography.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #2c3e50;
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* line 46, components/_typography.scss */
+.text-light, .text-light > *, .text-light label {
+  font-family: "OpenSansLight", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+/* line 49, components/_typography.scss */
+.text-normal, .text-normal > *, .text-normal label {
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* line 52, components/_typography.scss */
+.text-semibold, .text-semibold > *, .text-semibold label {
+  font-family: "OpenSansSemibold", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* line 55, components/_typography.scss */
+.text-bold, .text-bold > *, .text-bold label {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* line 62, components/_typography.scss */
+.text-spacing {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 66, components/_typography.scss */
+.text-lined {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 72, components/_typography.scss */
+.text-break {
+  word-break: break-all;
+}
+
+/* ========================================================================== 
+
+	Tables
+   
+   ========================================================================== */
+/* line 6, components/_tables.scss */
+th {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* line 14, components/_tables.scss */
+table.mx-table > tbody > tr > th {
+  padding: 8px;
+}
+/* line 16, components/_tables.scss */
+table.mx-table > tbody > tr > th * {
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+/* line 17, components/_tables.scss */
+table.mx-table > tbody > tr > th > label {
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+/* line 24, components/_tables.scss */
+table.mx-table > tbody > tr > td {
+  padding: 8px;
+}
+/* line 26, components/_tables.scss */
+table.mx-table > tbody > tr > td > div > label {
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+
+/*	Table Spacing Listview
+   ========================================================================== */
+/* line 43, components/_tables.scss */
+.mx-list table.mx-table > tbody > tr > th,
+.mx-list table.mx-table > tbody > tr > td {
+  padding: 8px;
+}
+
+/*	Table Lined
+   ========================================================================== */
+/* line 61, components/_tables.scss */
+table.table-lined.mx-table > tbody > tr > th,
+table.table-lined.mx-table > tbody > tr > td {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #dddddd;
+}
+
+/*	Table Bordered
+   ========================================================================== */
+/* line 83, components/_tables.scss */
+table.table-bordered.mx-table > tbody > tr > th,
+table.table-bordered.mx-table > tbody > tr > td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dddddd;
+}
+
+/*	Table Compact
+   ========================================================================== */
+/* line 104, components/_tables.scss */
+table.table-compact.mx-table > tbody > tr > th,
+table.table-compact.mx-table > tbody > tr > td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/*	Table Sideless
+   ========================================================================== */
+/* line 125, components/_tables.scss */
+table.table-sideless.mx-table > tbody > tr > td,
+table.table-sideless.mx-table > tbody > tr > th {
+  padding-right: 0;
+}
+/* line 129, components/_tables.scss */
+table.table-sideless.mx-table > tbody > tr > th:first-child,
+table.table-sideless.mx-table > tbody > tr > td:first-child {
+  padding-left: 0;
+}
+
+/*	Table Spaceless
+   ========================================================================== */
+/* line 149, components/_tables.scss */
+table.table-spaceless.mx-table > tbody > tr > th,
+table.table-spaceless.mx-table > tbody > tr > td {
+  padding: 0;
+}
+
+/*	Table Vertical (labels above input)
+   ========================================================================== */
+/* line 168, components/_tables.scss */
+table.table-vertical.mx-table > tbody > tr > th {
+  padding-bottom: 0;
+}
+/* line 170, components/_tables.scss */
+table.table-vertical.mx-table > tbody > tr > th > label {
+  padding: 0;
+}
+/* line 171, components/_tables.scss */
+table.table-vertical.mx-table > tbody > tr > th > div > label {
+  padding: 0;
+}
+
+/*	Table Vertical aligned in middle
+   ========================================================================== */
+/* line 190, components/_tables.scss */
+table.table-align-vertical-middle.mx-table > tbody > tr > th,
+table.table-align-vertical-middle.mx-table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+/*	Table Where the labels have no spacing
+   ========================================================================== */
+/* line 212, components/_tables.scss */
+table.table-label-compact.mx-table > tbody > tr > th > label,
+table.table-label-compact.mx-table > tbody > tr > td > label {
+  padding: 0;
+  margin: 0;
+}
+/* line 216, components/_tables.scss */
+table.table-label-compact.mx-table > tbody > tr > th > div > label,
+table.table-label-compact.mx-table > tbody > tr > td > div > label {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 229, components/_tables.scss */
+html body .mx-page table.mx-table th.nopadding,
+html body .mx-page table.mx-table td.nopadding {
+  padding: 0;
+}
+
+/* ========================================================================== 
+
+	Table option - Row sizes
+   
+   ========================================================================== */
+/*  Small rows
+	========================================================================== */
+/* line 260, components/_tables.scss */
+table.table-row-s.mx-table > tbody > tr > th,
+table.table-row-s.mx-table > tbody > tr > td {
+  height: 40px;
+}
+
+/*  Medium rows
+	========================================================================== */
+/* line 279, components/_tables.scss */
+table.table-row-m.mx-table > tbody > tr > th,
+table.table-row-m.mx-table > tbody > tr > td {
+  height: 70px;
+}
+
+/*  Large rows
+	========================================================================== */
+/* line 297, components/_tables.scss */
+table.table-row-l.mx-table > tbody > tr > th,
+table.table-row-l.mx-table > tbody > tr > td {
+  height: 120px;
+}
+
+/*	Table Fixed
+   ========================================================================== */
+/* line 307, components/_tables.scss */
+table.table-fixed {
+  table-layout: fixed;
+}
+
+/* ========================================================================== 
+
+	Labels
+   
+   ========================================================================== */
+/* line 6, components/_labels.scss */
+.label {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  display: inline;
+  padding: .2em .6em .3em !important;
+  color: #fff;
+  vertical-align: baseline;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 100%;
+  line-height: 1;
+}
+
+/* line 18, components/_labels.scss */
+.label-default {
+  background-color: #dddddd;
+  color: #2c3e50;
+}
+
+/* line 22, components/_labels.scss */
+.label-primary {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* line 26, components/_labels.scss */
+.label-success {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* line 30, components/_labels.scss */
+.label-info {
+  background-color: #52b3d9;
+  color: white;
+}
+
+/* line 34, components/_labels.scss */
+.label-warning {
+  background-color: #f39c12;
+  color: white;
+}
+
+/* line 38, components/_labels.scss */
+.label-danger {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* ========================================================================== 
+
+	Alerts
+   
+   ========================================================================== */
+/* line 7, components/_alerts.scss */
+.alert {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 15px;
+}
+
+/* line 13, components/_alerts.scss */
+.alert-success {
+  border-color: #9ee9be;
+  background-color: #9ee9be;
+  color: #27ae60;
+}
+
+/* line 18, components/_alerts.scss */
+.alert-info {
+  border-color: #cfeaf5;
+  background-color: #cfeaf5;
+  color: #52b3d9;
+}
+
+/* line 23, components/_alerts.scss */
+.alert-warning {
+  border-color: #fce3bc;
+  background-color: #fce3bc;
+  color: #f39c12;
+}
+
+/* line 28, components/_alerts.scss */
+.alert-danger {
+  border-color: #edb6b0;
+  background-color: #edb6b0;
+  color: #c0392b;
+}
+
+/* ==========================================================================
+
+   Layouts
+
+   ========================================================================== */
+/* line 7, mobile/components/_layouts.scss */
+.profile-phone,
+.profile-tablet {
+   /*	Header
+		========================================================================== */
+}
+/* line 9, mobile/components/_layouts.scss */
+.profile-phone .mx-layoutcontainer-top > .mx-layoutcontainer-wrapper,
+.profile-tablet .mx-layoutcontainer-top > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+/* line 13, mobile/components/_layouts.scss */
+.profile-phone .mx-header,
+.profile-tablet .mx-header {
+  padding: 9px;
+  background-color: #2980b9;
+}
+/* line 16, mobile/components/_layouts.scss */
+.profile-phone .mx-header .mx-link a,
+.profile-tablet .mx-header .mx-link a {
+  color: #FFF;
+  font-size: 14px;
+}
+/* line 22, mobile/components/_layouts.scss */
+.profile-phone .mx-layoutcontainer-center > .mx-layoutcontainer-wrapper,
+.profile-tablet .mx-layoutcontainer-center > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+/* line 32, mobile/components/_layouts.scss */
+.profile-phone .mx-header .btn.glyphicon,
+.profile-tablet .mx-header .btn.glyphicon {
+  color: #FFF;
+  font-size: 1.7em;
+}
+
+/* line 4, mobile/components/_listview.scss */
+.profile-phone .mx-listview .mx-listview-searchbar,
+.profile-tablet .mx-listview .mx-listview-searchbar {
+  padding: 10px;
+  margin-bottom: 0;
+}
+/* line 8, mobile/components/_listview.scss */
+.profile-phone .mx-listview .mx-listview-searchbar button,
+.profile-tablet .mx-listview .mx-listview-searchbar button {
+  display: none;
+}
+/* line 13, mobile/components/_listview.scss */
+.profile-phone .mx-listview .mx-listview-searchbar .mx-listview-search-input input,
+.profile-tablet .mx-listview .mx-listview-searchbar .mx-listview-search-input input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-style: none;
+  background-color: #dddddd;
+  text-align: center;
+}
+/* line 23, mobile/components/_listview.scss */
+.profile-phone .mx-listview .mx-list .mx-listview-item:first-child,
+.profile-tablet .mx-listview .mx-list .mx-listview-item:first-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 26, mobile/components/_listview.scss */
+.profile-phone .mx-listview .mx-list .mx-listview-item:last-child,
+.profile-tablet .mx-listview .mx-list .mx-listview-item:last-child {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+/* ==========================================================================
+
+   Tabcontainer
+
+   ========================================================================== */
+/* line 8, mobile/components/_tabcontainer.scss */
+.profile-phone .mx-tabcontainer-tabs,
+.profile-tablet .mx-tabcontainer-tabs {
+  margin-bottom: 0;
+  padding: 0 0 10px 0;
+  border-color: transparent;
+  background-color: #2980b9;
+  text-align: center;
+}
+/* line 15, mobile/components/_tabcontainer.scss */
+.profile-phone .mx-tabcontainer-tabs li,
+.profile-tablet .mx-tabcontainer-tabs li {
+  display: inline-block;
+  float: none;
+}
+/* line 18, mobile/components/_tabcontainer.scss */
+.profile-phone .mx-tabcontainer-tabs li a,
+.profile-tablet .mx-tabcontainer-tabs li a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 5px 15px;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: #1b557a;
+  color: white;
+  font-weight: normal;
+}
+/* line 31, mobile/components/_tabcontainer.scss */
+.profile-phone .mx-tabcontainer-tabs li a:hover, .profile-phone .mx-tabcontainer-tabs li a:focus, .profile-phone .mx-tabcontainer-tabs li a.active,
+.profile-tablet .mx-tabcontainer-tabs li a:hover,
+.profile-tablet .mx-tabcontainer-tabs li a:focus,
+.profile-tablet .mx-tabcontainer-tabs li a.active {
+  color: #FFF !important;
+  border-color: #1b557a !important;
+  background-color: #1b557a !important;
+}
+/* line 37, mobile/components/_tabcontainer.scss */
+.profile-phone .mx-tabcontainer-tabs li:first-child a,
+.profile-tablet .mx-tabcontainer-tabs li:first-child a {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* line 40, mobile/components/_tabcontainer.scss */
+.profile-phone .mx-tabcontainer-tabs li:last-child a,
+.profile-tablet .mx-tabcontainer-tabs li:last-child a {
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid #1b557a;
+}
+/* line 44, mobile/components/_tabcontainer.scss */
+.profile-phone .mx-tabcontainer-tabs li.active a,
+.profile-tablet .mx-tabcontainer-tabs li.active a {
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: #1b557a;
+  background-color: #1b557a;
+  color: white;
+}
+
+/* ==========================================================================
+
+   Typography
+
+   ========================================================================== */
+/* line 8, mobile/components/_typography.scss */
+.profile-phone .mx-title,
+.profile-tablet .mx-title {
+  margin: 0;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 1.7em;
+}
+
+/* ==========================================================================
+
+   Layouts
+
+   ========================================================================== */
+/* 	Base Layout
+   ========================================================================== */
+/* line 9, layouts/_base.scss */
+.mx-layoutcontainer-wrapper {
+  padding: 20px;
+}
+
+/* line 12, layouts/_base.scss */
+.mx-layoutcontainer-wrapper.mx-layoutcontainer-nested {
+  padding: 0;
+}
+
+/* line 16, layouts/_base.scss */
+#content > .mx-page {
+  background: #eff2f6;
+}
+
+/*	App Cloud Services Master Layout
+   ========================================================================== */
+/* Top container including bar */
+/* line 25, layouts/_base.scss */
+.mx-layoutcontainer .mxappcloud-topcontainer,
+.mx-layoutcontainer .mxappcloud-topcontainer > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+
+/* Content section */
+/* line 30, layouts/_base.scss */
+.mx-layoutcontainer .mxappcloud-contentcontainer > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+
+/* ==========================================================================
+
+   Sidebar Layout
+
+   ========================================================================== */
+/* line 7, layouts/_sidebar.scss */
+.layout-sidebar .layout-sidebar-sidebar {
+  background-color: #2c3e50;
+}
+/* line 9, layouts/_sidebar.scss */
+.layout-sidebar .layout-sidebar-sidebar > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}
+
+/* ==========================================================================
+
+   Topbar Layout
+
+   ========================================================================== */
+/* line 7, layouts/_topbar.scss */
+.layout-topbar .layout-topbar-topbar {
+  background-color: #2c3e50;
+}
+/* line 9, layouts/_topbar.scss */
+.layout-topbar .layout-topbar-topbar > .mx-layoutcontainer-wrapper {
+  padding: 0;
+}

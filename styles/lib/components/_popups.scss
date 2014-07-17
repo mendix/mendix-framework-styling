@@ -1,0 +1,91 @@
+/* ==========================================================================
+
+   Popups
+
+   ========================================================================== */
+
+.modal-dialog {
+	.modal-content {
+		@include box-shadow(0 2px 4px rgba(0,0,0,.2));
+		@include border-radius(0);
+		border-style: none;
+		.modal-header {
+			@include border-radius(0); // Because of the class .mx-window-active in mxui.css
+			padding: 20px;
+			background-color: $color-modal-default;
+			h4 {
+				@include font(bold);
+				color: $color-modal-text-default;
+				font-size: 18px;
+			}
+			.close {
+				@include opacity(1);
+				color: $color-modal-text-default;
+				text-shadow: none;
+			}
+		}
+		.modal-footer {
+			padding: 20px;
+			margin-top: 10px;
+			border-style: none;
+			text-align: left;
+		}
+	}
+
+	// Dataview
+	.mx-dataview-controls {
+		padding: 20px;
+		margin-top: 10px;
+		border-style: none;
+		text-align: left;
+	}
+
+
+	// Page in popup
+	.mx-page {
+		> .mx-dataview { 
+			> .mx-dataview-content {
+				padding: 20px;
+			}	
+		}
+	}
+}
+
+
+
+
+
+
+/* 	Default Login Modal
+   ========================================================================== */
+.mx-login {
+	.modal-body {
+		padding: 0 15px;
+	}
+	.modal-content {
+		input {
+			@include box-shadow(0);
+			padding: 12px 12px;
+			height: 56px;
+			border: 1px solid #EEE;
+			background: #eee;
+			font-size: 16px;
+
+			&:focus {
+				border-color: #66afe9;
+			}
+		}
+	}
+	.modal-header,
+	.modal-footer {
+		border: 0;
+	}
+	button {
+		font-size: 16px;
+	}
+	h4 {
+		color: #aaa;
+		font-weight: $font-weight-bold;
+		font-size: 20px;
+	}
+}

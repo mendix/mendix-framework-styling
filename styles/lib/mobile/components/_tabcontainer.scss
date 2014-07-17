@@ -1,0 +1,53 @@
+/* ==========================================================================
+
+   Tabcontainer
+
+   ========================================================================== */
+.profile-phone,
+.profile-tablet {
+	.mx-tabcontainer-tabs {
+		margin-bottom: 0;
+		padding: 0 0 10px 0;
+		border-color: transparent;
+		background-color: $m-color-tab-bg;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			float: none;
+			a {
+				@include box-shadow(none);
+				@include border-radius(0);
+				margin: 0;
+				padding: 5px 15px;
+				border-width: 1px 0 1px 1px;
+				border-style: solid;
+				border-color: $m-color-tab-border;
+				color: $m-color-tab-text;
+				font-weight: normal;
+
+				&:hover,
+				&:focus,
+				&.active {
+					color: #FFF !important;
+					border-color: $m-color-tab-border-active !important;
+					background-color: $m-color-tab-bg-active !important;
+				}
+			}
+			&:first-child a {
+				@include border-left-radius(10px);
+			}
+			&:last-child a {
+				@include border-right-radius(10px);
+				border-right: 1px solid $m-color-tab-border;
+			}
+			&.active a {
+				border-width: 1px 0 1px 1px;
+				border-style: solid;
+				border-color: $m-color-tab-border-active;
+				background-color: $m-color-tab-bg-active;
+				color: $m-color-tab-text-active;
+			}
+		}
+	}
+}

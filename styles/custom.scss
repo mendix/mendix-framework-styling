@@ -1,0 +1,28 @@
+// Modules and Variables
+@import "compass";
+@import "lib/base/all";
+
+/* ==========================================================================
+
+   Demo Styling (not included in the default framework)
+
+   ========================================================================== */
+.demo-banner {
+	background-image: url(../img/demo/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	> .mx-layoutcontainer-wrapper {
+		background: rgba(41, 128, 185, 0.9);
+		padding: 0;
+		> table {
+			height: 200px;
+		}
+		.demo-banner-text {
+			@include font(light);
+			color: #FFF;
+			text-align: center;
+			padding: 0 100px;
+		}
+	}
+}

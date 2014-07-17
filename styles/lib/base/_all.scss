@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins/buttons";
+@import "mixins/groupbox";
+@import "mixins/fonts";
+@import "mixins/arrow";
+
+
+/* ==========================================================================
+
+   Base
+
+   ========================================================================== */
+body {
+	color: $color-text;
+	font-size: $font-size-base;
+	//font-family: $font-family-base;
+}
+a {
+	color: $color-link;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	transition: 0.25s;
+	-webkit-backface-visibility: hidden;
+}
+a:hover {
+	text-decoration: underline;
+	color: $color-link-hover;
+}
+// Address `outline` inconsistency between Chrome and other browsers.
+a:focus {
+  outline: thin dotted; 
+}
+// Improve readability when focused and also mouse hovered in all browsers
+a:active, 
+a:hover {
+  outline: 0;
+}
+// Removes large blue border in chrome on focus and active states 
+input:focus, 
+button:focus,
+.mx-link:focus {
+  outline: 0; 
+}
+// Removes large blue border for tabindexes from widgets
+div[tabindex] {
+	outline: 0; 
+}

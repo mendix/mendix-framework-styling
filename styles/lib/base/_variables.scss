@@ -1,0 +1,401 @@
+// Here you can set your own variables or override exsting located in lib/base/variables.scss
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//   Base Colors (The base colors of a project)
+//
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+// Library colors
+/////////////////////////////////////////////////////////////////////////////////////
+// Gray shades
+$gray-darker:							#222;	
+$gray-dark:								#333;	
+$gray:									#555;	
+$gray-light:							#999;	
+$gray-primary:							#DDD;	
+$gray-lighter:							#eee;	
+	
+// Flat ui colors:						http://flatuicolors.com/
+$color-turquoise:						#1abc9c; // Blue Green -- Light
+$color-greensea:						#16a085; // Blue Green -- Dark
+$color-emerald:							#2ecc71; // Green -- Light
+$color-nephritis:						#27ae60; // Green -- Dark
+$color-peterriver:						#3498db; // Blue -- Light
+$color-belizehole:						#2980b9; // Blue -- Dark
+$color-amethyst:						#9b59b6; // Purple -- Light
+$color-wisteria:						#8e44ad; // Purple -- Dark		
+$color-wegasphalt:						#34495e; // Dark Blue -- Light	
+$color-midnightblue:					#2c3e50; // Dark Blue -- Dark
+$color-sunflower:						#f1c40f; // Yellow -- Light				
+$color-orange:							#f39c12; // Yellow -- Dark
+$color-carrot:							#e67e22; // Orange -- Light
+$color-pumpkin:							#d35400; // Orange -- Dark
+$color-alizarin:						#e74c3c; // Red -- Light
+$color-pomegranate:						#c0392b; // Red -- Dark
+$color-clouds:							#ecf0f1; // Light gray -- Light
+$color-silver:							#bdc3c7; // Light gray -- Dark
+$color-concrete:						#95a5a6; // Dark gray -- Light
+$color-asbestos:						#7f8c8d; // Dark gray -- Dark
+
+//										http://www.flatuicolorpicker.com/
+$color-shakespeare:						#52B3D9; // Blue - Green - Info
+
+
+
+// Primary colors
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Base color (for text, background etc)
+$base-color:							$color-midnightblue;		
+
+// Brand Colors
+$color-brand-primary:					$color-belizehole; 
+$color-brand-secondary:					$color-midnightblue;		 				 
+
+// Colors
+$color-default: 						$gray-primary;	
+$color-inverse: 						$color-midnightblue;	
+$color-primary: 						$color-brand-primary;	
+$color-info: 							$color-shakespeare;
+$color-success: 						$color-nephritis;	
+$color-warning: 						$color-orange;
+$color-danger: 							$color-pomegranate;	
+
+
+
+
+
+//   Layout Colors
+/////////////////////////////////////////////////////////////////////////////////////
+$color-baselayout-bg:					#eff2f6;
+
+$color-sidebar-bg: 						$color-inverse;
+$color-topbar-bg: 						$color-inverse;
+
+
+
+
+
+//   Alert
+///////////////////////////////////////////////////////////////////////////////////////
+// Backgrounds
+$color-alert-bg-info: 					lighten($color-info, 30); 
+$color-alert-bg-success: 				lighten($color-success, 35);
+$color-alert-bg-warning: 				lighten($color-warning, 35);
+$color-alert-bg-danger: 				lighten($color-danger, 35);
+
+// Text
+$color-alert-text-info: 				$color-info;
+$color-alert-text-success: 				$color-success;
+$color-alert-text-warning: 				$color-warning;
+$color-alert-text-danger: 				$color-danger;
+
+// Border
+$color-alert-border-info: 				lighten($color-info, 30); 
+$color-alert-border-success: 			lighten($color-success, 35);
+$color-alert-border-warning: 			lighten($color-warning, 35);
+$color-alert-border-danger: 			lighten($color-danger, 35);
+
+
+
+
+
+
+//   Button
+/////////////////////////////////////////////////////////////////////////////////////
+// Global link color
+$color-link:            				$color-brand-primary;
+$color-link-hover:      				darken($color-link, 15%);
+
+// Backgrounds
+$color-btn-bg-default: 					$color-default;	
+$color-btn-bg-inverse: 					$color-inverse;	
+$color-btn-bg-primary: 					$color-primary; 
+$color-btn-bg-info: 					$color-info; 
+$color-btn-bg-success: 					$color-success; 
+$color-btn-bg-warning: 					$color-warning;
+$color-btn-bg-danger: 					$color-danger; 	
+$color-btn-bg-white: 					#FFF; 
+
+// Text
+$color-btn-text-default: 				$base-color;
+$color-btn-text-inverse: 				#FFF;
+$color-btn-text-primary: 				#FFF;
+$color-btn-text-info: 					#FFF;
+$color-btn-text-success: 				#FFF;
+$color-btn-text-warning: 				#FFF;
+$color-btn-text-danger: 				#FFF;
+$color-btn-text-white: 					$base-color; 
+
+// Border
+$color-btn-border-default: 				$color-default;
+$color-btn-border-inverse: 				$color-inverse;
+$color-btn-border-primary: 				$color-primary;
+$color-btn-border-info: 				$color-info;
+$color-btn-border-success: 				$color-success;
+$color-btn-border-warning: 				$color-warning;
+$color-btn-border-danger: 				$color-danger;
+$color-btn-border-white: 				#FFF; 
+
+
+
+
+
+
+//   Dataview Colors 
+/////////////////////////////////////////////////////////////////////////////////////
+$color-dataview-controls-bg: 			transparent;
+$color-dataview-controls-border: 		$gray-primary;
+
+
+
+
+
+
+//   Grid Colors 
+/////////////////////////////////////////////////////////////////////////////////////
+// Paging 
+$color-grid-paging-bg:					transparent;
+$color-grid-paging-bg-hover:			transparent;
+$color-grid-paging-border:				transparent;
+$color-grid-paging-border-hover:		transparent;
+$color-grid-paging-text: 				$gray-light;
+$color-grid-paging-text-hover:			$color-primary;
+
+// Borders
+$color-grid-border: 					$gray-primary;
+
+// Background 
+$color-grid-bg:							#FFF;
+$color-grid-bg-header:					transparent; // Grid Headers
+$color-grid-bg-hover: 					#FFFFD6;
+$color-grid-bg-selected: 				#F9F9D1;	
+$color-grid-bg-selected-hover: 			darken($color-grid-bg-selected, 2);
+$color-grid-text-selected:				$base-color;
+
+// Striped 
+$color-grid-bg-striped: 				lighten($color-grid-border,5);
+
+// Footer
+$color-grid-footer-bg: 					$gray-primary;
+
+
+
+
+
+//   Groupbox Colors
+/////////////////////////////////////////////////////////////////////////////////////
+// Backgrounds
+$color-groupbox-default: 				$color-default;
+$color-groupbox-inverse: 				$color-inverse; 
+$color-groupbox-primary: 				$color-primary; 
+$color-groupbox-info: 					$color-info;
+$color-groupbox-success: 				$color-success; 
+$color-groupbox-warning: 				$color-warning;
+$color-groupbox-danger: 				$color-danger; 	
+$color-groupbox-blank: 					#FFF;
+
+// Text
+$color-groupbox-text-default: 			$base-color;
+$color-groupbox-text-inverse: 			#FFF;
+$color-groupbox-text-primary: 			#FFF;
+$color-groupbox-text-info: 				#FFF;
+$color-groupbox-text-success: 			#FFF;
+$color-groupbox-text-warning: 			#FFF;
+$color-groupbox-text-danger: 			#FFF;
+$color-groupbox-text-blank: 			$base-color;
+
+
+//   Callout (groupbox) Colors
+/////////////////////////////////////////////////////////////////////////////////////
+// Text and border
+$color-callout-info:					$color-info;
+$color-callout-success:					$color-success;
+$color-callout-warning:					$color-warning;
+$color-callout-danger:					$color-danger;
+
+// Background
+$color-callout-bg-info:					lighten($color-info, 30); 
+$color-callout-bg-success:				lighten($color-success, 35); 
+$color-callout-bg-warning:				lighten($color-warning, 35); 
+$color-callout-bg-danger:				lighten($color-danger, 35);
+
+
+
+
+
+//   Input Colors
+/////////////////////////////////////////////////////////////////////////////////////
+$color-input-bg:						#FFF;
+$color-input-bg-focus:					#FFF;
+$color-input-bg-disabled:				$gray-lighter;
+$color-input-text: 						$gray;
+$color-input-text-focus:				$gray;
+$color-input-text-disabled:				$gray;
+$color-input-placeholder-text:			$gray-light;
+$color-input-border:					$gray-primary;
+$color-input-border-focus:				$color-primary;	
+
+
+
+
+
+//   Label Colors
+/////////////////////////////////////////////////////////////////////////////////////
+// Backgrounds
+$color-label-bg-default: 				$color-default;
+$color-label-bg-primary: 				$color-primary; 
+$color-label-bg-info: 					$color-info; 
+$color-label-bg-success: 				$color-success; 
+$color-label-bg-warning: 				$color-warning;
+$color-label-bg-danger: 				$color-danger; 	
+
+// Text
+$color-label-text-default: 				$base-color;
+$color-label-text-primary: 				#FFF;
+$color-label-text-info: 				#FFF;
+$color-label-text-success: 				#FFF;
+$color-label-text-warning: 				#FFF;
+$color-label-text-danger: 				#FFF;
+
+// Border
+$color-label-border-default: 			$color-default;
+$color-label-border-primary: 			$color-primary;
+$color-label-border-info: 				$color-info;
+$color-label-border-success: 			$color-success;
+$color-label-border-warning: 			$color-warning;
+$color-label-border-danger: 			$color-danger;
+
+
+
+
+
+//   Navigation Colors
+/////////////////////////////////////////////////////////////////////////////////////
+$color-nav-bg: 							$color-inverse;
+$color-nav-bg-hover:					lighten($color-nav-bg, 4);
+$color-nav-sub-bg: 						darken($color-nav-bg, 4);
+$color-nav-text:						lighten($color-nav-bg, 50);
+$color-nav-text-active:					#FFF;
+$color-nav-border:						$color-nav-bg-hover;
+
+
+
+
+
+
+//   Tab Colors 
+/////////////////////////////////////////////////////////////////////////////////////
+// Text color
+$color-tab-text: 						$color-brand-primary;
+$color-tab-text-active: 				$base-color;
+
+// Border color
+$color-tab-border:						$gray-primary;	
+
+// Background color
+$color-tab-bg-hover: 					lighten($color-tab-border,5);
+$color-tab-bg-active:					$color-brand-primary;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   Modal Colors (Pop ups)
+/////////////////////////////////////////////////////////////////////////////////////
+// Backgrounds
+$color-modal-default: 					$color-primary;
+
+// Text
+$color-modal-text-default: 				#FFF;
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//   Typography
+//
+/////////////////////////////////////////////////////////////////////////////////////
+// Colors 
+$color-text:							$base-color;
+$color-header: 							$base-color;
+
+// Font family
+//$font-family-base:					'OpenSans', Helvetica, Arial, 'sans-serif'; // Google font
+$font-family-base:						"OpenSansRegular", Helvetica, Arial, sans-serif;
+$font-family-light:						"OpenSansLight", Helvetica, Arial, sans-serif;
+$font-family-semibold:					"OpenSansSemibold", Helvetica, Arial, sans-serif;
+$font-family-bold:						"OpenSansBold", Helvetica, Arial, sans-serif;
+
+// Font Weights
+$font-weight-light:						300;
+$font-weight-normal:					400;		
+$font-weight-semibold:					600;
+$font-weight-bold:						700;
+
+// Font size
+$font-size-base:        				12px;
+$font-size-large:       				ceil(($font-size-base * 1.25)); // ~15px
+$font-size-small:       				ceil(($font-size-base * 0.85)); // ~10px
+
+// Font size headers
+$font-size-h1:          				floor(($font-size-base * 2.6)); // ~31px
+$font-size-h2:          				floor(($font-size-base * 2.15)); // ~25px
+$font-size-h3:          				ceil(($font-size-base * 1.7)); // ~21px
+$font-size-h4:          				ceil(($font-size-base * 1.25)); // ~15px
+$font-size-h5:          				$font-size-base; // ~12px
+$font-size-h6:          				ceil(($font-size-base * 0.85)); // ~11px
+
+// Line height
+$line-height-base:      				20 / 12;
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//   Mobile
+//
+/////////////////////////////////////////////////////////////////////////////////////
+
+//   Tab Container
+/////////////////////////////////////////////////////////////////////////////////////
+// Text color
+$m-color-tab-text: 						#FFF;
+$m-color-tab-text-active: 				#FFF;
+
+// Background color
+$m-color-tab-bg:						$color-primary;
+$m-color-tab-bg-hover: 					lighten($color-tab-border,5);
+$m-color-tab-bg-active:					darken($m-color-tab-bg, 15);	
+
+// Border color
+$m-color-tab-border:					darken($m-color-tab-bg, 15);
+$m-color-tab-border-active:				darken($m-color-tab-bg, 15);

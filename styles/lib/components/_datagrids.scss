@@ -1,0 +1,136 @@
+/* ========================================================================== 
+
+	Data Grid
+   
+   ========================================================================== */
+.mx-datagrid {
+	.mx-datagrid-head-table {
+		border: 0;
+
+		th {
+			border-left: 0;
+			border-right: 0;
+			border-bottom-width: 2px;
+			border-color: $color-grid-border;
+			background-color: $color-grid-bg-header;
+		}
+
+		.mx-datagrid-head-wrapper {
+			padding: 10px;
+		}
+	}
+	.mx-datagrid-body-table {
+		border: 0;
+
+		/* Body */
+		.mx-datagrid-body tr {
+			td {
+				padding: 10px;
+				background-color: $color-grid-bg;
+				border: 0;
+				border-top: 1px solid;
+				border-color: $color-grid-border;
+
+				&:focus {
+					outline: none;
+				}
+				// text without spaces
+				.mx-datagrid-data-wrapper {
+					text-overflow: ellipsis;
+				}
+			}
+			&:hover td {
+			
+			}
+			&.selected td,
+			&.selected:hover td {
+				background-color: $color-grid-bg-selected !important;
+				color: $color-grid-text-selected;
+			}
+		}
+		
+		/* Footer */
+		.mx-datagrid-foot {
+
+			> tr > th {
+				padding: 1px;
+				background-color: $color-grid-footer-bg;
+				border: 0;
+			}
+
+			> tr > td {
+				border: 0;
+			}
+		}
+
+		& *:focus {
+			outline: 0;
+		}
+	}
+}
+
+
+
+/*	Data Grid Striped
+   ========================================================================== */
+.datagrid-striped.mx-datagrid {
+	.mx-datagrid-head-table {
+		th { border: 0; }
+		.mx-datagrid-head-wrapper {
+			
+		}
+	}
+	.mx-datagrid-body-table {
+		/* Body */
+		.mx-datagrid-body tr {
+			td {
+				border-top: 0;
+			}
+			&:nth-child(odd) td {
+				background-color: $color-grid-bg-striped;
+			}
+		}
+	}
+}
+
+
+
+/*	Data Grid Bordered
+   ========================================================================== */
+.datagrid-bordered.mx-datagrid {
+	.mx-datagrid-head-table {
+		th { 
+			border: 1px solid $color-grid-border;
+			border-bottom: 1px; 
+		}
+		.mx-datagrid-head-wrapper {
+
+		}
+	}
+	.mx-datagrid-body-table {
+		border: 1px solid;
+		.mx-datagrid-body tr {
+			td {
+				border: 1px solid $color-grid-border;
+			}
+		}
+	}
+}
+
+
+
+/*	Data Grid Hoverd
+   ========================================================================== */
+.datagrid-hover.mx-datagrid { 
+	.mx-datagrid-body-table {
+		// Body
+		.mx-datagrid-body tr {
+			&:hover td {
+				background-color: $color-grid-bg-hover !important;
+			}
+			&.selected:hover td {
+				background-color: $color-grid-bg-selected-hover !important;
+			}
+		}
+	}
+}

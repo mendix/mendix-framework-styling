@@ -1,0 +1,49 @@
+/* ==========================================================================
+
+   Navigation List
+
+   ========================================================================== */
+.mx-navigationlist {
+	padding: 0;
+	margin: 0;
+	
+	.mx-navigationlist-item {
+		padding: 10px;
+		&:hover {
+			background-color: #FFF!important;
+		}
+	}
+}
+
+
+
+
+/* Hover
+   ========================================================================== */
+.navigationlist-hover.mx-navigationlist {
+	.mx-navigationlist-item {
+		&:hover {
+			background-color: $color-grid-bg-hover !important;
+		}
+	}
+}
+
+
+
+/*	Lined
+   ========================================================================== */
+.navigationlist-lined.mx-navigationlist {
+	.mx-navigationlist-item {
+		border-top: 1px solid $color-grid-border;
+		border-right: none;
+		border-left: none;
+
+		&:first-child {
+			@include border-radius(0);
+		}
+		&:last-child {
+			@include border-radius(0);
+			border-bottom: 1px solid $color-grid-border;
+		}
+	}
+}

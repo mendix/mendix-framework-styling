@@ -1,0 +1,27 @@
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.display-ie8-only:not([attr*='']) {
+	display: none;
+	padding: 0;
+}
+.list-nostyle {
+	ul {
+	  padding: 0;
+	  margin: 0;
+		li {
+		  list-style-type: none!important;
+		}
+	}
+}
+.nowrap,
+.nowrap * { // Star for inside an element, IE8 span > a
+	white-space: nowrap;
+}

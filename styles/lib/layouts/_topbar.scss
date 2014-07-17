@@ -1,0 +1,13 @@
+/* ==========================================================================
+
+   Topbar Layout
+
+   ========================================================================== */
+.layout-topbar {
+	.layout-topbar-topbar {
+		background-color: $color-nav-bg;
+		> .mx-layoutcontainer-wrapper {
+			padding: 0;
+		}
+	}
+}

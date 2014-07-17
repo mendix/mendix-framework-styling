@@ -1,0 +1,21 @@
+/* ==========================================================================
+
+   Data view
+
+   ========================================================================== */
+.mx-dataview {
+
+	/* Control bar */
+	.mx-dataview-controls {
+		@include border-radius(0);
+		margin-top: 10px;
+		padding: 8px 0;
+		border-top: 1px solid $color-dataview-controls-border;
+		background-color: $color-dataview-controls-bg;
+
+		/* Buttons */
+		.mx-button {
+			margin-bottom: 0;
+		}
+	}
+}
