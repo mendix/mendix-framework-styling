@@ -15,7 +15,7 @@ Mendix Framework uses SASS and Compass, which rely on Ruby. However you can inst
 
 #### Setup Scout
 
-Add you Mendix project in Scout and select the styles\lib folder as the input and output folder for the stylesheet directory. Press play!
+Add your Mendix project in Scout and select the styles\lib folder as the input and output folder for the stylesheet directory. Press play!
 
 #### Edit the SCSS files
 
