@@ -1,7 +1,9 @@
 mendix-framework-styling
 ========================
 
-This is the default SCSS framework the Mendix UX team created. 
+This is the default SCSS framework the Mendix UX team created.
+
+Preview: [Mendix UX](https://mendixux.mendixcloud.com/)
 
 ## Features
 
@@ -20,3 +22,10 @@ Add your Mendix project in Scout and select the styles\lib folder as the input a
 #### Edit the SCSS files
 
 When you make changes to any of the scss files, your lib.css file will be automatically updated. You don't edit lib.css directly, compass takes care of that for you.
+
+## Further Documentation
+
+ * [Bootstrap](http://getbootstrap.com)
+ * [Compass Framework](http://compass-style.org/)
+ * [SASS](http://sass-lang.com/)
+ * [Scout](http://mhs.github.io/scout-app/)
