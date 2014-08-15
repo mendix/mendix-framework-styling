@@ -40,7 +40,8 @@
 .mx-link {
     img {
         margin-top: -1px;
-        height: auto; // MXUI override who set the height on 16px default;
+        //height: auto; // MXUI override who set the height on 16px default;
+        height: $font-size-base + 4px;
     }
 }
 
@@ -132,12 +133,15 @@
    ========================================================================== */
 .btn-lg {
     font-size: $font-size-large;
+    img {
+        height: $font-size-base + 4px;
+    }
 }
 .btn-sm {
     font-size: $font-size-small;
-}
-.btn-xs {
-    font-size: $font-size-small;
+    img {
+        height: $font-size-small + 4px;
+    }
 }
 
 
@@ -153,6 +157,7 @@
     text-indent: -9999;
 
     img {
+        height: auto; // Image set height
         display: block; // or else the button doesn't get a width 
     }
 
