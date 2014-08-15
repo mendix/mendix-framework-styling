@@ -5,7 +5,7 @@
    ========================================================================== */
 .mx-datagrid {
 	.mx-datagrid-head-table {
-		border: 0;
+		border-width: 0;
 
 		th {
 			border-left: 0;
@@ -20,15 +20,16 @@
 		}
 	}
 	.mx-datagrid-body-table {
-		border: 0;
+		border-width: 0;
 
 		/* Body */
 		.mx-datagrid-body tr {
 			td {
 				padding: 10px;
 				background-color: $color-grid-bg;
-				border: 0;
-				border-top: 1px solid;
+				border-width: 0;
+				border-top-width: 1px;
+				border-top-style: solid;
 				border-color: $color-grid-border;
 
 				&:focus {
@@ -54,12 +55,13 @@
 
 			> tr > th {
 				padding: 1px;
-				background-color: $color-grid-footer-bg;
-				border: 0;
+				background-color: $color-grid-footer-bg; 
+				border-width: 0;
 			}
 
 			> tr > td {
-				border: 0;
+				background-color: $color-grid-bg;
+				border-width: 0;
 			}
 		}
 
@@ -75,7 +77,7 @@
    ========================================================================== */
 .datagrid-striped.mx-datagrid {
 	.mx-datagrid-head-table {
-		th { border: 0; }
+		th { border-width: 0; }
 		.mx-datagrid-head-wrapper {
 			
 		}
@@ -84,7 +86,7 @@
 		/* Body */
 		.mx-datagrid-body tr {
 			td {
-				border-top: 0;
+				border-top-width: 0;
 			}
 			&:nth-child(odd) td {
 				background-color: $color-grid-bg-striped;
@@ -101,7 +103,7 @@
 	.mx-datagrid-head-table {
 		th { 
 			border: 1px solid $color-grid-border;
-			border-bottom: 1px; 
+			border-bottom-width: 1px; 
 		}
 		.mx-datagrid-head-wrapper {
 
@@ -113,6 +115,18 @@
 			td {
 				border: 1px solid $color-grid-border;
 			}
+		}
+	}
+	.mx-datagrid-foot {
+
+		> tr > th {
+			padding: 1px;
+			background-color: $color-grid-footer-bg; 
+			border-width: 0;
+		}
+
+		> tr > td {
+			border-width: 1px;
 		}
 	}
 }
