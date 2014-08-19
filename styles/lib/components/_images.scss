@@ -1,0 +1,43 @@
+/* ========================================================================== 
+
+	Images
+   
+   ========================================================================== */
+.img-rounded {
+	@include border-radius (6px);
+	img {
+		@include border-radius (6px);
+	}
+}
+.img-thumbnail {
+	@include border-radius (4px);
+	@include transition-property(all);
+	@include transition-timing-function(ease-in-out);
+	@include transition-duration(2s);
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+	padding: 4px;
+	line-height: 1.428571429;
+	background-color: #fff;
+	border: 1px solid $color-default;
+	img {
+		@include border-radius (4px);
+		@include transition-property(all);
+		@include transition-timing-function(ease-in-out);
+		@include transition-duration(2s);
+		display: inline-block;
+		height: auto;
+		max-width: 100%;
+		padding: 4px;
+		line-height: 1.428571429;
+		background-color: #fff;
+		border: 1px solid $color-default;
+	}
+}
+.img-circle {
+	@include border-radius (50%);
+	img {
+		@include border-radius (50%);
+	}
+}
