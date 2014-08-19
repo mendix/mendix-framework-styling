@@ -12,7 +12,7 @@ table.mx-table {
 
 			// Table header
 			> th {
-				padding: 8px;
+				padding: $padding-table-cell-top  $padding-table-cell-right $padding-table-cell-bottom $padding-table-cell-left;
 				* { @include font(bold); }
 				> label { 
 					padding-top: 7px;
@@ -22,7 +22,7 @@ table.mx-table {
 			
 			// Table data
 			> td {
-				padding: 8px;
+				padding: $padding-table-cell-top  $padding-table-cell-right $padding-table-cell-bottom $padding-table-cell-left;
 				> div > label { 
 					padding-top: 7px;
 					padding-bottom: 6px; // Aligns label in the middle if there is no input field next to it.
@@ -32,16 +32,27 @@ table.mx-table {
 	}
 }
 
+/*	Default Table Spacing TemplateGrid
+   ========================================================================== */
+.mx-templategrid table.mx-table {
+	> tbody {
+		> tr {
+			> th,
+			> td {
+				padding: $padding-table-cell-top  $padding-table-cell-right $padding-table-cell-bottom $padding-table-cell-left;
+			}
+		}
+	}
+}
 
-
-/*	Table Spacing Listview
+/*	Default Table Spacing Listview
    ========================================================================== */
 .mx-list table.mx-table {
 	> tbody {
 		> tr {
 			> th,
 			> td {
-				padding: 8px;
+				padding: $padding-table-cell-top  $padding-table-cell-right $padding-table-cell-bottom $padding-table-cell-left;
 			}
 		}
 	}
