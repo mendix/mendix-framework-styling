@@ -2319,7 +2319,7 @@ th {
 
 /* line 14, components/_tables.scss */
 table.mx-table > tbody > tr > th {
-  padding: 8px;
+  padding: 8px 8px 8px 8px;
 }
 /* line 16, components/_tables.scss */
 table.mx-table > tbody > tr > th * {
@@ -2333,7 +2333,7 @@ table.mx-table > tbody > tr > th > label {
 }
 /* line 24, components/_tables.scss */
 table.mx-table > tbody > tr > td {
-  padding: 8px;
+  padding: 8px 8px 8px 8px;
 }
 /* line 26, components/_tables.scss */
 table.mx-table > tbody > tr > td > div > label {
@@ -2341,17 +2341,25 @@ table.mx-table > tbody > tr > td > div > label {
   padding-bottom: 6px;
 }
 
-/*	Table Spacing Listview
+/*	Default Table Spacing TemplateGrid
    ========================================================================== */
-/* line 43, components/_tables.scss */
+/* line 41, components/_tables.scss */
+.mx-templategrid table.mx-table > tbody > tr > th,
+.mx-templategrid table.mx-table > tbody > tr > td {
+  padding: 8px 8px 8px 8px;
+}
+
+/*	Default Table Spacing Listview
+   ========================================================================== */
+/* line 54, components/_tables.scss */
 .mx-list table.mx-table > tbody > tr > th,
 .mx-list table.mx-table > tbody > tr > td {
-  padding: 8px;
+  padding: 8px 8px 8px 8px;
 }
 
 /*	Table Lined
    ========================================================================== */
-/* line 61, components/_tables.scss */
+/* line 72, components/_tables.scss */
 table.table-lined.mx-table > tbody > tr > th,
 table.table-lined.mx-table > tbody > tr > td {
   border-width: 1px 0;
@@ -2361,7 +2369,7 @@ table.table-lined.mx-table > tbody > tr > td {
 
 /*	Table Bordered
    ========================================================================== */
-/* line 83, components/_tables.scss */
+/* line 94, components/_tables.scss */
 table.table-bordered.mx-table > tbody > tr > th,
 table.table-bordered.mx-table > tbody > tr > td {
   border-width: 1px;
@@ -2371,7 +2379,7 @@ table.table-bordered.mx-table > tbody > tr > td {
 
 /*	Table Compact
    ========================================================================== */
-/* line 104, components/_tables.scss */
+/* line 115, components/_tables.scss */
 table.table-compact.mx-table > tbody > tr > th,
 table.table-compact.mx-table > tbody > tr > td {
   padding-top: 2px;
@@ -2380,12 +2388,12 @@ table.table-compact.mx-table > tbody > tr > td {
 
 /*	Table Sideless
    ========================================================================== */
-/* line 125, components/_tables.scss */
+/* line 136, components/_tables.scss */
 table.table-sideless.mx-table > tbody > tr > td,
 table.table-sideless.mx-table > tbody > tr > th {
   padding-right: 0;
 }
-/* line 129, components/_tables.scss */
+/* line 140, components/_tables.scss */
 table.table-sideless.mx-table > tbody > tr > th:first-child,
 table.table-sideless.mx-table > tbody > tr > td:first-child {
   padding-left: 0;
@@ -2393,7 +2401,7 @@ table.table-sideless.mx-table > tbody > tr > td:first-child {
 
 /*	Table Spaceless
    ========================================================================== */
-/* line 149, components/_tables.scss */
+/* line 160, components/_tables.scss */
 table.table-spaceless.mx-table > tbody > tr > th,
 table.table-spaceless.mx-table > tbody > tr > td {
   padding: 0;
@@ -2401,22 +2409,22 @@ table.table-spaceless.mx-table > tbody > tr > td {
 
 /*	Table Vertical (labels above input)
    ========================================================================== */
-/* line 168, components/_tables.scss */
+/* line 179, components/_tables.scss */
 table.table-vertical.mx-table > tbody > tr > th {
   padding-bottom: 0;
 }
-/* line 170, components/_tables.scss */
+/* line 181, components/_tables.scss */
 table.table-vertical.mx-table > tbody > tr > th > label {
   padding: 0;
 }
-/* line 171, components/_tables.scss */
+/* line 182, components/_tables.scss */
 table.table-vertical.mx-table > tbody > tr > th > div > label {
   padding: 0;
 }
 
 /*	Table Vertical aligned in middle
    ========================================================================== */
-/* line 190, components/_tables.scss */
+/* line 201, components/_tables.scss */
 table.table-align-vertical-middle.mx-table > tbody > tr > th,
 table.table-align-vertical-middle.mx-table > tbody > tr > td {
   vertical-align: middle;
@@ -2424,20 +2432,20 @@ table.table-align-vertical-middle.mx-table > tbody > tr > td {
 
 /*	Table Where the labels have no spacing
    ========================================================================== */
-/* line 212, components/_tables.scss */
+/* line 223, components/_tables.scss */
 table.table-label-compact.mx-table > tbody > tr > th > label,
 table.table-label-compact.mx-table > tbody > tr > td > label {
   padding: 0;
   margin: 0;
 }
-/* line 216, components/_tables.scss */
+/* line 227, components/_tables.scss */
 table.table-label-compact.mx-table > tbody > tr > th > div > label,
 table.table-label-compact.mx-table > tbody > tr > td > div > label {
   padding: 0;
   margin: 0;
 }
 
-/* line 229, components/_tables.scss */
+/* line 240, components/_tables.scss */
 html body .mx-page table.mx-table th.nopadding,
 html body .mx-page table.mx-table td.nopadding {
   padding: 0;
@@ -2450,7 +2458,7 @@ html body .mx-page table.mx-table td.nopadding {
    ========================================================================== */
 /*  Small rows
 	========================================================================== */
-/* line 260, components/_tables.scss */
+/* line 271, components/_tables.scss */
 table.table-row-s.mx-table > tbody > tr > th,
 table.table-row-s.mx-table > tbody > tr > td {
   height: 40px;
@@ -2458,7 +2466,7 @@ table.table-row-s.mx-table > tbody > tr > td {
 
 /*  Medium rows
 	========================================================================== */
-/* line 279, components/_tables.scss */
+/* line 290, components/_tables.scss */
 table.table-row-m.mx-table > tbody > tr > th,
 table.table-row-m.mx-table > tbody > tr > td {
   height: 70px;
@@ -2466,7 +2474,7 @@ table.table-row-m.mx-table > tbody > tr > td {
 
 /*  Large rows
 	========================================================================== */
-/* line 297, components/_tables.scss */
+/* line 308, components/_tables.scss */
 table.table-row-l.mx-table > tbody > tr > th,
 table.table-row-l.mx-table > tbody > tr > td {
   height: 120px;
@@ -2474,7 +2482,7 @@ table.table-row-l.mx-table > tbody > tr > td {
 
 /*	Table Fixed
    ========================================================================== */
-/* line 307, components/_tables.scss */
+/* line 318, components/_tables.scss */
 table.table-fixed {
   table-layout: fixed;
 }
@@ -2582,6 +2590,100 @@ table.table-fixed {
   border-color: #edb6b0;
   background-color: #edb6b0;
   color: #c0392b;
+}
+
+/* ========================================================================== 
+
+	Images
+   
+   ========================================================================== */
+/* line 6, components/_images.scss */
+.img-rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 8, components/_images.scss */
+.img-rounded img {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 12, components/_images.scss */
+.img-thumbnail {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+}
+/* line 24, components/_images.scss */
+.img-thumbnail img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+}
+
+/* line 38, components/_images.scss */
+.img-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 40, components/_images.scss */
+.img-circle img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* ==========================================================================
