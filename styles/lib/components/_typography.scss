@@ -42,7 +42,10 @@ h4, h5, h6,
 
 }
 
-// Font Weights
+
+
+/*	Font Weights
+   ========================================================================== */
 .text-light, .text-light > *, .text-light label { 
 	@include font(light);
 }
@@ -57,7 +60,9 @@ h4, h5, h6,
 }
 
 
-// Utility
+
+/*	Utility
+   ========================================================================== */
 // Margin top and below for a title
 .text-spacing {
 	margin-top: 1em;
@@ -72,3 +77,25 @@ h4, h5, h6,
 .text-break {
 	word-break: break-all;
 }
+
+
+
+/*	Text colors
+   ========================================================================== */
+// Gray shades
+.text-gray-darker 	{	color: $gray-darker; 	}				
+.text-gray-dark 	{	color: $gray-dark; 		}
+.text-gray 			{	color: $gray;			}
+.text-gray-light	{	color: $gray-light;		}
+.text-gray-primary	{	color: $gray-primary;	}
+.text-gray-lighter	{	color: $gray-lighter;	}	
+	 				 
+// Colors
+.text-default, .text-default:hover	{	color: $base-color;		}
+.text-primary, .text-primary:hover	{	color: $color-primary;	}
+.text-info, .text-info:hover		{	color: $color-info;		}
+.text-success, .text-success:hover	{	color: $color-success;	}
+.text-warning, .text-warning:hover	{	color: $color-warning;	}
+.text-danger, .text-danger:hover	{	color: $color-danger;	}
+
+
