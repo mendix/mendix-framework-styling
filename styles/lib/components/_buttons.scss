@@ -154,7 +154,7 @@
     padding: 0;
     border-style: none;
     background-color: transparent;
-    text-indent: -9999;
+    vertical-align: middle; // Allignment for case: Buzz add: (icons)
 
     img {
         height: auto; // Image set height
