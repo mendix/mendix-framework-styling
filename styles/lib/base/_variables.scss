@@ -48,16 +48,12 @@ $color-shakespeare:						#52B3D9 !default; // Blue - Green - Info
 /////////////////////////////////////////////////////////////////////////////////////
 
 // Base color (for text, background etc)
-$base-color:							$color-midnightblue !default;		
-
-// Brand Colors
-$color-brand-primary:					$color-belizehole !default; 
-$color-brand-secondary:					$color-midnightblue !default;		 				 
+$base-color:							$color-midnightblue !default;				 
 
 // Colors
 $color-default: 						$gray-primary !default;	
 $color-inverse: 						$color-midnightblue !default;	
-$color-primary: 						$color-brand-primary !default;	
+$color-primary: 						$color-belizehole  !default;	
 $color-info: 							$color-shakespeare !default;
 $color-success: 						$color-nephritis !default;	
 $color-warning: 						$color-orange !default;
@@ -106,7 +102,7 @@ $color-alert-border-danger: 			lighten($color-danger, 35) !default;
 //   Button
 /////////////////////////////////////////////////////////////////////////////////////
 // Global link color
-$color-link:            				$color-brand-primary !default;
+$color-link:            				$color-primary !default;
 $color-link-hover:      				darken($color-link, 15%) !default;
 
 // Backgrounds
@@ -289,7 +285,7 @@ $color-nav-border:						$color-nav-bg-hover !default;
 //   Tab Colors 
 /////////////////////////////////////////////////////////////////////////////////////
 // Text color
-$color-tab-text: 						$color-brand-primary !default;
+$color-tab-text: 						$color-primary !default;
 $color-tab-text-active: 				$base-color !default;
 
 // Border color
@@ -297,7 +293,7 @@ $color-tab-border:						$gray-primary !default;
 
 // Background color
 $color-tab-bg-hover: 					lighten($color-tab-border,5) !default;
-$color-tab-bg-active:					$color-brand-primary !default;
+$color-tab-bg-active:					$color-primary !default;
 
 
 
@@ -355,8 +351,8 @@ $font-weight-bold:						700 !default;
 
 // Font size
 $font-size-base:        				12px !default;
-$font-size-large:       				ceil(($font-size-base * 1.25)) !default; // ~15px
-$font-size-small:       				ceil(($font-size-base * 0.85)) !default; // ~10px
+$font-size-large:       				16px !default;
+$font-size-small:       				10px !default;
 
 // Font size headers
 $font-size-h1:          				floor(($font-size-base * 2.6)) !default; // ~31px
@@ -373,6 +369,15 @@ $line-height-base:      				20 / 12 !default;
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//   Layout
+//
+/////////////////////////////////////////////////////////////////////////////////////
+$padding-layoutcontainer-base:			20px !default;
+
+
+
 
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -381,10 +386,11 @@ $line-height-base:      				20 / 12 !default;
 //
 /////////////////////////////////////////////////////////////////////////////////////
 // Default Table Spacing
-$padding-table-cell-top:				8px;					
-$padding-table-cell-bottom:				8px;					
-$padding-table-cell-left:				8px;					
-$padding-table-cell-right:				8px;					
+$padding-table-cell-top:				8px !default;					
+$padding-table-cell-bottom:				8px !default;					
+$padding-table-cell-left:				8px !default;					
+$padding-table-cell-right:				8px !default;					
+
 
 
 
