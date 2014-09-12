@@ -14,7 +14,7 @@
     @include transition-duration(0.2s);
     @include transition-timing-function(ease-in-out);
     @include box-shadow(none);
-    padding: 0.5em 1em;
+    padding: 6px 12px;
     background-color: $color-btn-bg-default;
     color: $color-btn-text-default;
     text-shadow: none;

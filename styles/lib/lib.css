@@ -395,7 +395,7 @@ div[tabindex] {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  padding: 0.5em 1em;
+  padding: 6px 12px;
   background-color: #dddddd;
   color: #2c3e50;
   text-shadow: none;
