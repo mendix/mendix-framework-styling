@@ -14,12 +14,13 @@
     @include transition-duration(0.2s);
     @include transition-timing-function(ease-in-out);
     @include box-shadow(none);
-    padding: 6px 12px;
+    padding: round(0.58 * $font-size-base) round(1 * $font-size-base);
+    //padding: 0.5em 1em;
     background-color: $color-btn-bg-default;
     color: $color-btn-text-default;
     text-shadow: none;
     font-size: $font-size-base;
-    line-height: 1.4;
+    line-height: 1.428571429;
 
     &:hover,
     &:focus,
@@ -133,12 +134,14 @@
    ========================================================================== */
 .btn-lg {
     font-size: $font-size-large;
+    &.btn { padding: round(0.5 * $font-size-large) round(1 * $font-size-large); } // only for buttons
     img {
         height: $font-size-base + 4px;
     }
 }
 .btn-sm {
     font-size: $font-size-small;
+    &.btn { padding: round(0.5 * $font-size-small) round(1 * $font-size-small); }
     img {
         height: $font-size-small + 4px;
     }
@@ -164,6 +167,10 @@
     &:hover,
     &:focus {
         background-color: transparent;
+    }
+
+    &.glyphicons:before {
+        margin: 0;
     }
 }
 

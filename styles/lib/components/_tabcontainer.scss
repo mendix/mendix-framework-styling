@@ -5,7 +5,7 @@
    ========================================================================== */
 .mx-tabcontainer {
 	.mx-tabcontainer-tabs {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		border-color: $color-tab-border;
 		> li > a {
 			@include font(bold);
@@ -77,7 +77,7 @@
             margin-bottom: -3px;
 
             > a {
-                padding: 0.6em 1.2em;
+                padding: 7px 15px;
                 border: 0;
                 border-style: solid;
                 border-color: transparent;
