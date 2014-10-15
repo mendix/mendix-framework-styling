@@ -13,7 +13,7 @@ label {
 
 // Headers
 .mx-title {
-	@include font(bold);
+	@include font(semibold);
 	color: $color-header;
 	font-size: $font-size-h1;
 }
@@ -27,7 +27,7 @@ h6, .h6, .h6 > * { font-size: $font-size-h6; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	@include font(normal);
+	//@include font(semibold);
 	color: $color-header;
 	margin: 0;
 }
@@ -75,7 +75,12 @@ h4, h5, h6,
 
 // Breaking sentances
 .text-break {
-	word-break: break-all;
+	-ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 
