@@ -191,7 +191,7 @@ $color-groupbox-info: 					$color-info !default;
 $color-groupbox-success: 				$color-success !default; 
 $color-groupbox-warning: 				$color-warning !default;
 $color-groupbox-danger: 				$color-danger !default; 	
-$color-groupbox-blank: 					#FFF !default;
+$color-groupbox-white: 					#FFF !default;
 
 // Text
 $color-groupbox-text-default: 			$base-color !default;
@@ -201,7 +201,7 @@ $color-groupbox-text-info: 				#FFF !default;
 $color-groupbox-text-success: 			#FFF !default;
 $color-groupbox-text-warning: 			#FFF !default;
 $color-groupbox-text-danger: 			#FFF !default;
-$color-groupbox-text-blank: 			$base-color !default;
+$color-groupbox-text-white: 			$base-color !default;
 
 
 //   Callout (groupbox) Colors
@@ -336,18 +336,17 @@ $color-modal-text-default: 				#FFF !default;
 $color-text:							$base-color !default;
 $color-header: 							$base-color !default;
 
-// Font family
-//$font-family-base:					'OpenSans', Helvetica, Arial, 'sans-serif' !default; // Google font
-$font-family-base:						"OpenSansRegular", Helvetica, Arial, sans-serif !default;
-$font-family-light:						"OpenSansLight", Helvetica, Arial, sans-serif !default;
-$font-family-semibold:					"OpenSansSemibold", Helvetica, Arial, sans-serif !default;
-$font-family-bold:						"OpenSansBold", Helvetica, Arial, sans-serif !default;
+// Font family					
+$font-family-base:						"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-light:						"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-semibold:					"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-bold:						"Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // Font Weights
-$font-weight-light:						300 !default;
-$font-weight-normal:					400 !default;		
-$font-weight-semibold:					600 !default;
-$font-weight-bold:						700 !default;
+$font-weight-light:						100 !default;
+$font-weight-normal:					normal !default; // 400		
+$font-weight-semibold:					500 !default;
+$font-weight-bold:						bold !default; //600
 
 // Font size
 $font-size-base:        				12px !default;

@@ -7,21 +7,37 @@
 .mx-groupbox  {
 	margin: 0;
 	> .mx-groupbox-header {
+		@include border-radius(0);
 		@include font(bold);
 		margin: 0;
 		background: $color-groupbox-default;
 		color: $color-groupbox-text-default;
 		font-size: $font-size-h4;
+		border-style: solid;
+		border-width: 1px 1px 0 1px;
+		border-color: $color-groupbox-default;
+
 		.mx-groupbox-collapse-icon {
 			margin-top: 0.1em;
 		}
 	}
 	> .mx-groupbox-body {
+		@include border-radius(0);
     	padding: 10px 15px;
     	border-color: $color-groupbox-default;
     	background-color: #FFF;
+		border-style: solid;
+		border-width: 1px;
+
   	}
+  	.mx-groupbox-header + .mx-groupbox-body {
+  		@include border-radius(0);
+		border-top: none;
+	}
 }
+
+
+
 
 
 /*  Alternate Groupboxes
@@ -33,51 +49,96 @@
 		> .mx-groupbox-header {
 			@include border-radius(0);
 			padding: 0;
+			border-style: none;
 			background-color: transparent;
 		}
 		> .mx-groupbox-body {
 			@include border-radius(0);
 	    	padding: 0;
-	    	border: 0;
+	    	border-style: none;
 	    	background-color: transparent;
 	  	}
 	}
 
-	&.groupbox-sideless  {
+	// Border radius
+	&.groupbox-border-radius {
 		> .mx-groupbox-header {
-			padding-right: 0;
-			padding-left: 0;
+			@include border-radius(3px 3px 0 0 !important);
 		}
 		> .mx-groupbox-body {
-			padding-right: 0;
-			padding-left: 0;
+			@include border-radius(3px !important);
+	  	}
+	  	.mx-groupbox-header + .mx-groupbox-body {
+			@include border-radius(0 0 3px 3px !important);
+	  	}
+	}
+	&.groupbox-borderless {
+		> .mx-groupbox-body {
+			border: 0 !important;
+	  	}
+	}
+	&.groupbox-border-top {
+		> .mx-groupbox-header {
+			border-style: none;
+			border-top-style: solid !important
+		}
+		> .mx-groupbox-body {
+			border-style: none;
+	  	}
+	}
+	&.groupbox-border-right {
+		> .mx-groupbox-header {
+			border-style: none;
+			border-right-style: solid !important
+		}
+		> .mx-groupbox-body {
+			border-style: none;
+			border-right-style: solid !important
+	  	}
+	}
+	&.groupbox-border-bottom {
+		> .mx-groupbox-header {
+			border-style: none;
+		}
+		> .mx-groupbox-body {
+			border-style: none;
+			border-bottom-style: solid !important
+	  	}
+	}
+	&.groupbox-border-left {
+		> .mx-groupbox-header {
+			border-style: none;
+			border-left-style: solid !important
+		}
+		> .mx-groupbox-body {
+			border-style: none;
+			border-left-style: solid !important
 	  	}
 	}
 
-	&.groupbox-bodyless  {
-		> .mx-groupbox-header {
-
-		}
-		> .mx-groupbox-body {
-			padding: 0;
-	  	}
-	}
 
 
-	&.groupbox-lined {
-		> .mx-groupbox-header {
-			@include border-radius(0);
-			border-bottom: 1px solid $color-groupbox-default;
-			background-color: #FFF;
-		}
-		> .mx-groupbox-body {
-			@include border-radius(0);
-			border: 0;
-			background-color: #FFF;
-  		}
-	}
+	// &.groupbox-lined {
+	// 	> .mx-groupbox-header {
+	// 		@include border-radius(0);
+	// 		border-bottom: 1px solid $color-groupbox-default;
+	// 		background-color: #FFF;
+	// 	}
+	// 	> .mx-groupbox-body {
+	// 		@include border-radius(0);
+	// 		border: 0;
+	// 		background-color: #FFF;
+ 	//  }
+	// }
+}
 
 
+
+
+
+/*  Color Groupboxes
+   ========================================================================== */
+.mx-groupbox  {
 	// Color variations 
 	&.groupbox-default {
 		 @include groupbox-variant($color-groupbox-text-default, $color-groupbox-default);
@@ -104,26 +165,50 @@
 	&.groupbox-danger {
 		@include groupbox-variant($color-groupbox-text-danger, $color-groupbox-danger);
 	}
-	// Blank appears as full white	
-	&.groupbox-blank {
-		@include groupbox-variant($color-groupbox-text-blank, $color-groupbox-blank);
-    	> .mx-groupbox-body {
-			border: 0;
-		}
+	// white appears as full white	
+	&.groupbox-white {
+		@include groupbox-variant($color-groupbox-text-white, $color-groupbox-white);
 	}
 	&.groupbox-transparent  {
 		background-color: transparent;
 		> .mx-groupbox-header {
-			@include border-radius(0);
+			border-style: none;
 			background-color: transparent;
 		}
 		> .mx-groupbox-body {
-    		@include border-radius(0);
-			border: 0;
+			border-style: none;
     		background-color: transparent;
   		}
 	}
+}
 
+
+
+
+
+/*  Spacing Options
+   ========================================================================== */
+.mx-groupbox {
+
+	&.groupbox-sideless  {
+		> .mx-groupbox-header {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		> .mx-groupbox-body {
+			padding-right: 0;
+			padding-left: 0;
+	  	}
+	}
+
+	&.groupbox-bodyless  {
+		> .mx-groupbox-header {
+
+		}
+		> .mx-groupbox-body {
+			padding: 0;
+	  	}
+	}
 }
 
 
@@ -150,6 +235,7 @@
 		border-left-style: solid;
 		border-left-color: transparent;
 		> .mx-groupbox-header {
+			border: 0;
 			background: transparent;
 		}
 		> .mx-groupbox-body {
