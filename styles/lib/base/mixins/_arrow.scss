@@ -16,6 +16,7 @@
 @mixin css-arrow($position: "top", $height: 10px, $width: 10px, $bg-color: #AAA, $arrow-color: #CCC,  $arrow-border-width: 0px) {    
     $position: unquote($position);
     $position: quote($position);
+    position: relative;
 
     &:after, &:before {
         position: absolute;
