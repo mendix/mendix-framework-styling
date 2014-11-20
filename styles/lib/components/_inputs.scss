@@ -10,7 +10,7 @@
 	display: block;
 	padding: 7px 8px;
 	width: 100%;
-	height: 33px;
+	height: $input-height;
 	border: 1px solid $color-input-border;
 	border-radius: 4px;
 	background-color: $color-input-bg;
@@ -18,7 +18,7 @@
 	color: $color-input-text;
 	vertical-align: middle;
 	font-size: 12px;
-	line-height: 1.428571429;
+	line-height: $line-height-base;
 
 }
 textarea.form-control {

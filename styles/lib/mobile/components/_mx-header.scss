@@ -1,0 +1,36 @@
+/* ==========================================================================
+
+   Header
+
+   ========================================================================== */
+body[dir="ltr"] .mx-header {
+	padding: 0;
+	background-color: $color-primary;
+	height: 44px;
+
+	.mx-header-center {
+		display: inline-block;
+		line-height: 30px;
+		width: 60%;
+	}
+	.mx-header-left,
+	.mx-header-right {	top: 5px;		}
+
+	.mx-header-left {	left: 10px;		}
+	.mx-header-right {	right: 10px; 	}
+
+	// Title
+	.mx-title {
+		margin: 0;
+		color: $m-color-header;
+		font-size: 18px;
+		line-height: 44px;
+	
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.btn-image.glyphicon {
+		font-size: 21px;
+	}
+}

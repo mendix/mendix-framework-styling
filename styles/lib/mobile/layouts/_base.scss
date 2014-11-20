@@ -1,0 +1,17 @@
+/* ==========================================================================
+
+   Layouts
+
+   ========================================================================== */
+.profile-phone,
+.profile-tablet {
+
+	/* 	Base Layout
+	   ========================================================================== */
+	.mx-layoutcontainer-wrapper {
+		padding: $m-padding-layoutcontainer-base;
+	}
+	.mx-layoutcontainer-wrapper.mx-layoutcontainer-nested {
+		padding: 0;
+	}
+}
