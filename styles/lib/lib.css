@@ -7,9 +7,11 @@
 body {
   color: #2c3e50;
   font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
-/* line 11, base/_base.scss */
+/* line 12, base/_base.scss */
 a {
   color: #2980b9;
   -webkit-transition: 0.25s;
@@ -19,31 +21,31 @@ a {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 19, base/_base.scss */
+/* line 20, base/_base.scss */
 a:hover {
   text-decoration: underline;
   color: #1b557a;
 }
 
-/* line 24, base/_base.scss */
+/* line 25, base/_base.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 29, base/_base.scss */
+/* line 30, base/_base.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 35, base/_base.scss */
+/* line 36, base/_base.scss */
 input:focus,
 button:focus,
 .mx-link:focus {
   outline: 0;
 }
 
-/* line 39, base/_base.scss */
+/* line 40, base/_base.scss */
 div[tabindex] {
   outline: 0;
 }
@@ -79,8 +81,7 @@ div[tabindex] {
 }
 /* line 31, components/_dijit-widgets.scss */
 .dijitCalendarContainer .dijitCalendarMonthLabel {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 /* line 34, components/_dijit-widgets.scss */
 .dijitCalendarContainer .dijitButtonNode {
@@ -115,8 +116,7 @@ div[tabindex] {
 }
 /* line 53, components/_dijit-widgets.scss */
 .dijitCalendarContainer .dijitCalendarYearContainer td {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -314,8 +314,7 @@ div[tabindex] {
 }
 /* line 227, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .tg_newlabelmenuitem .dijitMenuItemLabel {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 /* line 234, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .dijitMenuSeparator td {
@@ -400,9 +399,9 @@ div[tabindex] {
   color: #2c3e50;
   text-shadow: none;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
-/* line 26, components/_buttons.scss */
+/* line 27, components/_buttons.scss */
 .btn:hover, .btn:focus, .btn:active,
 .mx-button:hover,
 .mx-button:focus,
@@ -413,12 +412,12 @@ div[tabindex] {
   outline: none;
 }
 
-/* line 33, components/_buttons.scss */
+/* line 34, components/_buttons.scss */
 .mx-link {
   padding: 0;
 }
 
-/* line 41, components/_buttons.scss */
+/* line 42, components/_buttons.scss */
 .btn img,
 .mx-button img,
 .mx-link img {
@@ -426,7 +425,7 @@ div[tabindex] {
   height: 16px;
 }
 
-/* line 49, components/_buttons.scss */
+/* line 50, components/_buttons.scss */
 .dj_ie8 .mx-link {
   margin-right: 0;
   white-space: normal;
@@ -434,14 +433,14 @@ div[tabindex] {
 
 /*  Global Button Overrides
    ========================================================================== */
-/* line 61, components/_buttons.scss */
+/* line 62, components/_buttons.scss */
 .btn-block + .btn-block {
   margin-top: 0;
 }
 
 /*  Alternate button styles
    ========================================================================== */
-/* line 71, components/_buttons.scss */
+/* line 72, components/_buttons.scss */
 .btn-default {
   border-color: #dddddd;
   background-color: #dddddd;
@@ -473,12 +472,8 @@ div[tabindex] {
   border-color: #dddddd;
   color: #2c3e50;
 }
-/* line 73, components/_buttons.scss */
-.btn-default.btn-transparent {
-  color: #2c3e50;
-}
 
-/* line 77, components/_buttons.scss */
+/* line 75, components/_buttons.scss */
 .btn-primary {
   border-color: #2980b9;
   background-color: #2980b9;
@@ -511,7 +506,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 80, components/_buttons.scss */
+/* line 78, components/_buttons.scss */
 .btn-inverse {
   border-color: #2c3e50;
   background-color: #2c3e50;
@@ -543,13 +538,13 @@ div[tabindex] {
   border-color: #2c3e50;
   color: white;
 }
-/* line 86, components/_buttons.scss */
+/* line 84, components/_buttons.scss */
 .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
   background-color: #3e5771;
   border-color: #3e5771;
 }
 
-/* line 92, components/_buttons.scss */
+/* line 90, components/_buttons.scss */
 .btn-success {
   border-color: #27ae60;
   background-color: #27ae60;
@@ -582,7 +577,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 96, components/_buttons.scss */
+/* line 94, components/_buttons.scss */
 .btn-info {
   border-color: #52b3d9;
   background-color: #52b3d9;
@@ -615,7 +610,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 100, components/_buttons.scss */
+/* line 98, components/_buttons.scss */
 .btn-warning {
   border-color: #f39c12;
   background-color: #f39c12;
@@ -648,7 +643,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 104, components/_buttons.scss */
+/* line 102, components/_buttons.scss */
 .btn-danger {
   border-color: #c0392b;
   background-color: #c0392b;
@@ -681,7 +676,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 107, components/_buttons.scss */
+/* line 105, components/_buttons.scss */
 .btn-white {
   border-color: white;
   background-color: white;
@@ -714,19 +709,19 @@ div[tabindex] {
   color: #2c3e50;
 }
 
-/* line 111, components/_buttons.scss */
+/* line 109, components/_buttons.scss */
 .btn-link {
   border: 0;
   background-color: transparent;
   color: #2980b9;
 }
-/* line 116, components/_buttons.scss */
+/* line 114, components/_buttons.scss */
 .btn-link:hover {
   background-color: transparent;
   color: #1b557a;
 }
 
-/* line 122, components/_buttons.scss */
+/* line 120, components/_buttons.scss */
 .btn-disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -736,18 +731,20 @@ div[tabindex] {
 
 /*  Button sizes
    ========================================================================== */
-/* line 134, components/_buttons.scss */
+/* line 132, components/_buttons.scss */
 .btn-lg {
   font-size: 16px;
+  padding: 8px 16px;
 }
-/* line 136, components/_buttons.scss */
+/* line 135, components/_buttons.scss */
 .btn-lg img {
   height: 16px;
 }
 
-/* line 140, components/_buttons.scss */
+/* line 139, components/_buttons.scss */
 .btn-sm {
   font-size: 10px;
+  padding: 5px 10px;
 }
 /* line 142, components/_buttons.scss */
 .btn-sm img {
@@ -772,37 +769,41 @@ div[tabindex] {
 .btn-image:hover, .btn-image:focus {
   background-color: transparent;
 }
+/* line 170, components/_buttons.scss */
+.btn-image.glyphicon:before, .btn-image.glyphicons:before {
+  margin: 0;
+}
 
 /*  Button positioning
    ========================================================================== */
-/* line 176, components/_buttons.scss */
+/* line 181, components/_buttons.scss */
 .btn-right {
   float: right;
 }
 
-/* line 179, components/_buttons.scss */
+/* line 184, components/_buttons.scss */
 .btn-left {
   float: left;
 }
 
 /*  Button attached
    ========================================================================== */
-/* line 189, components/_buttons.scss */
+/* line 194, components/_buttons.scss */
 .btn-attached-right {
   margin-left: 5px;
 }
 
-/* line 192, components/_buttons.scss */
+/* line 197, components/_buttons.scss */
 .btn-attached-left {
   margin-right: 5px;
 }
 
-/* line 195, components/_buttons.scss */
+/* line 200, components/_buttons.scss */
 .btn-attached-bottom {
   margin-top: 5px;
 }
 
-/* line 198, components/_buttons.scss */
+/* line 203, components/_buttons.scss */
 .btn-attached-top {
   margin-bottom: 5px;
 }
@@ -896,11 +897,17 @@ div[tabindex] {
 }
 /* line 51, components/_grid.scss */
 .mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input .form-control, .mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input .readonly-input {
-  height: 25px;
+  height: 28px;
   font-size: 11px;
 }
+/* line 55, components/_grid.scss */
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-input .mx-button {
+  height: 28px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
 
-/* line 59, components/_grid.scss */
+/* line 64, components/_grid.scss */
 .mx-dataview .mx-grid {
   border: 0;
 }
@@ -1124,27 +1131,58 @@ div[tabindex] {
 }
 /* line 9, components/_groupbox.scss */
 .mx-groupbox > .mx-groupbox-header {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  font-weight: bold;
   margin: 0;
   background: #dddddd;
   color: #2c3e50;
   font-size: 15px;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: #dddddd;
 }
-/* line 15, components/_groupbox.scss */
+/* line 20, components/_groupbox.scss */
 .mx-groupbox > .mx-groupbox-header .mx-groupbox-collapse-icon {
   margin-top: 0.1em;
 }
-/* line 19, components/_groupbox.scss */
+/* line 24, components/_groupbox.scss */
 .mx-groupbox > .mx-groupbox-body {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   padding: 10px 15px;
   border-color: #dddddd;
   background-color: #FFF;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 33, components/_groupbox.scss */
+.mx-groupbox .mx-groupbox-header + .mx-groupbox-body {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-top: none;
+}
+/* line 38, components/_groupbox.scss */
+.mx-groupbox.collapsed > .mx-groupbox-header {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
 
 /*  Alternate Groupboxes
    ========================================================================== */
-/* line 33, components/_groupbox.scss */
+/* line 53, components/_groupbox.scss */
 .mx-groupbox.groupbox-stylingless > .mx-groupbox-header {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1152,9 +1190,10 @@ div[tabindex] {
   -o-border-radius: 0;
   border-radius: 0;
   padding: 0;
+  border-style: none;
   background-color: transparent;
 }
-/* line 38, components/_groupbox.scss */
+/* line 59, components/_groupbox.scss */
 .mx-groupbox.groupbox-stylingless > .mx-groupbox-body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1162,49 +1201,90 @@ div[tabindex] {
   -o-border-radius: 0;
   border-radius: 0;
   padding: 0;
-  border: 0;
+  border-style: none;
   background-color: transparent;
 }
-/* line 47, components/_groupbox.scss */
-.mx-groupbox.groupbox-sideless > .mx-groupbox-header {
-  padding-right: 0;
-  padding-left: 0;
+/* line 69, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-radius > .mx-groupbox-header {
+  -webkit-border-radius: 3px 3px 0 0 !important;
+  -moz-border-radius: 3px 3px 0 0 !important;
+  -ms-border-radius: 3px 3px 0 0 !important;
+  -o-border-radius: 3px 3px 0 0 !important;
+  border-radius: 3px 3px 0 0 !important;
 }
-/* line 51, components/_groupbox.scss */
-.mx-groupbox.groupbox-sideless > .mx-groupbox-body {
-  padding-right: 0;
-  padding-left: 0;
+/* line 72, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-radius > .mx-groupbox-body {
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -ms-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+  border-radius: 3px !important;
 }
-/* line 61, components/_groupbox.scss */
-.mx-groupbox.groupbox-bodyless > .mx-groupbox-body {
-  padding: 0;
+/* line 75, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-radius .mx-groupbox-header + .mx-groupbox-body {
+  -webkit-border-radius: 0 0 3px 3px !important;
+  -moz-border-radius: 0 0 3px 3px !important;
+  -ms-border-radius: 0 0 3px 3px !important;
+  -o-border-radius: 0 0 3px 3px !important;
+  border-radius: 0 0 3px 3px !important;
 }
-/* line 68, components/_groupbox.scss */
-.mx-groupbox.groupbox-lined > .mx-groupbox-header {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  border-bottom: 1px solid #dddddd;
-  background-color: #FFF;
+/* line 80, components/_groupbox.scss */
+.mx-groupbox.groupbox-borderless > .mx-groupbox-body {
+  border: 0 !important;
 }
-/* line 73, components/_groupbox.scss */
-.mx-groupbox.groupbox-lined > .mx-groupbox-body {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  border: 0;
-  background-color: #FFF;
+/* line 85, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-top > .mx-groupbox-header {
+  border-style: none;
+  border-top-style: solid !important;
 }
+/* line 89, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-top > .mx-groupbox-body {
+  border-style: none;
+  border-top-style: solid !important;
+}
+/* line 93, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-top .mx-groupbox-header + .mx-groupbox-body {
+  border-top-style: none !important;
+}
+/* line 98, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-right > .mx-groupbox-header {
+  border-style: none;
+  border-right-style: solid !important;
+}
+/* line 102, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-right > .mx-groupbox-body {
+  border-style: none;
+  border-right-style: solid !important;
+}
+/* line 108, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-bottom > .mx-groupbox-header {
+  border-style: none;
+}
+/* line 111, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-bottom > .mx-groupbox-body {
+  border-style: none;
+  border-bottom-style: solid !important;
+}
+/* line 117, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-left > .mx-groupbox-header {
+  border-style: none;
+  border-left-style: solid !important;
+}
+/* line 121, components/_groupbox.scss */
+.mx-groupbox.groupbox-border-left > .mx-groupbox-body {
+  border-style: none;
+  border-left-style: solid !important;
+}
+
+/*  Color Groupboxes
+   ========================================================================== */
 /* line 2, base/mixins/_groupbox.scss */
 .mx-groupbox.groupbox-default > .mx-groupbox-header {
   background: #dddddd;
   color: #2c3e50;
+  border-color: #dddddd;
 }
-/* line 6, base/mixins/_groupbox.scss */
+/* line 7, base/mixins/_groupbox.scss */
 .mx-groupbox.groupbox-default > .mx-groupbox-body {
   border-color: #dddddd;
 }
@@ -1212,8 +1292,9 @@ div[tabindex] {
 .mx-groupbox.groupbox-primary > .mx-groupbox-header {
   background: #2980b9;
   color: white;
+  border-color: #2980b9;
 }
-/* line 6, base/mixins/_groupbox.scss */
+/* line 7, base/mixins/_groupbox.scss */
 .mx-groupbox.groupbox-primary > .mx-groupbox-body {
   border-color: #2980b9;
 }
@@ -1221,8 +1302,9 @@ div[tabindex] {
 .mx-groupbox.groupbox-inverse > .mx-groupbox-header {
   background: #2c3e50;
   color: white;
+  border-color: #2c3e50;
 }
-/* line 6, base/mixins/_groupbox.scss */
+/* line 7, base/mixins/_groupbox.scss */
 .mx-groupbox.groupbox-inverse > .mx-groupbox-body {
   border-color: #2c3e50;
 }
@@ -1230,8 +1312,9 @@ div[tabindex] {
 .mx-groupbox.groupbox-success > .mx-groupbox-header {
   background: #27ae60;
   color: white;
+  border-color: #27ae60;
 }
-/* line 6, base/mixins/_groupbox.scss */
+/* line 7, base/mixins/_groupbox.scss */
 .mx-groupbox.groupbox-success > .mx-groupbox-body {
   border-color: #27ae60;
 }
@@ -1239,8 +1322,9 @@ div[tabindex] {
 .mx-groupbox.groupbox-info > .mx-groupbox-header {
   background: #52b3d9;
   color: white;
+  border-color: #52b3d9;
 }
-/* line 6, base/mixins/_groupbox.scss */
+/* line 7, base/mixins/_groupbox.scss */
 .mx-groupbox.groupbox-info > .mx-groupbox-body {
   border-color: #52b3d9;
 }
@@ -1248,8 +1332,9 @@ div[tabindex] {
 .mx-groupbox.groupbox-warning > .mx-groupbox-header {
   background: #f39c12;
   color: white;
+  border-color: #f39c12;
 }
-/* line 6, base/mixins/_groupbox.scss */
+/* line 7, base/mixins/_groupbox.scss */
 .mx-groupbox.groupbox-warning > .mx-groupbox-body {
   border-color: #f39c12;
 }
@@ -1257,88 +1342,95 @@ div[tabindex] {
 .mx-groupbox.groupbox-danger > .mx-groupbox-header {
   background: #c0392b;
   color: white;
+  border-color: #c0392b;
 }
-/* line 6, base/mixins/_groupbox.scss */
+/* line 7, base/mixins/_groupbox.scss */
 .mx-groupbox.groupbox-danger > .mx-groupbox-body {
   border-color: #c0392b;
 }
 /* line 2, base/mixins/_groupbox.scss */
-.mx-groupbox.groupbox-blank > .mx-groupbox-header {
+.mx-groupbox.groupbox-white > .mx-groupbox-header {
   background: white;
   color: #2c3e50;
-}
-/* line 6, base/mixins/_groupbox.scss */
-.mx-groupbox.groupbox-blank > .mx-groupbox-body {
   border-color: white;
 }
-/* line 110, components/_groupbox.scss */
-.mx-groupbox.groupbox-blank > .mx-groupbox-body {
-  border: 0;
+/* line 7, base/mixins/_groupbox.scss */
+.mx-groupbox.groupbox-white > .mx-groupbox-body {
+  border-color: white;
 }
-/* line 114, components/_groupbox.scss */
+/* line 165, components/_groupbox.scss */
 .mx-groupbox.groupbox-transparent {
   background-color: transparent;
 }
-/* line 116, components/_groupbox.scss */
+/* line 167, components/_groupbox.scss */
 .mx-groupbox.groupbox-transparent > .mx-groupbox-header {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  border-style: none;
   background-color: transparent;
 }
-/* line 120, components/_groupbox.scss */
+/* line 171, components/_groupbox.scss */
 .mx-groupbox.groupbox-transparent > .mx-groupbox-body {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  border: 0;
+  border-style: none;
   background-color: transparent;
+}
+
+/*  Spacing Options
+   ========================================================================== */
+/* line 187, components/_groupbox.scss */
+.mx-groupbox.groupbox-sideless > .mx-groupbox-header {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 191, components/_groupbox.scss */
+.mx-groupbox.groupbox-sideless > .mx-groupbox-body {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 201, components/_groupbox.scss */
+.mx-groupbox.groupbox-bodyless > .mx-groupbox-body {
+  padding: 0;
 }
 
 /*  Groupboxe Headers
    ========================================================================== */
-/* line 134, components/_groupbox.scss */
+/* line 212, components/_groupbox.scss */
 .mx-groupbox.groupbox-h1 > .mx-groupbox-header {
   font-size: 31px;
 }
-/* line 135, components/_groupbox.scss */
+/* line 213, components/_groupbox.scss */
 .mx-groupbox.groupbox-h2 > .mx-groupbox-header {
   font-size: 25px;
 }
-/* line 136, components/_groupbox.scss */
+/* line 214, components/_groupbox.scss */
 .mx-groupbox.groupbox-h3 > .mx-groupbox-header {
   font-size: 21px;
 }
-/* line 137, components/_groupbox.scss */
+/* line 215, components/_groupbox.scss */
 .mx-groupbox.groupbox-h4 > .mx-groupbox-header {
   font-size: 15px;
 }
-/* line 138, components/_groupbox.scss */
+/* line 216, components/_groupbox.scss */
 .mx-groupbox.groupbox-h5 > .mx-groupbox-header {
   font-size: 12px;
 }
-/* line 139, components/_groupbox.scss */
+/* line 217, components/_groupbox.scss */
 .mx-groupbox.groupbox-h6 > .mx-groupbox-header {
   font-size: 11px;
 }
 
 /*  Groupboxe Callouts
    ========================================================================== */
-/* line 148, components/_groupbox.scss */
+/* line 226, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout {
   border-left-width: 3px;
   border-left-style: solid;
   border-left-color: transparent;
 }
-/* line 152, components/_groupbox.scss */
+/* line 230, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout > .mx-groupbox-header {
+  border: 0;
   background: transparent;
 }
-/* line 155, components/_groupbox.scss */
+/* line 234, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout > .mx-groupbox-body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1348,43 +1440,43 @@ div[tabindex] {
   border: 0;
   background: transparent;
 }
-/* line 160, components/_groupbox.scss */
+/* line 239, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout .mx-groupbox-header + .mx-groupbox-body {
   padding-top: 0;
 }
-/* line 164, components/_groupbox.scss */
+/* line 243, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-info {
   border-left-color: #52b3d9;
   background-color: #cfeaf5;
 }
-/* line 167, components/_groupbox.scss */
+/* line 246, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-info > .mx-groupbox-header {
   color: #52b3d9;
 }
-/* line 171, components/_groupbox.scss */
+/* line 250, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-success {
   border-left-color: #27ae60;
   background-color: #9ee9be;
 }
-/* line 174, components/_groupbox.scss */
+/* line 253, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-success > .mx-groupbox-header {
   color: #27ae60;
 }
-/* line 178, components/_groupbox.scss */
+/* line 257, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-warning {
   border-left-color: #f39c12;
   background: #fce3bc;
 }
-/* line 181, components/_groupbox.scss */
+/* line 260, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-warning > .mx-groupbox-header {
   color: #f39c12;
 }
-/* line 185, components/_groupbox.scss */
+/* line 264, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-danger {
   border-left-color: #c0392b;
   background: #edb6b0;
 }
-/* line 188, components/_groupbox.scss */
+/* line 267, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-danger > .mx-groupbox-header {
   color: #c0392b;
 }
@@ -1405,9 +1497,9 @@ div[tabindex] {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   display: block;
-  padding: 6px 8px;
+  padding: 7px 8px;
   width: 100%;
-  height: 30px;
+  height: 33px;
   border: 1px solid #dddddd;
   border-radius: 4px;
   background-color: white;
@@ -1415,7 +1507,7 @@ div[tabindex] {
   color: #555555;
   vertical-align: middle;
   font-size: 12px;
-  line-height: 1.428571429;
+  line-height: 1.5;
 }
 
 /* line 24, components/_inputs.scss */
@@ -1611,8 +1703,7 @@ textarea.form-control, textarea.readonly-input {
 }
 /* line 19, components/_navigation.scss */
 .mx-navbar ul.nav > li.mx-navbar-item > a {
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -1674,8 +1765,7 @@ textarea.form-control, textarea.readonly-input {
   }
   /* line 75, components/_navigation.scss */
   .mx-navbar .mx-navbar-item.open .dropdown-menu > li.mx-navbar-subitem > a {
-    font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     padding: 15px 20px;
     border-radius: 0;
     color: #aabdd1;
@@ -1711,8 +1801,7 @@ textarea.form-control, textarea.readonly-input {
 }
 /* line 111, components/_navigation.scss */
 .mx-navigationtree .navbar-inner ul li a {
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   display: block;
   padding: 15px 20px;
   border-bottom: 1px solid #33485d;
@@ -1759,8 +1848,7 @@ textarea.form-control, textarea.readonly-input {
 }
 /* line 159, components/_navigation.scss */
 .mx-navigationtree li.mx-navigationtree-has-items > ul li a {
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   padding: 12px 20px 12px 25px;
   border: 0;
   background-color: transparent;
@@ -1789,8 +1877,7 @@ textarea.form-control, textarea.readonly-input {
 }
 /* line 189, components/_navigation.scss */
 .mx-menubar ul.mx-menubar-list li.mx-menubar-item a {
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   padding: 15px 20px;
   border-radius: 0;
   color: #aabdd1;
@@ -1893,8 +1980,7 @@ textarea.form-control, textarea.readonly-input {
 }
 /* line 16, components/_popups.scss */
 .modal-dialog .modal-content .modal-header h4 {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   color: white;
   font-size: 18px;
 }
@@ -1914,8 +2000,6 @@ textarea.form-control, textarea.readonly-input {
 }
 /* line 36, components/_popups.scss */
 .modal-dialog .mx-dataview-controls {
-  padding: 20px;
-  margin-top: 10px;
   border-style: none;
   text-align: left;
 }
@@ -1957,7 +2041,7 @@ textarea.form-control, textarea.readonly-input {
 /* line 86, components/_popups.scss */
 .mx-login h4 {
   color: #aaa;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 20px;
 }
 
@@ -1968,13 +2052,12 @@ textarea.form-control, textarea.readonly-input {
    ========================================================================== */
 /* line 7, components/_tabcontainer.scss */
 .mx-tabcontainer .mx-tabcontainer-tabs {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-color: #dddddd;
 }
 /* line 10, components/_tabcontainer.scss */
 .mx-tabcontainer .mx-tabcontainer-tabs > li > a {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -2050,7 +2133,7 @@ textarea.form-control, textarea.readonly-input {
 }
 /* line 79, components/_tabcontainer.scss */
 .tab-lined.mx-tabcontainer .mx-tabcontainer-tabs li > a {
-  padding: 0.6em 1.2em;
+  padding: 7px 15px;
   border: 0;
   border-style: solid;
   border-color: transparent;
@@ -2142,7 +2225,7 @@ textarea.form-control, textarea.readonly-input {
 /* line 6, components/_typography.scss */
 p {
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* line 10, components/_typography.scss */
@@ -2152,8 +2235,7 @@ label {
 
 /* line 15, components/_typography.scss */
 .mx-title {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   color: #2c3e50;
   font-size: 31px;
 }
@@ -2191,8 +2273,6 @@ h6, .h6, .h6 > * {
 /* line 29, components/_typography.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
-  font-weight: 400;
   color: #2c3e50;
   margin: 0;
 }
@@ -2201,26 +2281,22 @@ h1, h2, h3, h4, h5, h6,
    ========================================================================== */
 /* line 49, components/_typography.scss */
 .text-light, .text-light > *, .text-light label {
-  font-family: "OpenSansLight", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 /* line 52, components/_typography.scss */
 .text-normal, .text-normal > *, .text-normal label {
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 /* line 55, components/_typography.scss */
 .text-semibold, .text-semibold > *, .text-semibold label {
-  font-family: "OpenSansSemibold", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* line 58, components/_typography.scss */
 .text-bold, .text-bold > *, .text-bold label {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /*	Utility
@@ -2239,67 +2315,72 @@ h1, h2, h3, h4, h5, h6,
 
 /* line 77, components/_typography.scss */
 .text-break {
+  -ms-word-break: break-all;
   word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 /*	Text colors
    ========================================================================== */
-/* line 86, components/_typography.scss */
+/* line 91, components/_typography.scss */
 .text-gray-darker {
   color: #222222;
 }
 
-/* line 87, components/_typography.scss */
+/* line 92, components/_typography.scss */
 .text-gray-dark {
   color: #333333;
 }
 
-/* line 88, components/_typography.scss */
+/* line 93, components/_typography.scss */
 .text-gray {
   color: #555555;
 }
 
-/* line 89, components/_typography.scss */
+/* line 94, components/_typography.scss */
 .text-gray-light {
   color: #999999;
 }
 
-/* line 90, components/_typography.scss */
+/* line 95, components/_typography.scss */
 .text-gray-primary {
   color: #dddddd;
 }
 
-/* line 91, components/_typography.scss */
+/* line 96, components/_typography.scss */
 .text-gray-lighter {
   color: #eeeeee;
 }
 
-/* line 94, components/_typography.scss */
+/* line 99, components/_typography.scss */
 .text-default, .text-default:hover {
   color: #2c3e50;
 }
 
-/* line 95, components/_typography.scss */
+/* line 100, components/_typography.scss */
 .text-primary, .text-primary:hover {
   color: #2980b9;
 }
 
-/* line 96, components/_typography.scss */
+/* line 101, components/_typography.scss */
 .text-info, .text-info:hover {
   color: #52b3d9;
 }
 
-/* line 97, components/_typography.scss */
+/* line 102, components/_typography.scss */
 .text-success, .text-success:hover {
   color: #27ae60;
 }
 
-/* line 98, components/_typography.scss */
+/* line 103, components/_typography.scss */
 .text-warning, .text-warning:hover {
   color: #f39c12;
 }
 
-/* line 99, components/_typography.scss */
+/* line 104, components/_typography.scss */
 .text-danger, .text-danger:hover {
   color: #c0392b;
 }
@@ -2311,8 +2392,7 @@ h1, h2, h3, h4, h5, h6,
    ========================================================================== */
 /* line 6, components/_tables.scss */
 th {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* line 14, components/_tables.scss */
@@ -2321,8 +2401,7 @@ table.mx-table > tbody > tr > th {
 }
 /* line 16, components/_tables.scss */
 table.mx-table > tbody > tr > th * {
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 /* line 17, components/_tables.scss */
 table.mx-table > tbody > tr > th > label {
@@ -2462,7 +2541,7 @@ html body .mx-page table.mx-table td.nopadding {
 /* line 273, components/_tables.scss */
 table.table-row-s.mx-table > tbody > tr > th,
 table.table-row-s.mx-table > tbody > tr > td {
-  height: 40px;
+  height: 55px;
 }
 
 /*  Medium rows
@@ -2500,8 +2579,7 @@ table.table-fixed {
   -ms-border-radius: 0.25em;
   -o-border-radius: 0.25em;
   border-radius: 0.25em;
-  font-family: "OpenSansBold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   display: inline;
   padding: .2em .6em .3em !important;
   color: #fff;
@@ -2638,7 +2716,7 @@ table.table-fixed {
   height: auto;
   max-width: 100%;
   padding: 4px;
-  line-height: 1.428571429;
+  line-height: 1.5;
   background-color: #fff;
   border: 1px solid #dddddd;
 }
@@ -2665,7 +2743,7 @@ table.table-fixed {
   height: auto;
   max-width: 100%;
   padding: 4px;
-  line-height: 1.428571429;
+  line-height: 1.5;
   background-color: #fff;
   border: 1px solid #dddddd;
 }
@@ -2692,39 +2770,21 @@ table.table-fixed {
    Layouts
 
    ========================================================================== */
-/* line 7, mobile/components/_layouts.scss */
+/* line 7, mobile/layouts/_base.scss */
 .profile-phone,
 .profile-tablet {
-   /*	Header
-		========================================================================== */
+  /* 	Base Layout
+     ========================================================================== */
 }
-/* line 9, mobile/components/_layouts.scss */
-.profile-phone .mx-layoutcontainer-top > .mx-layoutcontainer-wrapper,
-.profile-tablet .mx-layoutcontainer-top > .mx-layoutcontainer-wrapper {
+/* line 11, mobile/layouts/_base.scss */
+.profile-phone .mx-layoutcontainer-wrapper,
+.profile-tablet .mx-layoutcontainer-wrapper {
+  padding: 0px;
+}
+/* line 14, mobile/layouts/_base.scss */
+.profile-phone .mx-layoutcontainer-wrapper.mx-layoutcontainer-nested,
+.profile-tablet .mx-layoutcontainer-wrapper.mx-layoutcontainer-nested {
   padding: 0;
-}
-/* line 13, mobile/components/_layouts.scss */
-.profile-phone .mx-header,
-.profile-tablet .mx-header {
-  padding: 9px;
-  background-color: #2980b9;
-}
-/* line 16, mobile/components/_layouts.scss */
-.profile-phone .mx-header .mx-link a,
-.profile-tablet .mx-header .mx-link a {
-  color: #FFF;
-  font-size: 14px;
-}
-/* line 22, mobile/components/_layouts.scss */
-.profile-phone .mx-layoutcontainer-center > .mx-layoutcontainer-wrapper,
-.profile-tablet .mx-layoutcontainer-center > .mx-layoutcontainer-wrapper {
-  padding: 0;
-}
-/* line 32, mobile/components/_layouts.scss */
-.profile-phone .mx-header .btn.glyphicon,
-.profile-tablet .mx-header .btn.glyphicon {
-  color: #FFF;
-  font-size: 1.7em;
 }
 
 /* line 4, mobile/components/_listview.scss */
@@ -2767,6 +2827,300 @@ table.table-fixed {
   border-radius: 0;
 }
 
+/* line 2, mobile/components/_loader.scss */
+.profile-phone .mx-progress {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 8, mobile/components/_loader.scss */
+.profile-phone .mx-progress .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  height: 100%;
+  border-style: none;
+  background: none;
+}
+/* line 15, mobile/components/_loader.scss */
+.profile-phone .mx-progress .modal-header {
+  display: none;
+}
+/* line 18, mobile/components/_loader.scss */
+.profile-phone .mx-progress .mx-dialog-body {
+  height: 100% !important;
+  width: 100%;
+}
+/* line 22, mobile/components/_loader.scss */
+.profile-phone .mx-progress .mx-progress-list {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+/* line 27, mobile/components/_loader.scss */
+.profile-phone .mx-progress .mx-progress-item {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  position: relative;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: loader10m 1.5s ease-in-out infinite;
+  animation: loader10m 1.5s ease-in-out infinite;
+  text-indent: -9999px;
+  background: none;
+}
+/* line 40, mobile/components/_loader.scss */
+.profile-phone .mx-progress .mx-progress-item:before {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  height: 12px;
+  width: 12px;
+  -webkit-animation: loader10g 1.5s ease-in-out infinite;
+  animation: loader10g 1.5s ease-in-out infinite;
+}
+/* line 51, mobile/components/_loader.scss */
+.profile-phone .mx-progress .mx-progress-item:after {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  height: 12px;
+  width: 12px;
+  -webkit-animation: loader10d 1.5s ease-in-out infinite;
+  animation: loader10d 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes loader10g {
+  /* line 67, mobile/components/_loader.scss */
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 68, mobile/components/_loader.scss */
+  25% {
+    background-color: white;
+  }
+
+  /* line 69, mobile/components/_loader.scss */
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 70, mobile/components/_loader.scss */
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 71, mobile/components/_loader.scss */
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes loader10g {
+  /* line 74, mobile/components/_loader.scss */
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 75, mobile/components/_loader.scss */
+  25% {
+    background-color: white;
+  }
+
+  /* line 76, mobile/components/_loader.scss */
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 77, mobile/components/_loader.scss */
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 78, mobile/components/_loader.scss */
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@-webkit-keyframes loader10m {
+  /* line 82, mobile/components/_loader.scss */
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 83, mobile/components/_loader.scss */
+  25% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 84, mobile/components/_loader.scss */
+  50% {
+    background-color: white;
+  }
+
+  /* line 85, mobile/components/_loader.scss */
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 86, mobile/components/_loader.scss */
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes loader10m {
+  /* line 89, mobile/components/_loader.scss */
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 90, mobile/components/_loader.scss */
+  25% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 91, mobile/components/_loader.scss */
+  50% {
+    background-color: white;
+  }
+
+  /* line 92, mobile/components/_loader.scss */
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 93, mobile/components/_loader.scss */
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@-webkit-keyframes loader10d {
+  /* line 97, mobile/components/_loader.scss */
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 98, mobile/components/_loader.scss */
+  25% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 99, mobile/components/_loader.scss */
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 100, mobile/components/_loader.scss */
+  75% {
+    background-color: white;
+  }
+
+  /* line 101, mobile/components/_loader.scss */
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes loader10d {
+  /* line 104, mobile/components/_loader.scss */
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 105, mobile/components/_loader.scss */
+  25% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 106, mobile/components/_loader.scss */
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* line 107, mobile/components/_loader.scss */
+  75% {
+    background-color: white;
+  }
+
+  /* line 108, mobile/components/_loader.scss */
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ==========================================================================
+
+   Header
+
+   ========================================================================== */
+/* line 6, mobile/components/_mx-header.scss */
+body[dir="ltr"] .mx-header {
+  padding: 0;
+  background-color: #2980b9;
+  height: 44px;
+}
+/* line 11, mobile/components/_mx-header.scss */
+body[dir="ltr"] .mx-header .mx-header-center {
+  display: inline-block;
+  line-height: 30px;
+  width: 60%;
+}
+/* line 17, mobile/components/_mx-header.scss */
+body[dir="ltr"] .mx-header .mx-header-left,
+body[dir="ltr"] .mx-header .mx-header-right {
+  top: 5px;
+}
+/* line 19, mobile/components/_mx-header.scss */
+body[dir="ltr"] .mx-header .mx-header-left {
+  left: 10px;
+}
+/* line 20, mobile/components/_mx-header.scss */
+body[dir="ltr"] .mx-header .mx-header-right {
+  right: 10px;
+}
+/* line 23, mobile/components/_mx-header.scss */
+body[dir="ltr"] .mx-header .mx-title {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  line-height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 33, mobile/components/_mx-header.scss */
+body[dir="ltr"] .mx-header .btn-image.glyphicon {
+  font-size: 21px;
+}
+
 /* ==========================================================================
 
    Tabcontainer
@@ -2775,8 +3129,8 @@ table.table-fixed {
 /* line 8, mobile/components/_tabcontainer.scss */
 .profile-phone .mx-tabcontainer-tabs,
 .profile-tablet .mx-tabcontainer-tabs {
-  margin-bottom: 0;
-  padding: 0 0 10px 0;
+  margin: 0;
+  padding: 0 10px 10px 10px;
   border-color: transparent;
   background-color: #2980b9;
   text-align: center;
@@ -2784,10 +3138,12 @@ table.table-fixed {
 /* line 15, mobile/components/_tabcontainer.scss */
 .profile-phone .mx-tabcontainer-tabs li,
 .profile-tablet .mx-tabcontainer-tabs li {
-  display: inline-block;
+  display: table-cell;
   float: none;
+  margin: 0;
+  width: 1%;
 }
-/* line 18, mobile/components/_tabcontainer.scss */
+/* line 22, mobile/components/_tabcontainer.scss */
 .profile-phone .mx-tabcontainer-tabs li a,
 .profile-tablet .mx-tabcontainer-tabs li a {
   -webkit-box-shadow: none;
@@ -2800,13 +3156,14 @@ table.table-fixed {
   border-radius: 0;
   margin: 0;
   padding: 5px 15px;
-  border-width: 1px 0 1px 1px;
+  border-width: 1px;
   border-style: solid;
   border-color: #1b557a;
+  border-right-color: transparent;
   color: white;
   font-weight: normal;
 }
-/* line 31, mobile/components/_tabcontainer.scss */
+/* line 36, mobile/components/_tabcontainer.scss */
 .profile-phone .mx-tabcontainer-tabs li a:hover, .profile-phone .mx-tabcontainer-tabs li a:focus, .profile-phone .mx-tabcontainer-tabs li a.active,
 .profile-tablet .mx-tabcontainer-tabs li a:hover,
 .profile-tablet .mx-tabcontainer-tabs li a:focus,
@@ -2815,7 +3172,7 @@ table.table-fixed {
   border-color: #1b557a !important;
   background-color: #1b557a !important;
 }
-/* line 37, mobile/components/_tabcontainer.scss */
+/* line 42, mobile/components/_tabcontainer.scss */
 .profile-phone .mx-tabcontainer-tabs li:first-child a,
 .profile-tablet .mx-tabcontainer-tabs li:first-child a {
   -moz-border-radius-topleft: 10px;
@@ -2825,7 +3182,7 @@ table.table-fixed {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 40, mobile/components/_tabcontainer.scss */
+/* line 45, mobile/components/_tabcontainer.scss */
 .profile-phone .mx-tabcontainer-tabs li:last-child a,
 .profile-tablet .mx-tabcontainer-tabs li:last-child a {
   -moz-border-radius-topright: 10px;
@@ -2834,30 +3191,16 @@ table.table-fixed {
   -moz-border-radius-bottomright: 10px;
   -webkit-border-bottom-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-right: 1px solid #1b557a;
+  border-right-color: #1b557a;
 }
-/* line 44, mobile/components/_tabcontainer.scss */
+/* line 49, mobile/components/_tabcontainer.scss */
 .profile-phone .mx-tabcontainer-tabs li.active a,
 .profile-tablet .mx-tabcontainer-tabs li.active a {
-  border-width: 1px 0 1px 1px;
+  border-width: 1px;
   border-style: solid;
   border-color: #1b557a;
   background-color: #1b557a;
   color: white;
-}
-
-/* ==========================================================================
-
-   Typography
-
-   ========================================================================== */
-/* line 8, mobile/components/_typography.scss */
-.profile-phone .mx-title,
-.profile-tablet .mx-title {
-  margin: 0;
-  color: #FFF;
-  font-size: 18px;
-  line-height: 1.7em;
 }
 
 /* ==========================================================================

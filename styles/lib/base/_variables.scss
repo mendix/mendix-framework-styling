@@ -1,4 +1,5 @@
-// Here you can set your own variables or override exsting located in lib/base/variables.scss
+// The location where you can set new variables or override the lib variables (give the same name without !default).
+@import "../../custom-variables";
 
 ///////////////////////////////////////////////////////////////////////////////////////
 //
@@ -222,7 +223,7 @@ $color-callout-bg-danger:				lighten($color-danger, 35) !default;
 
 
 
-//   Input Colors
+//   Input
 /////////////////////////////////////////////////////////////////////////////////////
 $color-input-bg:						#FFF !default;
 $color-input-bg-focus:					#FFF !default;
@@ -233,6 +234,9 @@ $color-input-text-disabled:				$gray !default;
 $color-input-placeholder-text:			$gray-light !default;
 $color-input-border:					$gray-primary !default;
 $color-input-border-focus:				$color-primary !default;	
+
+// Input height
+$input-height:							33px;
 
 
 
@@ -337,10 +341,10 @@ $color-text:							$base-color !default;
 $color-header: 							$base-color !default;
 
 // Font family					
-$font-family-base:						"Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-light:						"Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-semibold:					"Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-bold:						"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-base:						false !default;//"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-light:						false !default;//"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-semibold:					false !default;//"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-bold:						false !default;//"Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // Font Weights
 $font-weight-light:						100 !default;
@@ -362,7 +366,8 @@ $font-size-h5:          				$font-size-base !default; // ~12px
 $font-size-h6:          				ceil(($font-size-base * 0.85)) !default; // ~11px
 
 // Line height
-$line-height-base:      				20 / 12 !default;
+$line-height-base:      				1.5;//20 / 12 !default; // 12 is font-size-base
+
 
 
 
@@ -374,7 +379,7 @@ $line-height-base:      				20 / 12 !default;
 //
 /////////////////////////////////////////////////////////////////////////////////////
 $padding-layoutcontainer-base:			20px !default;
-
+$m-padding-layoutcontainer-base:		0px !default;
 
 
 
@@ -402,6 +407,8 @@ $padding-table-cell-right:				8px !default;
 //   Mobile
 //
 /////////////////////////////////////////////////////////////////////////////////////
+$m-color-header: 						#FFF !default;
+
 
 //   Tab Container
 /////////////////////////////////////////////////////////////////////////////////////

@@ -3,16 +3,24 @@
 	$weight: unquote($weight);
 	$weight: quote($weight);
 	@if $weight == normal {
-		font-family: $font-family-base; 
+		@if($font-family-base) {
+			font-family: $font-family-base; 
+		}
 		font-weight: $font-weight-normal;
 	} @else if $weight == "light" {
-		font-family: $font-family-light;
+		@if($font-family-light) {
+			font-family: $font-family-light; 
+		}
 		font-weight: $font-weight-light;
 	} @else if $weight == "semibold" {
-		font-family: $font-family-semibold;
+		@if($font-family-semibold) {
+			font-family: $font-family-semibold; 
+		}
 		font-weight: $font-weight-semibold;
 	} @else if $weight == "bold" {
-		font-family: $font-family-bold; 
+		@if($font-family-bold) {
+			font-family: $font-family-bold; 
+		}
 		font-weight: $font-weight-bold;
 	}
 }

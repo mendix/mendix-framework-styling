@@ -1,5 +1,4 @@
 // Modules and Variables
-@import "compass";
 @import "base/all";
 @import "base/base";
 
@@ -25,10 +24,12 @@
 @import "components/images";
 
 // Mobile
-@import "mobile/components/layouts";
+@import "mobile/layouts/base";
+
 @import "mobile/components/listview";
+@import "mobile/components/loader";
+@import "mobile/components/mx-header";
 @import "mobile/components/tabcontainer";
-@import "mobile/components/typography";
 
 //layouts
 @import "layouts/base";
