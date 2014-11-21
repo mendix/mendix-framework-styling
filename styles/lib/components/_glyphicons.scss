@@ -1,0 +1,18 @@
+/* ========================================================================== 
+
+	Glyphicons (bootstrap)
+   
+   ========================================================================== */
+.mx-glyphicon {
+	&:before {
+		display: inline-block;
+		font-family: 'Glyphicons Halflings';
+		-webkit-font-smoothing: antialiased;
+		font-style: normal;
+		font-weight: normal;
+		vertical-align: middle;
+		margin-right: 0.5em;
+		line-height: 1;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
