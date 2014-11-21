@@ -364,6 +364,24 @@ div[tabindex] {
   white-space: nowrap;
 }
 
+/* ========================================================================== 
+
+	Glyphicons (bootstrap)
+   
+   ========================================================================== */
+/* line 7, components/_glyphicons.scss */
+.mx-glyphicon:before {
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* ==========================================================================
 
    Buttons
@@ -462,12 +480,12 @@ div[tabindex] {
   background-color: #dddddd;
 }
 /* line 33, base/mixins/_buttons.scss */
-.btn-default.btn-transparent {
+.btn-default.btn-bordered {
   background-color: transparent;
   color: #dddddd;
 }
 /* line 41, base/mixins/_buttons.scss */
-.btn-default.btn-transparent:hover, .btn-default.btn-transparent:focus, .btn-default.btn-transparent:active, .btn-default.btn-transparent.active, .open > .btn-default.btn-transparent.dropdown-toggle {
+.btn-default.btn-bordered:hover, .btn-default.btn-bordered:focus, .btn-default.btn-bordered:active, .btn-default.btn-bordered.active, .open > .btn-default.btn-bordered.dropdown-toggle {
   background-color: #dddddd;
   border-color: #dddddd;
   color: #2c3e50;
@@ -495,12 +513,12 @@ div[tabindex] {
   background-color: #2980b9;
 }
 /* line 33, base/mixins/_buttons.scss */
-.btn-primary.btn-transparent {
+.btn-primary.btn-bordered {
   background-color: transparent;
   color: #2980b9;
 }
 /* line 41, base/mixins/_buttons.scss */
-.btn-primary.btn-transparent:hover, .btn-primary.btn-transparent:focus, .btn-primary.btn-transparent:active, .btn-primary.btn-transparent.active, .open > .btn-primary.btn-transparent.dropdown-toggle {
+.btn-primary.btn-bordered:hover, .btn-primary.btn-bordered:focus, .btn-primary.btn-bordered:active, .btn-primary.btn-bordered.active, .open > .btn-primary.btn-bordered.dropdown-toggle {
   background-color: #2980b9;
   border-color: #2980b9;
   color: white;
@@ -528,12 +546,12 @@ div[tabindex] {
   background-color: #2c3e50;
 }
 /* line 33, base/mixins/_buttons.scss */
-.btn-inverse.btn-transparent {
+.btn-inverse.btn-bordered {
   background-color: transparent;
   color: #2c3e50;
 }
 /* line 41, base/mixins/_buttons.scss */
-.btn-inverse.btn-transparent:hover, .btn-inverse.btn-transparent:focus, .btn-inverse.btn-transparent:active, .btn-inverse.btn-transparent.active, .open > .btn-inverse.btn-transparent.dropdown-toggle {
+.btn-inverse.btn-bordered:hover, .btn-inverse.btn-bordered:focus, .btn-inverse.btn-bordered:active, .btn-inverse.btn-bordered.active, .open > .btn-inverse.btn-bordered.dropdown-toggle {
   background-color: #2c3e50;
   border-color: #2c3e50;
   color: white;
@@ -566,12 +584,12 @@ div[tabindex] {
   background-color: #27ae60;
 }
 /* line 33, base/mixins/_buttons.scss */
-.btn-success.btn-transparent {
+.btn-success.btn-bordered {
   background-color: transparent;
   color: #27ae60;
 }
 /* line 41, base/mixins/_buttons.scss */
-.btn-success.btn-transparent:hover, .btn-success.btn-transparent:focus, .btn-success.btn-transparent:active, .btn-success.btn-transparent.active, .open > .btn-success.btn-transparent.dropdown-toggle {
+.btn-success.btn-bordered:hover, .btn-success.btn-bordered:focus, .btn-success.btn-bordered:active, .btn-success.btn-bordered.active, .open > .btn-success.btn-bordered.dropdown-toggle {
   background-color: #27ae60;
   border-color: #27ae60;
   color: white;
@@ -599,12 +617,12 @@ div[tabindex] {
   background-color: #52b3d9;
 }
 /* line 33, base/mixins/_buttons.scss */
-.btn-info.btn-transparent {
+.btn-info.btn-bordered {
   background-color: transparent;
   color: #52b3d9;
 }
 /* line 41, base/mixins/_buttons.scss */
-.btn-info.btn-transparent:hover, .btn-info.btn-transparent:focus, .btn-info.btn-transparent:active, .btn-info.btn-transparent.active, .open > .btn-info.btn-transparent.dropdown-toggle {
+.btn-info.btn-bordered:hover, .btn-info.btn-bordered:focus, .btn-info.btn-bordered:active, .btn-info.btn-bordered.active, .open > .btn-info.btn-bordered.dropdown-toggle {
   background-color: #52b3d9;
   border-color: #52b3d9;
   color: white;
@@ -632,12 +650,12 @@ div[tabindex] {
   background-color: #f39c12;
 }
 /* line 33, base/mixins/_buttons.scss */
-.btn-warning.btn-transparent {
+.btn-warning.btn-bordered {
   background-color: transparent;
   color: #f39c12;
 }
 /* line 41, base/mixins/_buttons.scss */
-.btn-warning.btn-transparent:hover, .btn-warning.btn-transparent:focus, .btn-warning.btn-transparent:active, .btn-warning.btn-transparent.active, .open > .btn-warning.btn-transparent.dropdown-toggle {
+.btn-warning.btn-bordered:hover, .btn-warning.btn-bordered:focus, .btn-warning.btn-bordered:active, .btn-warning.btn-bordered.active, .open > .btn-warning.btn-bordered.dropdown-toggle {
   background-color: #f39c12;
   border-color: #f39c12;
   color: white;
@@ -665,12 +683,12 @@ div[tabindex] {
   background-color: #c0392b;
 }
 /* line 33, base/mixins/_buttons.scss */
-.btn-danger.btn-transparent {
+.btn-danger.btn-bordered {
   background-color: transparent;
   color: #c0392b;
 }
 /* line 41, base/mixins/_buttons.scss */
-.btn-danger.btn-transparent:hover, .btn-danger.btn-transparent:focus, .btn-danger.btn-transparent:active, .btn-danger.btn-transparent.active, .open > .btn-danger.btn-transparent.dropdown-toggle {
+.btn-danger.btn-bordered:hover, .btn-danger.btn-bordered:focus, .btn-danger.btn-bordered:active, .btn-danger.btn-bordered.active, .open > .btn-danger.btn-bordered.dropdown-toggle {
   background-color: #c0392b;
   border-color: #c0392b;
   color: white;
@@ -698,12 +716,12 @@ div[tabindex] {
   background-color: white;
 }
 /* line 33, base/mixins/_buttons.scss */
-.btn-white.btn-transparent {
+.btn-white.btn-bordered {
   background-color: transparent;
   color: white;
 }
 /* line 41, base/mixins/_buttons.scss */
-.btn-white.btn-transparent:hover, .btn-white.btn-transparent:focus, .btn-white.btn-transparent:active, .btn-white.btn-transparent.active, .open > .btn-white.btn-transparent.dropdown-toggle {
+.btn-white.btn-bordered:hover, .btn-white.btn-bordered:focus, .btn-white.btn-bordered:active, .btn-white.btn-bordered.active, .open > .btn-white.btn-bordered.dropdown-toggle {
   background-color: white;
   border-color: white;
   color: #2c3e50;
@@ -729,81 +747,85 @@ div[tabindex] {
   pointer-events: none;
 }
 
+/* line 128, components/_buttons.scss */
+.btn-transparent,
+.btn-transparent:hover,
+.btn-transparent:focus {
+  border-style: none;
+  background-color: transparent;
+}
+
 /*  Button sizes
    ========================================================================== */
-/* line 132, components/_buttons.scss */
+/* line 139, components/_buttons.scss */
 .btn-lg {
   font-size: 16px;
   padding: 8px 16px;
 }
-/* line 135, components/_buttons.scss */
+/* line 142, components/_buttons.scss */
 .btn-lg img {
   height: 16px;
 }
 
-/* line 139, components/_buttons.scss */
+/* line 146, components/_buttons.scss */
 .btn-sm {
   font-size: 10px;
   padding: 5px 10px;
 }
-/* line 142, components/_buttons.scss */
+/* line 149, components/_buttons.scss */
 .btn-sm img {
   height: 14px;
 }
 
 /*  Button sort
    ========================================================================== */
-/* line 153, components/_buttons.scss */
+/* line 160, components/_buttons.scss */
 .btn-image {
   padding: 0;
   border-style: none;
   background-color: transparent;
   vertical-align: middle;
 }
-/* line 159, components/_buttons.scss */
+/* line 166, components/_buttons.scss */
 .btn-image img {
   height: auto;
   display: block;
 }
-/* line 165, components/_buttons.scss */
+/* line 172, components/_buttons.scss */
 .btn-image:hover, .btn-image:focus {
   background-color: transparent;
-}
-/* line 170, components/_buttons.scss */
-.btn-image.glyphicon:before, .btn-image.glyphicons:before {
-  margin: 0;
 }
 
 /*  Button positioning
    ========================================================================== */
-/* line 181, components/_buttons.scss */
+/* line 182, components/_buttons.scss */
 .btn-right {
   float: right;
 }
 
-/* line 184, components/_buttons.scss */
+/* line 185, components/_buttons.scss */
 .btn-left {
   float: left;
 }
 
 /*  Button attached
    ========================================================================== */
-/* line 194, components/_buttons.scss */
+/* line 195, components/_buttons.scss */
 .btn-attached-right {
   margin-left: 5px;
 }
 
-/* line 197, components/_buttons.scss */
+/* line 198, components/_buttons.scss */
 .btn-attached-left {
   margin-right: 5px;
 }
 
-/* line 200, components/_buttons.scss */
+/* line 201, components/_buttons.scss */
 .btn-attached-bottom {
   margin-top: 5px;
 }
 
-/* line 203, components/_buttons.scss */
+/* line 204, components/_buttons.scss */
 .btn-attached-top {
   margin-bottom: 5px;
 }
@@ -2275,45 +2297,46 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #2c3e50;
   margin: 0;
+  line-height: 1.3;
 }
 
 /*	Font Weights
    ========================================================================== */
-/* line 49, components/_typography.scss */
+/* line 50, components/_typography.scss */
 .text-light, .text-light > *, .text-light label {
   font-weight: 100;
 }
 
-/* line 52, components/_typography.scss */
+/* line 53, components/_typography.scss */
 .text-normal, .text-normal > *, .text-normal label {
   font-weight: normal;
 }
 
-/* line 55, components/_typography.scss */
+/* line 56, components/_typography.scss */
 .text-semibold, .text-semibold > *, .text-semibold label {
   font-weight: 500;
 }
 
-/* line 58, components/_typography.scss */
+/* line 59, components/_typography.scss */
 .text-bold, .text-bold > *, .text-bold label {
   font-weight: bold;
 }
 
 /*	Utility
    ========================================================================== */
-/* line 67, components/_typography.scss */
+/* line 68, components/_typography.scss */
 .text-spacing {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-/* line 71, components/_typography.scss */
+/* line 72, components/_typography.scss */
 .text-lined {
   padding-bottom: 10px;
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 77, components/_typography.scss */
+/* line 78, components/_typography.scss */
 .text-break {
   -ms-word-break: break-all;
   word-break: break-all;
@@ -2325,62 +2348,62 @@ h1, h2, h3, h4, h5, h6,
 
 /*	Text colors
    ========================================================================== */
-/* line 91, components/_typography.scss */
+/* line 92, components/_typography.scss */
 .text-gray-darker {
   color: #222222;
 }
 
-/* line 92, components/_typography.scss */
+/* line 93, components/_typography.scss */
 .text-gray-dark {
   color: #333333;
 }
 
-/* line 93, components/_typography.scss */
+/* line 94, components/_typography.scss */
 .text-gray {
   color: #555555;
 }
 
-/* line 94, components/_typography.scss */
+/* line 95, components/_typography.scss */
 .text-gray-light {
   color: #999999;
 }
 
-/* line 95, components/_typography.scss */
+/* line 96, components/_typography.scss */
 .text-gray-primary {
   color: #dddddd;
 }
 
-/* line 96, components/_typography.scss */
+/* line 97, components/_typography.scss */
 .text-gray-lighter {
   color: #eeeeee;
 }
 
-/* line 99, components/_typography.scss */
+/* line 100, components/_typography.scss */
 .text-default, .text-default:hover {
   color: #2c3e50;
 }
 
-/* line 100, components/_typography.scss */
+/* line 101, components/_typography.scss */
 .text-primary, .text-primary:hover {
   color: #2980b9;
 }
 
-/* line 101, components/_typography.scss */
+/* line 102, components/_typography.scss */
 .text-info, .text-info:hover {
   color: #52b3d9;
 }
 
-/* line 102, components/_typography.scss */
+/* line 103, components/_typography.scss */
 .text-success, .text-success:hover {
   color: #27ae60;
 }
 
-/* line 103, components/_typography.scss */
+/* line 104, components/_typography.scss */
 .text-warning, .text-warning:hover {
   color: #f39c12;
 }
 
-/* line 104, components/_typography.scss */
+/* line 105, components/_typography.scss */
 .text-danger, .text-danger:hover {
   color: #c0392b;
 }

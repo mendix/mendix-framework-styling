@@ -1,0 +1,53 @@
+/* ==========================================================================
+
+   Demo Styling (not included in the default framework)
+   Remove this part when using CSS
+
+   ========================================================================== */
+/* line 11, custom.scss */
+.demo-banner {
+  background-image: url(../img/demo/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* line 16, custom.scss */
+.demo-banner > .mx-layoutcontainer-wrapper {
+  background: rgba(41, 128, 185, 0.9);
+  padding: 0;
+}
+/* line 19, custom.scss */
+.demo-banner > .mx-layoutcontainer-wrapper table {
+  height: 200px;
+}
+/* line 22, custom.scss */
+.demo-banner > .mx-layoutcontainer-wrapper .demo-banner-text {
+  font-weight: 100;
+  color: #FFF;
+  text-align: center;
+  padding: 0 100px;
+}
+
+/* line 31, custom.scss */
+.layout-sidebar .demo-sidebar {
+  border-right: 1px solid #dddddd;
+  background-color: #eeeeee;
+}
+/* line 34, custom.scss */
+.layout-sidebar .demo-sidebar .mx-navigationtree {
+  background-color: #eeeeee;
+}
+/* line 37, custom.scss */
+.layout-sidebar .demo-sidebar .mx-navigationtree ul li a {
+  color: #2980b9;
+  border-color: #dddddd;
+}
+/* line 42, custom.scss */
+.layout-sidebar .demo-sidebar .mx-navigationtree ul li a:hover, .layout-sidebar .demo-sidebar .mx-navigationtree ul li a:focus {
+  background-color: #2980b9;
+  color: #FFF;
+}
+/* line 47, custom.scss */
+.layout-sidebar .demo-sidebar .mx-navigationtree ul li.mx-navigationtree-has-items > ul {
+  background-color: #eeeeee;
+}

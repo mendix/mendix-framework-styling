@@ -122,6 +122,13 @@
     cursor: not-allowed;
     pointer-events: none;
 }
+// Transparent
+.btn-transparent,
+.btn-transparent:hover,
+.btn-transparent:focus {
+    border-style: none;
+    background-color: transparent;
+}
 
 
 
@@ -154,7 +161,7 @@
     padding: 0;
     border-style: none;
     background-color: transparent;
-    vertical-align: middle; // Allignment for case: Buzz add: (icons)
+    vertical-align: middle; 
 
     img {
         height: auto; // Image set height
@@ -165,13 +172,7 @@
     &:focus {
         background-color: transparent;
     }
-
-    &.glyphicon:before, //bootstrap
-    &.glyphicons:before {
-        margin: 0;
-    }
 }
-
 
 
 
