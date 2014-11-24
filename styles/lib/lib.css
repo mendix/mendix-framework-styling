@@ -2022,21 +2022,25 @@ textarea.form-control, textarea.readonly-input {
 }
 /* line 36, components/_popups.scss */
 .modal-dialog .mx-dataview-controls {
+  padding: 20px;
   border-style: none;
   text-align: left;
 }
 /* line 47, components/_popups.scss */
-.modal-dialog .mx-page > .mx-dataview > .mx-dataview-content {
+.modal-dialog > .mx-dataview > .mx-dataview-content,
+.modal-dialog > .mx-placeholder > .mx-dataview > .mx-dataview-content {
   padding: 20px;
 }
 
-/* 	Default Login Modal
-   ========================================================================== */
 /* line 62, components/_popups.scss */
+.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-body,
+.mx-window-view .mx-window-body >
 .mx-login .modal-body {
   padding: 0 15px;
 }
 /* line 66, components/_popups.scss */
+.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-content input,
+.mx-window-view .mx-window-body >
 .mx-login .modal-content input {
   -webkit-box-shadow: 0;
   -moz-box-shadow: 0;
@@ -2048,19 +2052,29 @@ textarea.form-control, textarea.readonly-input {
   font-size: 16px;
 }
 /* line 74, components/_popups.scss */
+.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-content input:focus,
+.mx-window-view .mx-window-body >
 .mx-login .modal-content input:focus {
   border-color: #66afe9;
 }
 /* line 80, components/_popups.scss */
+.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-header,
+.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-footer,
+.mx-window-view .mx-window-body >
 .mx-login .modal-header,
+.mx-window-view .mx-window-body >
 .mx-login .modal-footer {
   border: 0;
 }
 /* line 83, components/_popups.scss */
+.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content button,
+.mx-window-view .mx-window-body >
 .mx-login button {
   font-size: 16px;
 }
 /* line 86, components/_popups.scss */
+.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content h4,
+.mx-window-view .mx-window-body >
 .mx-login h4 {
   color: #aaa;
   font-weight: bold;

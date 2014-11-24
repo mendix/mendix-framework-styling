@@ -34,7 +34,7 @@
 
 	// Dataview
 	.mx-dataview-controls {
-		//padding: 20px; <---- why? this breaks popups (Move story to different project)
+		padding: 20px;
 		//margin-top: 10px;
 		border-style: none;
 		text-align: left;
@@ -42,17 +42,17 @@
 
 
 	// Page in popup
-	.mx-page {
-		> .mx-dataview { 
-			> .mx-dataview-content {
-				padding: 20px;
-			}	
+	> .mx-dataview,
+	> .mx-placeholder > .mx-dataview { 
+		> .mx-dataview-content {
+			padding: 20px;
 		}
 	}
 }
 
 
-
+.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content, 
+.mx-window-view .mx-window-body > 
 
 
 
