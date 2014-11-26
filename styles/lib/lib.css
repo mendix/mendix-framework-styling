@@ -449,16 +449,9 @@ div[tabindex] {
   white-space: normal;
 }
 
-/*  Global Button Overrides
-   ========================================================================== */
-/* line 62, components/_buttons.scss */
-.btn-block + .btn-block {
-  margin-top: 0;
-}
-
 /*  Alternate button styles
    ========================================================================== */
-/* line 72, components/_buttons.scss */
+/* line 59, components/_buttons.scss */
 .btn-default {
   border-color: #dddddd;
   background-color: #dddddd;
@@ -491,7 +484,7 @@ div[tabindex] {
   color: #2c3e50;
 }
 
-/* line 75, components/_buttons.scss */
+/* line 62, components/_buttons.scss */
 .btn-primary {
   border-color: #2980b9;
   background-color: #2980b9;
@@ -524,7 +517,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 78, components/_buttons.scss */
+/* line 65, components/_buttons.scss */
 .btn-inverse {
   border-color: #2c3e50;
   background-color: #2c3e50;
@@ -556,13 +549,13 @@ div[tabindex] {
   border-color: #2c3e50;
   color: white;
 }
-/* line 84, components/_buttons.scss */
+/* line 71, components/_buttons.scss */
 .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .open > .btn-inverse.dropdown-toggle {
   background-color: #3e5771;
   border-color: #3e5771;
 }
 
-/* line 90, components/_buttons.scss */
+/* line 77, components/_buttons.scss */
 .btn-success {
   border-color: #27ae60;
   background-color: #27ae60;
@@ -595,7 +588,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 94, components/_buttons.scss */
+/* line 81, components/_buttons.scss */
 .btn-info {
   border-color: #52b3d9;
   background-color: #52b3d9;
@@ -628,7 +621,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 98, components/_buttons.scss */
+/* line 85, components/_buttons.scss */
 .btn-warning {
   border-color: #f39c12;
   background-color: #f39c12;
@@ -661,7 +654,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 102, components/_buttons.scss */
+/* line 89, components/_buttons.scss */
 .btn-danger {
   border-color: #c0392b;
   background-color: #c0392b;
@@ -694,7 +687,7 @@ div[tabindex] {
   color: white;
 }
 
-/* line 105, components/_buttons.scss */
+/* line 92, components/_buttons.scss */
 .btn-white {
   border-color: white;
   background-color: white;
@@ -727,19 +720,19 @@ div[tabindex] {
   color: #2c3e50;
 }
 
-/* line 109, components/_buttons.scss */
+/* line 96, components/_buttons.scss */
 .btn-link {
   border: 0;
   background-color: transparent;
   color: #2980b9;
 }
-/* line 114, components/_buttons.scss */
+/* line 101, components/_buttons.scss */
 .btn-link:hover {
   background-color: transparent;
   color: #1b557a;
 }
 
-/* line 120, components/_buttons.scss */
+/* line 107, components/_buttons.scss */
 .btn-disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -747,7 +740,7 @@ div[tabindex] {
   pointer-events: none;
 }
 
-/* line 128, components/_buttons.scss */
+/* line 115, components/_buttons.scss */
 .btn-transparent,
 .btn-transparent:hover,
 .btn-transparent:focus {
@@ -757,75 +750,88 @@ div[tabindex] {
 
 /*  Button sizes
    ========================================================================== */
-/* line 139, components/_buttons.scss */
+/* line 126, components/_buttons.scss */
 .btn-lg {
   font-size: 16px;
   padding: 8px 16px;
 }
-/* line 142, components/_buttons.scss */
+/* line 129, components/_buttons.scss */
 .btn-lg img {
   height: 16px;
 }
 
-/* line 146, components/_buttons.scss */
+/* line 133, components/_buttons.scss */
 .btn-sm {
   font-size: 10px;
   padding: 5px 10px;
 }
-/* line 149, components/_buttons.scss */
+/* line 136, components/_buttons.scss */
 .btn-sm img {
   height: 14px;
 }
 
 /*  Button sort
    ========================================================================== */
-/* line 160, components/_buttons.scss */
+/* line 147, components/_buttons.scss */
 .btn-image {
   padding: 0;
   border-style: none;
   background-color: transparent;
   vertical-align: middle;
 }
-/* line 166, components/_buttons.scss */
+/* line 153, components/_buttons.scss */
 .btn-image img {
   height: auto;
   display: block;
 }
-/* line 172, components/_buttons.scss */
+/* line 159, components/_buttons.scss */
 .btn-image:hover, .btn-image:focus {
   background-color: transparent;
 }
 
+/* line 163, components/_buttons.scss */
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 169, components/_buttons.scss */
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
 /*  Button positioning
    ========================================================================== */
-/* line 182, components/_buttons.scss */
+/* line 178, components/_buttons.scss */
 .btn-right {
   float: right;
 }
 
-/* line 185, components/_buttons.scss */
+/* line 181, components/_buttons.scss */
 .btn-left {
   float: left;
 }
 
 /*  Button attached
    ========================================================================== */
-/* line 195, components/_buttons.scss */
+/* line 191, components/_buttons.scss */
 .btn-attached-right {
   margin-left: 5px;
 }
 
-/* line 198, components/_buttons.scss */
+/* line 194, components/_buttons.scss */
 .btn-attached-left {
   margin-right: 5px;
 }
 
-/* line 201, components/_buttons.scss */
+/* line 197, components/_buttons.scss */
 .btn-attached-bottom {
   margin-top: 5px;
 }
 
-/* line 204, components/_buttons.scss */
+/* line 200, components/_buttons.scss */
 .btn-attached-top {
   margin-bottom: 5px;
 }

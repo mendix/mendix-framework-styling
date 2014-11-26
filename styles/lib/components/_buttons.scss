@@ -54,19 +54,6 @@
 
 
 
-
-
-/*  Global Button Overrides
-   ========================================================================== */
-// Overwrite bootstrap default margin-top for buttons that have btn-block class next to each other
-.btn-block+.btn-block {
-    margin-top: 0;
-}
-
-
-
-
-
 /*  Alternate button styles
    ========================================================================== */
 .btn-default {
@@ -172,6 +159,15 @@
     &:focus {
         background-color: transparent;
     }
+}
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+.btn-block + .btn-block {
+    margin-top: 5px;
 }
 
 
