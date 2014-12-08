@@ -64,6 +64,24 @@
 	}
 }
 
+.dijitCalendarMonthMenuPopup {
+	@include border-radius(3px);
+	padding: 3px 4px;
+	background-color: #26323D;
+	.dijitCalendarMonthMenu {
+		border-style: none;
+		background: none;
+		.dijitCalendarMonthLabel {
+			padding: 2px 0;
+			color: #FFF;
+			&:hover,
+			&:focus {
+				color: #4280cb;
+			}
+		}
+	}
+}
+
 .dj_rtl {
 	.dijitCalendarContainer {
 	 	.dijitCalendarMonthContainer {
@@ -179,6 +197,7 @@
 /*  Dropdown menu
     ========================================================================== */
 .dijitMenuPopup {
+	margin-top: 10px;
     .dijitMenu {
         @include border-radius(3px);
         display: block;
