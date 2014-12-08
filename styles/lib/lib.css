@@ -50,6 +50,11 @@ div[tabindex] {
   outline: 0;
 }
 
+/* line 44, base/_base.scss */
+label {
+  max-width: 100%;
+}
+
 /* ==========================================================================
 
    Dijit Widgets
@@ -139,7 +144,32 @@ div[tabindex] {
   border-top-right-radius: 3px;
 }
 
-/* line 72, components/_dijit-widgets.scss */
+/* line 67, components/_dijit-widgets.scss */
+.dijitCalendarMonthMenuPopup {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 3px 4px;
+  background-color: #26323D;
+}
+/* line 71, components/_dijit-widgets.scss */
+.dijitCalendarMonthMenuPopup .dijitCalendarMonthMenu {
+  border-style: none;
+  background: none;
+}
+/* line 74, components/_dijit-widgets.scss */
+.dijitCalendarMonthMenuPopup .dijitCalendarMonthMenu .dijitCalendarMonthLabel {
+  padding: 2px 0;
+  color: #FFF;
+}
+/* line 78, components/_dijit-widgets.scss */
+.dijitCalendarMonthMenuPopup .dijitCalendarMonthMenu .dijitCalendarMonthLabel:hover, .dijitCalendarMonthMenuPopup .dijitCalendarMonthMenu .dijitCalendarMonthLabel:focus {
+  color: #4280cb;
+}
+
+/* line 90, components/_dijit-widgets.scss */
 .dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:first-child {
   -moz-border-radius-topleft: 0px;
   -webkit-border-top-left-radius: 0px;
@@ -148,7 +178,7 @@ div[tabindex] {
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 76, components/_dijit-widgets.scss */
+/* line 94, components/_dijit-widgets.scss */
 .dj_rtl .dijitCalendarContainer .dijitCalendarMonthContainer th:last-child {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -160,7 +190,7 @@ div[tabindex] {
 
 /* Tooltip
 ========================================================================== */
-/* line 89, components/_dijit-widgets.scss */
+/* line 107, components/_dijit-widgets.scss */
 .mx-tooltip .dijitTooltipContainer {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -174,11 +204,11 @@ div[tabindex] {
   border-color: #26323D;
   background: #FFF;
 }
-/* line 97, components/_dijit-widgets.scss */
+/* line 115, components/_dijit-widgets.scss */
 .mx-tooltip .dijitTooltipContainer .mx-tooltip-content {
   padding: 5px;
 }
-/* line 102, components/_dijit-widgets.scss */
+/* line 120, components/_dijit-widgets.scss */
 .mx-tooltip .dijitTooltipConnector {
   margin-left: -10px;
   width: 0;
@@ -191,57 +221,57 @@ div[tabindex] {
 
 /* Split Container
 ========================================================================== */
-/* line 115, components/_dijit-widgets.scss */
+/* line 133, components/_dijit-widgets.scss */
 .dijitBorderContainer {
   padding: 5px;
   background-color: #fcfcfc;
 }
-/* line 120, components/_dijit-widgets.scss */
+/* line 138, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitSplitterV,
 .dijitBorderContainer .dijitGutterV {
   width: 5px;
   border: 0;
   background: #fcfcfc;
 }
-/* line 126, components/_dijit-widgets.scss */
+/* line 144, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitSplitterH,
 .dijitBorderContainer .dijitGutterH {
   height: 5px;
   border: 0;
   background: #fcfcfc;
 }
-/* line 132, components/_dijit-widgets.scss */
+/* line 150, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitSplitterH .dijitSplitterThumb {
   top: 2px;
   width: 19px;
   height: 1px;
   background: #B0B0B0;
 }
-/* line 140, components/_dijit-widgets.scss */
+/* line 158, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitSplitterV .dijitSplitterThumb {
   left: 2px;
   width: 1px;
   height: 19px;
   background: #B0B0B0;
 }
-/* line 148, components/_dijit-widgets.scss */
+/* line 166, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitSplitContainer-child,
 .dijitBorderContainer .dijitBorderContainer-child {
   border: 1px solid #ccc;
 }
-/* line 154, components/_dijit-widgets.scss */
+/* line 172, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitBorderContainer-dijitTabContainerTop,
 .dijitBorderContainer .dijitBorderContainer-dijitTabContainerBottom,
 .dijitBorderContainer .dijitBorderContainer-dijitTabContainerLeft,
 .dijitBorderContainer .dijitBorderContainer-dijitTabContainerRight {
   border: none;
 }
-/* line 157, components/_dijit-widgets.scss */
+/* line 175, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitBorderContainer-dijitBorderContainer {
   padding: 0;
   border: none;
 }
-/* line 161, components/_dijit-widgets.scss */
+/* line 179, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitSplitterActive {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -250,7 +280,7 @@ div[tabindex] {
   background-image: none;
   font-size: 1px;
 }
-/* line 170, components/_dijit-widgets.scss */
+/* line 188, components/_dijit-widgets.scss */
 .dijitBorderContainer .dijitSplitContainer-dijitContentPane,
 .dijitBorderContainer .dijitBorderContainer-dijitContentPane {
   padding: 5px;
@@ -259,7 +289,11 @@ div[tabindex] {
 
 /*  Dropdown menu
     ========================================================================== */
-/* line 182, components/_dijit-widgets.scss */
+/* line 199, components/_dijit-widgets.scss */
+.dijitMenuPopup {
+  margin-top: 10px;
+}
+/* line 201, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -272,7 +306,7 @@ div[tabindex] {
   background: #2c3e50;
   width: 200px !important;
 }
-/* line 190, components/_dijit-widgets.scss */
+/* line 209, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu:after {
   position: absolute;
   bottom: 100%;
@@ -286,11 +320,11 @@ div[tabindex] {
   content: " ";
   pointer-events: none;
 }
-/* line 205, components/_dijit-widgets.scss */
+/* line 224, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .dijitMenuItem {
   background: transparent;
 }
-/* line 207, components/_dijit-widgets.scss */
+/* line 226, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .dijitMenuItem .dijitMenuItemLabel {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -304,24 +338,24 @@ div[tabindex] {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 217, components/_dijit-widgets.scss */
+/* line 236, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .dijitMenuItem.dijitMenuItemHover {
   background: none;
 }
-/* line 219, components/_dijit-widgets.scss */
+/* line 238, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .dijitMenuItem.dijitMenuItemHover .dijitMenuItemLabel {
   background: #2980b9;
 }
-/* line 227, components/_dijit-widgets.scss */
+/* line 246, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .tg_newlabelmenuitem .dijitMenuItemLabel {
   font-weight: bold;
 }
-/* line 234, components/_dijit-widgets.scss */
+/* line 253, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .dijitMenuSeparator td {
   padding: 0;
   border-bottom-width: 3px;
 }
-/* line 239, components/_dijit-widgets.scss */
+/* line 258, components/_dijit-widgets.scss */
 .dijitMenuPopup .dijitMenu .dijitMenuSeparator .dijitMenuSeparatorIconCell > div {
   margin: 0;
 }
@@ -377,9 +411,9 @@ div[tabindex] {
   font-style: normal;
   font-weight: normal;
   vertical-align: middle;
-  margin-right: 0.750em;
+  margin-right: 0.500em;
+  margin-top: -0.2em;
   line-height: 1;
-  margin-top: -0.15em;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -1211,7 +1245,7 @@ div[tabindex] {
 
 /*  Alternate Groupboxes
    ========================================================================== */
-/* line 53, components/_groupbox.scss */
+/* line 50, components/_groupbox.scss */
 .mx-groupbox.groupbox-stylingless > .mx-groupbox-header {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1222,7 +1256,7 @@ div[tabindex] {
   border-style: none;
   background-color: transparent;
 }
-/* line 59, components/_groupbox.scss */
+/* line 56, components/_groupbox.scss */
 .mx-groupbox.groupbox-stylingless > .mx-groupbox-body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1233,7 +1267,7 @@ div[tabindex] {
   border-style: none;
   background-color: transparent;
 }
-/* line 69, components/_groupbox.scss */
+/* line 66, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-radius > .mx-groupbox-header {
   -webkit-border-radius: 3px 3px 0 0 !important;
   -moz-border-radius: 3px 3px 0 0 !important;
@@ -1241,7 +1275,7 @@ div[tabindex] {
   -o-border-radius: 3px 3px 0 0 !important;
   border-radius: 3px 3px 0 0 !important;
 }
-/* line 72, components/_groupbox.scss */
+/* line 69, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-radius > .mx-groupbox-body {
   -webkit-border-radius: 3px !important;
   -moz-border-radius: 3px !important;
@@ -1249,7 +1283,7 @@ div[tabindex] {
   -o-border-radius: 3px !important;
   border-radius: 3px !important;
 }
-/* line 75, components/_groupbox.scss */
+/* line 72, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-radius .mx-groupbox-header + .mx-groupbox-body {
   -webkit-border-radius: 0 0 3px 3px !important;
   -moz-border-radius: 0 0 3px 3px !important;
@@ -1257,49 +1291,49 @@ div[tabindex] {
   -o-border-radius: 0 0 3px 3px !important;
   border-radius: 0 0 3px 3px !important;
 }
-/* line 80, components/_groupbox.scss */
+/* line 77, components/_groupbox.scss */
 .mx-groupbox.groupbox-borderless > .mx-groupbox-body {
   border: 0 !important;
 }
-/* line 85, components/_groupbox.scss */
+/* line 82, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-top > .mx-groupbox-header {
   border-style: none;
   border-top-style: solid !important;
 }
-/* line 89, components/_groupbox.scss */
+/* line 86, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-top > .mx-groupbox-body {
   border-style: none;
   border-top-style: solid !important;
 }
-/* line 93, components/_groupbox.scss */
+/* line 90, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-top .mx-groupbox-header + .mx-groupbox-body {
   border-top-style: none !important;
 }
-/* line 98, components/_groupbox.scss */
+/* line 95, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-right > .mx-groupbox-header {
   border-style: none;
   border-right-style: solid !important;
 }
-/* line 102, components/_groupbox.scss */
+/* line 99, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-right > .mx-groupbox-body {
   border-style: none;
   border-right-style: solid !important;
 }
-/* line 108, components/_groupbox.scss */
+/* line 105, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-bottom > .mx-groupbox-header {
   border-style: none;
 }
-/* line 111, components/_groupbox.scss */
+/* line 108, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-bottom > .mx-groupbox-body {
   border-style: none;
   border-bottom-style: solid !important;
 }
-/* line 117, components/_groupbox.scss */
+/* line 114, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-left > .mx-groupbox-header {
   border-style: none;
   border-left-style: solid !important;
 }
-/* line 121, components/_groupbox.scss */
+/* line 118, components/_groupbox.scss */
 .mx-groupbox.groupbox-border-left > .mx-groupbox-body {
   border-style: none;
   border-left-style: solid !important;
@@ -1387,16 +1421,16 @@ div[tabindex] {
 .mx-groupbox.groupbox-white > .mx-groupbox-body {
   border-color: white;
 }
-/* line 165, components/_groupbox.scss */
+/* line 162, components/_groupbox.scss */
 .mx-groupbox.groupbox-transparent {
   background-color: transparent;
 }
-/* line 167, components/_groupbox.scss */
+/* line 164, components/_groupbox.scss */
 .mx-groupbox.groupbox-transparent > .mx-groupbox-header {
   border-style: none;
   background-color: transparent;
 }
-/* line 171, components/_groupbox.scss */
+/* line 168, components/_groupbox.scss */
 .mx-groupbox.groupbox-transparent > .mx-groupbox-body {
   border-style: none;
   background-color: transparent;
@@ -1404,62 +1438,62 @@ div[tabindex] {
 
 /*  Spacing Options
    ========================================================================== */
-/* line 187, components/_groupbox.scss */
+/* line 184, components/_groupbox.scss */
 .mx-groupbox.groupbox-sideless > .mx-groupbox-header {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 191, components/_groupbox.scss */
+/* line 188, components/_groupbox.scss */
 .mx-groupbox.groupbox-sideless > .mx-groupbox-body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 201, components/_groupbox.scss */
+/* line 198, components/_groupbox.scss */
 .mx-groupbox.groupbox-bodyless > .mx-groupbox-body {
   padding: 0;
 }
 
 /*  Groupboxe Headers
    ========================================================================== */
-/* line 212, components/_groupbox.scss */
+/* line 209, components/_groupbox.scss */
 .mx-groupbox.groupbox-h1 > .mx-groupbox-header {
   font-size: 31px;
 }
-/* line 213, components/_groupbox.scss */
+/* line 210, components/_groupbox.scss */
 .mx-groupbox.groupbox-h2 > .mx-groupbox-header {
   font-size: 25px;
 }
-/* line 214, components/_groupbox.scss */
+/* line 211, components/_groupbox.scss */
 .mx-groupbox.groupbox-h3 > .mx-groupbox-header {
   font-size: 21px;
 }
-/* line 215, components/_groupbox.scss */
+/* line 212, components/_groupbox.scss */
 .mx-groupbox.groupbox-h4 > .mx-groupbox-header {
   font-size: 15px;
 }
-/* line 216, components/_groupbox.scss */
+/* line 213, components/_groupbox.scss */
 .mx-groupbox.groupbox-h5 > .mx-groupbox-header {
   font-size: 12px;
 }
-/* line 217, components/_groupbox.scss */
+/* line 214, components/_groupbox.scss */
 .mx-groupbox.groupbox-h6 > .mx-groupbox-header {
   font-size: 11px;
 }
 
 /*  Groupboxe Callouts
    ========================================================================== */
-/* line 226, components/_groupbox.scss */
+/* line 223, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout {
   border-left-width: 3px;
   border-left-style: solid;
   border-left-color: transparent;
 }
-/* line 230, components/_groupbox.scss */
+/* line 227, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout > .mx-groupbox-header {
   border: 0;
   background: transparent;
 }
-/* line 234, components/_groupbox.scss */
+/* line 231, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout > .mx-groupbox-body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1469,43 +1503,43 @@ div[tabindex] {
   border: 0;
   background: transparent;
 }
-/* line 239, components/_groupbox.scss */
+/* line 236, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout .mx-groupbox-header + .mx-groupbox-body {
   padding-top: 0;
 }
-/* line 243, components/_groupbox.scss */
+/* line 240, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-info {
   border-left-color: #52b3d9;
   background-color: #cfeaf5;
 }
-/* line 246, components/_groupbox.scss */
+/* line 243, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-info > .mx-groupbox-header {
   color: #52b3d9;
 }
-/* line 250, components/_groupbox.scss */
+/* line 247, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-success {
   border-left-color: #27ae60;
   background-color: #9ee9be;
 }
-/* line 253, components/_groupbox.scss */
+/* line 250, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-success > .mx-groupbox-header {
   color: #27ae60;
 }
-/* line 257, components/_groupbox.scss */
+/* line 254, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-warning {
   border-left-color: #f39c12;
   background: #fce3bc;
 }
-/* line 260, components/_groupbox.scss */
+/* line 257, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-warning > .mx-groupbox-header {
   color: #f39c12;
 }
-/* line 264, components/_groupbox.scss */
+/* line 261, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-danger {
   border-left-color: #c0392b;
   background: #edb6b0;
 }
-/* line 267, components/_groupbox.scss */
+/* line 264, components/_groupbox.scss */
 .mx-groupbox.groupbox-callout-danger > .mx-groupbox-header {
   color: #c0392b;
 }
@@ -1632,20 +1666,20 @@ textarea.form-control, textarea.readonly-input {
 
 /*	List View Hover
    ========================================================================== */
-/* line 48, components/_listview.scss */
-.listview-hover.mx-listview .mx-listview-item:hover {
+/* line 49, components/_listview.scss */
+.listview-hover.mx-listview .mx-listview-item:hover, .listview-hover.mx-listview .mx-listview-item:active {
   background-color: #ffffd6 !important;
 }
 
 /*	List View Lined
    ========================================================================== */
-/* line 59, components/_listview.scss */
+/* line 60, components/_listview.scss */
 .listview-lined.mx-listview .mx-listview-item {
   border-top: 1px solid #dddddd;
   border-right: none;
   border-left: none;
 }
-/* line 64, components/_listview.scss */
+/* line 65, components/_listview.scss */
 .listview-lined.mx-listview .mx-listview-item:first-child {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1653,7 +1687,7 @@ textarea.form-control, textarea.readonly-input {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 67, components/_listview.scss */
+/* line 68, components/_listview.scss */
 .listview-lined.mx-listview .mx-listview-item:last-child {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1665,14 +1699,14 @@ textarea.form-control, textarea.readonly-input {
 
 /*	List View Striped
    ========================================================================== */
-/* line 79, components/_listview.scss */
+/* line 80, components/_listview.scss */
 .listview-striped.mx-listview .mx-listview-item:nth-child(2n+1) {
   background-color: #eaeaea;
 }
 
 /*	List View Seperated
    ========================================================================== */
-/* line 89, components/_listview.scss */
+/* line 90, components/_listview.scss */
 .listview-seperated.mx-listview .mx-listview-item {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1685,22 +1719,22 @@ textarea.form-control, textarea.readonly-input {
 
 /*	List View no styling
    ========================================================================== */
-/* line 101, components/_listview.scss */
+/* line 102, components/_listview.scss */
 .listview-stylingless.mx-listview .mx-listview-item {
   background-color: transparent;
   border: 0;
   padding: 0;
   cursor: default;
 }
-/* line 107, components/_listview.scss */
+/* line 108, components/_listview.scss */
 .listview-stylingless.mx-listview .mx-listview-item:hover {
   background-color: transparent;
 }
-/* line 110, components/_listview.scss */
+/* line 111, components/_listview.scss */
 .listview-stylingless.mx-listview .mx-listview-item.selected {
   background-color: transparent !important;
 }
-/* line 113, components/_listview.scss */
+/* line 114, components/_listview.scss */
 .listview-stylingless.mx-listview .mx-listview-item.selected:hover {
   background-color: transparent !important;
 }
@@ -1949,20 +1983,20 @@ textarea.form-control, textarea.readonly-input {
 
 /* Hover
    ========================================================================== */
-/* line 25, components/_navigationlist.scss */
-.navigationlist-hover.mx-navigationlist .mx-navigationlist-item:hover {
+/* line 26, components/_navigationlist.scss */
+.navigationlist-hover.mx-navigationlist .mx-navigationlist-item:hover, .navigationlist-hover.mx-navigationlist .mx-navigationlist-item:active {
   background-color: #ffffd6 !important;
 }
 
 /*	Lined
    ========================================================================== */
-/* line 36, components/_navigationlist.scss */
+/* line 37, components/_navigationlist.scss */
 .navigationlist-lined.mx-navigationlist .mx-navigationlist-item {
   border-top: 1px solid #dddddd;
   border-right: none;
   border-left: none;
 }
-/* line 41, components/_navigationlist.scss */
+/* line 42, components/_navigationlist.scss */
 .navigationlist-lined.mx-navigationlist .mx-navigationlist-item:first-child {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1970,7 +2004,7 @@ textarea.form-control, textarea.readonly-input {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 44, components/_navigationlist.scss */
+/* line 45, components/_navigationlist.scss */
 .navigationlist-lined.mx-navigationlist .mx-navigationlist-item:last-child {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1985,7 +2019,11 @@ textarea.form-control, textarea.readonly-input {
    Popups
 
    ========================================================================== */
-/* line 8, components/_popups.scss */
+/* line 7, components/_popups.scss */
+.modal-dialog {
+  z-index: 10000 !important;
+}
+/* line 9, components/_popups.scss */
 .modal-dialog .modal-content {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1996,58 +2034,70 @@ textarea.form-control, textarea.readonly-input {
   -o-border-radius: 0;
   border-radius: 0;
   border-style: none;
+  border: 1px solid #dddddd;
 }
-/* line 12, components/_popups.scss */
+/* line 15, components/_popups.scss */
 .modal-dialog .modal-content .modal-header {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  padding: 20px;
+  padding: 15px 20px;
   background-color: #2980b9;
 }
-/* line 16, components/_popups.scss */
+/* line 19, components/_popups.scss */
 .modal-dialog .modal-content .modal-header h4 {
   font-weight: bold;
   color: white;
   font-size: 18px;
 }
-/* line 21, components/_popups.scss */
+/* line 24, components/_popups.scss */
 .modal-dialog .modal-content .modal-header .close {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   color: white;
   text-shadow: none;
 }
-/* line 27, components/_popups.scss */
+/* line 30, components/_popups.scss */
+.modal-dialog .modal-content .modal-body {
+  padding: 20px;
+}
+/* line 33, components/_popups.scss */
 .modal-dialog .modal-content .modal-footer {
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 0;
   border-style: none;
   text-align: left;
-}
-/* line 36, components/_popups.scss */
-.modal-dialog .mx-dataview-controls {
-  padding: 20px;
-  border-style: none;
-  text-align: left;
-}
-/* line 47, components/_popups.scss */
-.modal-dialog > .mx-dataview > .mx-dataview-content,
-.modal-dialog > .mx-placeholder > .mx-dataview > .mx-dataview-content {
-  padding: 20px;
 }
 
-/* line 62, components/_popups.scss */
-.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-body,
-.mx-window-view .mx-window-body >
+/* 	Popups
+   ========================================================================== */
+/* line 50, components/_popups.scss */
+.mx-window.mx-window-view .mx-window-body {
+  padding: 0;
+}
+/* line 55, components/_popups.scss */
+.mx-window.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content,
+.mx-window.mx-window-view .mx-window-body > .mx-placeholder > .mx-dataview > .mx-dataview-content {
+  padding: 20px;
+}
+/* line 59, components/_popups.scss */
+.mx-window.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-controls,
+.mx-window.mx-window-view .mx-window-body > .mx-placeholder > .mx-dataview > .mx-dataview-controls {
+  padding: 20px;
+  border-style: none;
+  text-align: left;
+  margin: 0;
+}
+
+/* 	Default Login Modal
+   ========================================================================== */
+/* line 73, components/_popups.scss */
 .mx-login .modal-body {
   padding: 0 15px;
 }
-/* line 66, components/_popups.scss */
-.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-content input,
-.mx-window-view .mx-window-body >
+/* line 77, components/_popups.scss */
 .mx-login .modal-content input {
   -webkit-box-shadow: 0;
   -moz-box-shadow: 0;
@@ -2058,30 +2108,20 @@ textarea.form-control, textarea.readonly-input {
   background: #eee;
   font-size: 16px;
 }
-/* line 74, components/_popups.scss */
-.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-content input:focus,
-.mx-window-view .mx-window-body >
+/* line 85, components/_popups.scss */
 .mx-login .modal-content input:focus {
   border-color: #66afe9;
 }
-/* line 80, components/_popups.scss */
-.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-header,
-.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content .modal-footer,
-.mx-window-view .mx-window-body >
+/* line 91, components/_popups.scss */
 .mx-login .modal-header,
-.mx-window-view .mx-window-body >
 .mx-login .modal-footer {
   border: 0;
 }
-/* line 83, components/_popups.scss */
-.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content button,
-.mx-window-view .mx-window-body >
+/* line 94, components/_popups.scss */
 .mx-login button {
   font-size: 16px;
 }
-/* line 86, components/_popups.scss */
-.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content h4,
-.mx-window-view .mx-window-body >
+/* line 97, components/_popups.scss */
 .mx-login h4 {
   color: #aaa;
   font-weight: bold;
@@ -2720,15 +2760,8 @@ table.table-fixed {
 	Images
    
    ========================================================================== */
-/* line 6, components/_images.scss */
-.img-rounded {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
-}
-/* line 8, components/_images.scss */
+/* line 7, components/_images.scss */
+img.img-rounded,
 .img-rounded img {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -2737,34 +2770,8 @@ table.table-fixed {
   border-radius: 6px;
 }
 
-/* line 12, components/_images.scss */
-.img-thumbnail {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 2s;
-  -moz-transition-duration: 2s;
-  -o-transition-duration: 2s;
-  transition-duration: 2s;
-  display: inline-block;
-  height: auto;
-  max-width: 100%;
-  padding: 4px;
-  line-height: 1.5;
-  background-color: #fff;
-  border: 1px solid #dddddd;
-}
-/* line 24, components/_images.scss */
+/* line 11, components/_images.scss */
+img.img-thumbnail,
 .img-thumbnail img {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2792,21 +2799,23 @@ table.table-fixed {
   border: 1px solid #dddddd;
 }
 
-/* line 38, components/_images.scss */
-.img-circle {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-/* line 40, components/_images.scss */
+/* line 25, components/_images.scss */
+img.img-circle,
 .img-circle img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+}
+
+/* line 29, components/_images.scss */
+img.img-auto,
+.img-auto img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
 }
 
 /* ==========================================================================
