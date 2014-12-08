@@ -22,7 +22,8 @@
    ========================================================================== */
 .navigationlist-hover.mx-navigationlist {
 	.mx-navigationlist-item {
-		&:hover {
+		&:hover,
+		&:active {
 			background-color: $color-grid-bg-hover !important;
 		}
 	}
