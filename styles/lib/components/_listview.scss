@@ -45,7 +45,8 @@
    ========================================================================== */
 .listview-hover.mx-listview {
 	.mx-listview-item {
-		&:hover {
+		&:hover,
+		&:active {
 			background-color: $color-grid-bg-hover !important;
 		}
 	}
