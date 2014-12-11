@@ -8,6 +8,7 @@
 /* Calendar
 ========================================================================== */
 .dijitCalendarContainer {
+	z-index: 10010 !important; //(must be higher than popup z-index)
 	background-color: #eff0f2;
 
 	tr {
