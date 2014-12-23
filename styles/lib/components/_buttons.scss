@@ -14,7 +14,7 @@
     @include transition-duration(0.2s);
     @include transition-timing-function(ease-in-out);
     @include box-shadow(none);
-    padding: round(0.5 * $font-size-base) round(1 * $font-size-base);
+    padding: round(0.6 * $font-size-base) round(1 * $font-size-base);
     //padding: 0.5em 1em;
     background-color: $color-btn-bg-default;
     color: $color-btn-text-default;
@@ -125,14 +125,14 @@
    ========================================================================== */
 .btn-lg {
     font-size: $font-size-large;
-    padding: round(0.5 * $font-size-large) round(1 * $font-size-large);  // only for buttons
+    padding: round(0.6 * $font-size-large) round(1 * $font-size-large);  // only for buttons
     img {
         height: $font-size-base + 4px;
     }
 }
 .btn-sm {
     font-size: $font-size-small;
-    padding: round(0.5 * $font-size-small) round(1 * $font-size-small); 
+    padding: round(0.6 * $font-size-small) round(1 * $font-size-small); 
     img {
         height: $font-size-small + 4px;
     }
