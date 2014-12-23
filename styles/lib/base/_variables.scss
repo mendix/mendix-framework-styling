@@ -53,15 +53,47 @@ $base-color:							$color-midnightblue !default;
 
 // Colors
 $color-default: 						$gray-primary !default;	
-$color-inverse: 						$color-midnightblue !default;	
-$color-primary: 						$color-belizehole  !default;	
-$color-info: 							$color-shakespeare !default;
-$color-success: 						$color-nephritis !default;	
-$color-warning: 						$color-orange !default;
-$color-danger: 							$color-pomegranate !default;	
+$color-inverse: 						#3a3f51 !default;//$color-midnightblue !default; 
+$color-primary: 						#4280cb !default;//#4280cb;//$color-belizehole  !default; 	
+$color-info: 							#48B0F7 !default;//#23b7e5;//$color-shakespeare !default;
+$color-success: 						#10CFBD !default;//#27c24c;//$color-nephritis !default;	
+$color-warning: 						#F8D053 !default;//#fad733;//$color-orange !default;
+$color-danger: 							#F55753 !default;//#f05050;//$color-pomegranate !default;	
 
+$color-default-darker: 					shade($color-default,40) !default;	
+$color-default-dark: 					shade($color-default,26) !default;	
+$color-default-light: 					tint($color-default,40) !default;	
+$color-default-lighter: 				tint($color-default,80) !default;	
 
+$color-inverse-darker: 					shade($color-inverse,40) !default;	
+$color-inverse-dark: 					shade($color-inverse,26) !default;	
+$color-inverse-light: 					tint($color-inverse,40) !default;	
+$color-inverse-lighter: 				tint($color-inverse,80) !default;	
 
+$color-primary-darker: 					shade($color-primary,40) !default;	
+$color-primary-dark: 					shade($color-primary,26) !default;	
+$color-primary-light: 					tint($color-primary,40) !default;	
+$color-primary-lighter: 				tint($color-primary,80) !default;	
+
+$color-info-darker: 					shade($color-info,40) !default;	
+$color-info-dark: 						shade($color-info,26) !default;	
+$color-info-light: 						tint($color-info,40) !default;	
+$color-info-lighter: 					tint($color-info,80) !default;	
+
+$color-success-darker: 					shade($color-success,40) !default;	
+$color-success-dark: 					shade($color-success,26) !default;	
+$color-success-light: 					tint($color-success,40) !default;	
+$color-success-lighter: 				tint($color-success,80) !default;	
+
+$color-warning-darker: 					shade($color-warning,40) !default;	
+$color-warning-dark: 					shade($color-warning,26) !default;	
+$color-warning-light: 					tint($color-warning,40) !default;	
+$color-warning-lighter: 				tint($color-warning,80) !default;	
+
+$color-danger-darker: 					shade($color-danger,40) !default;	
+$color-danger-dark: 					shade($color-danger,26) !default;	
+$color-danger-light: 					tint($color-danger,40) !default;	
+$color-danger-lighter: 					tint($color-danger,80) !default;	
 
 
 //   Layout Colors
@@ -78,22 +110,22 @@ $color-topbar-bg: 						$color-inverse !default;
 //   Alert
 ///////////////////////////////////////////////////////////////////////////////////////
 // Backgrounds
-$color-alert-bg-info: 					lighten($color-info, 30) !default; 
-$color-alert-bg-success: 				lighten($color-success, 35) !default;
-$color-alert-bg-warning: 				lighten($color-warning, 35) !default;
-$color-alert-bg-danger: 				lighten($color-danger, 35) !default;
+$color-alert-bg-info: 					$color-info-lighter !default;
+$color-alert-bg-success: 				$color-success-lighter !default;
+$color-alert-bg-warning: 				$color-warning-lighter !default;
+$color-alert-bg-danger: 				$color-danger-lighter !default;
 
 // Text
-$color-alert-text-info: 				$color-info !default;
-$color-alert-text-success: 				$color-success !default;
-$color-alert-text-warning: 				$color-warning !default;
-$color-alert-text-danger: 				$color-danger !default;
+$color-alert-text-info: 				$color-info-darker !default;
+$color-alert-text-success: 				$color-success-darker !default;
+$color-alert-text-warning: 				$color-warning-darker !default;
+$color-alert-text-danger: 				$color-danger-darker !default;
 
 // Border
-$color-alert-border-info: 				lighten($color-info, 30) !default; 
-$color-alert-border-success: 			lighten($color-success, 35) !default;
-$color-alert-border-warning: 			lighten($color-warning, 35) !default;
-$color-alert-border-danger: 			lighten($color-danger, 35) !default;
+$color-alert-border-info: 				$color-info-dark !default;
+$color-alert-border-success: 			$color-success-dark !default;
+$color-alert-border-warning: 			$color-warning-dark !default;
+$color-alert-border-danger: 			$color-danger-dark !default;
 
 
 
@@ -167,9 +199,9 @@ $color-grid-border: 					$gray-primary !default;
 // Background 
 $color-grid-bg:							#FFF !default;
 $color-grid-bg-header:					transparent !default; // Grid Headers
-$color-grid-bg-hover: 					#FFFFD6 !default;
-$color-grid-bg-selected: 				#F9F9D1 !default;	
-$color-grid-bg-selected-hover: 			darken($color-grid-bg-selected, 2) !default;
+$color-grid-bg-hover: 					$color-warning-lighter !default;//#FFFFD6 !default;
+$color-grid-bg-selected: 				$color-warning-lighter !default;//#F9F9D1 !default;	
+$color-grid-bg-selected-hover: 			shade($color-warning-lighter,3) !default;
 $color-grid-text-selected:				$base-color !default;
 
 // Striped 
@@ -214,10 +246,10 @@ $color-callout-warning:					$color-warning !default;
 $color-callout-danger:					$color-danger !default;
 
 // Background
-$color-callout-bg-info:					lighten($color-info, 30) !default; 
-$color-callout-bg-success:				lighten($color-success, 35) !default; 
-$color-callout-bg-warning:				lighten($color-warning, 35) !default; 
-$color-callout-bg-danger:				lighten($color-danger, 35) !default;
+$color-callout-bg-info:					$color-info-lighter !default; 
+$color-callout-bg-success:				$color-success-lighter !default; 
+$color-callout-bg-warning:				$color-warning-lighter !default; 
+$color-callout-bg-danger:				$color-danger-lighter !default;
 
 
 
@@ -352,6 +384,8 @@ $font-weight-normal:					normal !default; // 400
 $font-weight-semibold:					500 !default;
 $font-weight-bold:						bold !default; //600
 
+$font-weight-headers:					$font-weight-semibold !default;
+
 // Font size
 $font-size-base:        				12px !default;
 $font-size-large:       				16px !default;
@@ -366,7 +400,7 @@ $font-size-h5:          				$font-size-base !default; // ~12px
 $font-size-h6:          				ceil(($font-size-base * 0.85)) !default; // ~11px
 
 // Line height
-$line-height-base:      				1.5;//20 / 12 !default; // 12 is font-size-base
+$line-height-base:      				1.428571429 !default;
 
 
 
