@@ -221,46 +221,53 @@
    ========================================================================== */
 .mx-groupbox {	
 	&.groupbox-callout {
-		border-left-width: 3px;
-		border-left-style: solid;
-		border-left-color: transparent;
-		> .mx-groupbox-header {
-			border: 0;
-			background: transparent;
-		}
+		> .mx-groupbox-header, 
 		> .mx-groupbox-body {
-	    	@include border-radius(0);
 	    	border: 0;
-	    	background: transparent;
+	    	//border-left-width: 3px;
+			//border-left-style: solid;
+			//border-left-color: transparent;
 	  	}
 	  	.mx-groupbox-header + .mx-groupbox-body {
 	  		padding-top: 0;
 	  	}
 	}
 	&.groupbox-callout-info {
-		border-left-color: $color-callout-info;
-		background-color: $color-callout-bg-info;
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+			//border-left-color: $color-callout-info;
+			background-color: $color-callout-bg-info;
+		}
 		> .mx-groupbox-header {
 			color: $color-callout-info;
 		}
 	}
 	&.groupbox-callout-success {
-		border-left-color: $color-callout-success;
-		background-color: $color-callout-bg-success;
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+			//border-left-color: $color-callout-success;
+			background-color: $color-callout-bg-success;
+		}
 		> .mx-groupbox-header {
 			color: $color-callout-success;
 		}
 	}
 	&.groupbox-callout-warning {
-		border-left-color: $color-callout-warning;
-		background: $color-callout-bg-warning;
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+			//border-left-color: $color-callout-warning;
+			background-color: $color-callout-bg-warning;
+		}
 		> .mx-groupbox-header {
-			color: $color-groupbox-warning;
+			color: $color-callout-warning;
 		}
 	}
 	&.groupbox-callout-danger {
-		border-left-color: $color-callout-danger;
-		background: $color-callout-bg-danger;
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+			//border-left-color: $color-callout-danger;
+			background-color: $color-callout-bg-danger;
+		}
 		> .mx-groupbox-header {
 			color: $color-callout-danger;
 		}
