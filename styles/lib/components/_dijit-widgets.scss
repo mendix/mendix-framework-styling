@@ -67,6 +67,7 @@
 
 .dijitCalendarMonthMenuPopup {
 	@include border-radius(3px);
+	z-index: 10020 !important; //(must be higher than popup z-index)
 	padding: 3px 4px;
 	background-color: #26323D;
 	.dijitCalendarMonthMenu {
