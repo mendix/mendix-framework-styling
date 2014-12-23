@@ -13,7 +13,7 @@ label {
 
 // Headers
 .mx-title {
-	@include font(semibold);
+	font-weight: $font-weight-headers;
 	color: $color-header;
 	font-size: $font-size-h1;
 }
@@ -27,7 +27,7 @@ h6, .h6, .h6 > * { font-size: $font-size-h6; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	//@include font(semibold);
+	font-weight: $font-weight-headers;
 	color: $color-header;
 	margin: 0;
 	line-height: 1.3;
