@@ -1,0 +1,12 @@
+// INDEX OF SLIDING ENTRANCES
+
+@import
+  "_slideInDown",
+  "_slideInLeft",
+  "_slideInRight",
+  "_slideInUp";
+
+.slideInDown { @include slideInDown(); }
+.slideInLeft { @include slideInLeft(); }
+.slideInRight { @include slideInRight(); }
+.slideInUp { @include slideInUp(); }

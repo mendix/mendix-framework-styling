@@ -1,0 +1,14 @@
+// INDEX OF BOUNCING EXITS
+
+@import 
+  "_bounceOut",
+  "_bounceOutDown",
+  "_bounceOutLeft",
+  "_bounceOutRight",
+  "_bounceOutUp";
+  
+.bounceOut { @include bounceOut() }
+.bounceOutDown { @include bounceOutDown() }
+.bounceOutLeft { @include bounceOutLeft() }
+.bounceOutRight { @include bounceOutRight() }
+.bounceOutUp { @include bounceOutUp() }

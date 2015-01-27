@@ -1,0 +1,14 @@
+// INDEX OF BOUNCING ENTRANCES
+
+@import
+  "_bounceIn",
+  "_bounceInDown",
+  "_bounceInLeft",
+  "_bounceInRight",
+  "_bounceInUp";
+
+.bounceIn { @include bounceIn() }
+.bounceInDown { @include bounceInDown() }
+.bounceInLeft { @include bounceInLeft() }
+.bounceInRight { @include bounceInRight() }
+.bounceInUp { @include bounceInUp() }

@@ -1,0 +1,14 @@
+// INDEX OF ROTATING ENTRANCES
+
+@import 
+  "_rotateIn",
+  "_rotateInDownLeft",
+  "_rotateInDownRight",
+  "_rotateInUpLeft",
+  "_rotateInUpRight";
+
+.rotateIn { @include rotateIn(); }
+.rotateInDownLeft { @include rotateInDownLeft(); }
+.rotateInDownRight { @include rotateInDownRight(); }
+.rotateInUpLeft { @include rotateInUpLeft(); }
+.rotateInUpRight { @include rotateInUpLeft(); }

@@ -1,0 +1,14 @@
+// INDEX OF ZOOMING EXITS
+
+@import
+  "_zoomOut",
+  "_zoomOutDown",
+  "_zoomOutLeft",
+  "_zoomOutRight",
+  "_zoomOutUp";
+
+.zoomOut { @include zoomOut(); }
+.zoomOutDown { @include zoomOutDown(); }
+.zoomOutLeft { @include zoomOutLeft(); }
+.zoomOutRight { @include zoomOutRight(); }
+.zoomOutUp { @include zoomOutUp(); }

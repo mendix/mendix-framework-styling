@@ -1,0 +1,20 @@
+// INDEX OF ATTENTION SEEKERS
+
+@import 
+  "_bounce",
+  "_flash",
+  "_pulse",
+  "_rubberBand",
+  "_shake",
+  "_swing",
+  "_tada",
+  "_wobble"; 
+
+.bounce { @include bounce() }
+.flash { @include flash() }
+.pulse { @include pulse() }
+.rubberBand { @include rubberBand() }
+.shake { @include shake() }
+.swing { @include swing() }
+.tada { @include tada() }
+.wobble { @include wobble() }

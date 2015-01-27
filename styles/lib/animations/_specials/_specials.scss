@@ -1,0 +1,10 @@
+// INDEX OF SPECIAL ANIMATIONS
+
+@import 
+  "_hinge",
+  "_rollIn",
+  "_rollOut";
+
+.hinge { @include hinge(); }
+.rollIn { @include rollIn(); }
+.rollOut { @include rollOut(); }

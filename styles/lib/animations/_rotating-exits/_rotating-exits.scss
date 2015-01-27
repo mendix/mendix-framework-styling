@@ -1,0 +1,14 @@
+// INDEX OF ROTATING EXITS
+
+@import 
+  "_rotateOut",
+  "_rotateOutDownLeft",
+  "_rotateOutDownRight",
+  "_rotateOutUpLeft",
+  "_rotateOutUpRight";
+
+.rotateOut { @include rotateOut(); }
+.rotateOutDownLeft { @include rotateOutDownLeft(); }
+.rotateOutDownRight { @include rotateOutDownRight(); }
+.rotateOutUpLeft { @include rotateOutUpLeft(); }
+.rotateOutUpRight { @include rotateOutUpLeft(); }

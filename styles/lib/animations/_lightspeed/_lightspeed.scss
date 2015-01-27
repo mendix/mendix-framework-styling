@@ -1,0 +1,8 @@
+// INDEX OF LIGHTSPEED ANIMATIONS
+
+@import 
+  "_lightSpeedIn",
+  "_lightSpeedOut";
+
+.lightSpeedIn { @include lightSpeedIn(); }
+.lightSpeedOut { @include lightSpeedOut(); }

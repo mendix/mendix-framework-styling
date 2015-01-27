@@ -1,0 +1,22 @@
+// INDEX OF FADING ENTRANCES
+
+@import 
+  "_fadeOut",
+  "_fadeOutDown",
+  "_fadeOutDownBig",
+  "_fadeOutLeft",
+  "_fadeOutLeftBig",
+  "_fadeOutRight",
+  "_fadeOutRightBig",
+  "_fadeOutUp",
+  "_fadeOutUpBig";
+
+.fadeOut { @include fadeOut(); }
+.fadeOutDown { @include fadeOutDown(); }
+.fadeOutDownBig { @include fadeOutDownBig(); }
+.fadeOutLeft { @include fadeOutLeft(); }
+.fadeOutLeftBig { @include fadeOutLeftBig(); }
+.fadeOutRight { @include fadeOutRight(); }
+.fadeOutRightBig { @include fadeOutRightBig(); }
+.fadeOutUp { @include fadeOutUp(); }
+.fadeOutUpBig { @include fadeOutUpBig(); }
