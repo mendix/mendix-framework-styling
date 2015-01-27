@@ -39,12 +39,12 @@
 }
 /* line 37, custom.scss */
 .layout-sidebar .demo-sidebar .mx-navigationtree ul li a {
-  color: #2980b9;
+  color: #4280cb;
   border-color: #dddddd;
 }
 /* line 42, custom.scss */
 .layout-sidebar .demo-sidebar .mx-navigationtree ul li a:hover, .layout-sidebar .demo-sidebar .mx-navigationtree ul li a:focus {
-  background-color: #2980b9;
+  background-color: #4280cb;
   color: #FFF;
 }
 /* line 47, custom.scss */
