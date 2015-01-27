@@ -107,6 +107,7 @@
 
 		li {
 			padding: 0;
+			border-style: none;
 
 			a {
 				@include font(normal);
@@ -118,6 +119,7 @@
 				text-shadow: none;
 				font-size: 13px;
 				vertical-align: bottom;
+				background-color: transparent;
 
 				.caret {
 					border-top-color: $color-nav-text;
