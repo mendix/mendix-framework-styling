@@ -443,6 +443,7 @@ textarea.form-control, textarea.readonly-input { height: auto; }
 .mx-navigationtree .navbar-inner ul li a .caret { border-top-color: #bbc0cf; border-bottom-color: #bbc0cf; }
 .mx-navigationtree .navbar-inner ul li a img { margin-right: 4px; width: 20px; height: auto; }
 .mx-navigationtree .navbar-inner ul li a:hover, .mx-navigationtree .navbar-inner ul li a:focus { background-color: #43485d; color: white; text-decoration: none; }
+.mx-navigationtree .navbar-inner ul li a.active { color: white; text-decoration: none; }
 .mx-navigationtree .navbar-inner ul li a:hover .caret, .mx-navigationtree .navbar-inner ul li a:focus .caret { border-top-color: white; border-bottom-color: white; }
 .mx-navigationtree li.mx-navigationtree-has-items > ul { margin: 0; padding-left: 0; background-color: #313645; }
 .mx-navigationtree li.mx-navigationtree-has-items > ul li { margin: 0; padding: 0; }

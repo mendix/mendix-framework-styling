@@ -135,7 +135,7 @@
 			}
 
 			a:hover,
-			a:focus {
+			a:focus{
 				background-color: $color-nav-bg-hover;
 				color: $color-nav-text-active;
 				text-decoration: none;
@@ -145,6 +145,11 @@
 					border-bottom-color: $color-nav-text-active;
 				}
 			}
+            
+            a.active{
+				color: $color-nav-text-active;
+				text-decoration: none;
+            }
 		}
 	}
 
