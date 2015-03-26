@@ -308,6 +308,7 @@ $color-label-border-danger: 			$color-danger !default;
 /////////////////////////////////////////////////////////////////////////////////////
 $color-nav-bg: 							$color-inverse !default;
 $color-nav-bg-hover:					lighten($color-nav-bg, 4) !default;
+$color-nav-bg-active:					lighten($color-nav-bg, 8) !default;
 $color-nav-sub-bg: 						darken($color-nav-bg, 4) !default;
 $color-nav-text:						lighten($color-nav-bg, 50) !default;
 $color-nav-text-active:					#FFF !default;
