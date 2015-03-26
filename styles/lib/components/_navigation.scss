@@ -135,7 +135,8 @@
 			}
 
 			a:hover,
-			a:focus {
+			a:focus,
+			a.active {
 				background-color: $color-nav-bg-hover;
 				color: $color-nav-text-active;
 				text-decoration: none;
@@ -145,6 +146,10 @@
 					border-bottom-color: $color-nav-text-active;
 				}
 			}
+
+            a.active {
+				background-color: $color-nav-bg-active;
+            }
 		}
 	}
 
@@ -164,7 +169,9 @@
 					border: 0;
 					background-color: transparent;
 
-					&:hover {
+					&:hover,
+					&:focus,
+					&.active {
 						background-color: transparent;
 						color: $color-nav-text-active;
 					}
