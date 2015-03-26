@@ -9,6 +9,8 @@
 
    ========================================================================== */
 .demo-banner {
+	display: table;
+	width: 100%;
 	background-image: url(../img/demo/banner.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -16,9 +18,10 @@
 	> .mx-layoutcontainer-wrapper {
 		background: rgba(41, 128, 185, 0.9);
 		padding: 0;
-		table {
-			height: 200px;
-		}
+		height: 200px;
+		display: table-cell;
+		vertical-align: middle;
+
 		.demo-banner-text {
 			@include font(light);
 			color: #FFF;

@@ -6,48 +6,41 @@
    ========================================================================== */
 /* line 11, custom.scss */
 .demo-banner {
+  display: table;
+  width: 100%;
   background-image: url(../img/demo/banner.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-}
-/* line 16, custom.scss */
-.demo-banner > .mx-layoutcontainer-wrapper {
-  background: rgba(41, 128, 185, 0.9);
-  padding: 0;
-}
-/* line 19, custom.scss */
-.demo-banner > .mx-layoutcontainer-wrapper table {
-  height: 200px;
-}
-/* line 22, custom.scss */
-.demo-banner > .mx-layoutcontainer-wrapper .demo-banner-text {
-  font-weight: 100;
-  color: #FFF;
-  text-align: center;
-  padding: 0 100px;
-}
+  background-size: cover; }
+  /* line 18, custom.scss */
+  .demo-banner > .mx-layoutcontainer-wrapper {
+    background: rgba(41, 128, 185, 0.9);
+    padding: 0;
+    height: 200px;
+    display: table-cell;
+    vertical-align: middle; }
+    /* line 25, custom.scss */
+    .demo-banner > .mx-layoutcontainer-wrapper .demo-banner-text {
+      font-weight: 100;
+      color: #FFF;
+      text-align: center;
+      padding: 0 100px; }
 
-/* line 31, custom.scss */
+/* line 34, custom.scss */
 .layout-sidebar .demo-sidebar {
   border-right: 1px solid #dddddd;
-  background-color: #eeeeee;
-}
-/* line 34, custom.scss */
-.layout-sidebar .demo-sidebar .mx-navigationtree {
-  background-color: #eeeeee;
-}
-/* line 37, custom.scss */
-.layout-sidebar .demo-sidebar .mx-navigationtree ul li a {
-  color: #4280cb;
-  border-color: #dddddd;
-}
-/* line 42, custom.scss */
-.layout-sidebar .demo-sidebar .mx-navigationtree ul li a:hover, .layout-sidebar .demo-sidebar .mx-navigationtree ul li a:focus {
-  background-color: #4280cb;
-  color: #FFF;
-}
-/* line 47, custom.scss */
-.layout-sidebar .demo-sidebar .mx-navigationtree ul li.mx-navigationtree-has-items > ul {
-  background-color: #eeeeee;
-}
+  background-color: #eeeeee; }
+  /* line 37, custom.scss */
+  .layout-sidebar .demo-sidebar .mx-navigationtree {
+    background-color: #eeeeee; }
+    /* line 40, custom.scss */
+    .layout-sidebar .demo-sidebar .mx-navigationtree ul li a {
+      color: #4280cb;
+      border-color: #dddddd; }
+      /* line 45, custom.scss */
+      .layout-sidebar .demo-sidebar .mx-navigationtree ul li a:hover, .layout-sidebar .demo-sidebar .mx-navigationtree ul li a:focus {
+        background-color: #4280cb;
+        color: #FFF; }
+    /* line 50, custom.scss */
+    .layout-sidebar .demo-sidebar .mx-navigationtree ul li.mx-navigationtree-has-items > ul {
+      background-color: #eeeeee; }
