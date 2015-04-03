@@ -37,14 +37,14 @@
             left: 50%;
             margin-left: ($width - $width - $width);
             border-width: $height $width;
-            border-top-color: $bg-color;
+            border-bottom-color: $bg-color;
         }
         
         &:before {
             left: 50%;
             margin-left: ($width - $width - $width - $arrow-border-width);
             border-width: $height + 1 $width + $arrow-border-width;
-            border-top-color: $arrow-color;
+            border-bottom-color: $arrow-color;
         }
     } 
 
