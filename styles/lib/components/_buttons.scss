@@ -9,13 +9,31 @@
    ========================================================================== */
 .btn,
 .mx-button {
+
+    /* MXID / Bootstrap values for when used in non-mendix apps */
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    /* */
+
     @include border-radius(4px);
     @include transition-property(all);
     @include transition-duration(0.2s);
     @include transition-timing-function(ease-in-out);
     @include box-shadow(none);
     padding: round(0.6 * $font-size-base) round(1 * $font-size-base);
-    //padding: 0.5em 1em;
     background-color: $color-btn-bg-default;
     color: $color-btn-text-default;
     text-shadow: none;
