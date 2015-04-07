@@ -371,6 +371,23 @@ label {
    ========================================================================== */
 .btn,
 .mx-button {
+  /* MXID / Bootstrap values for when used in non-mendix apps */
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  /* */
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -1718,13 +1735,13 @@ textarea.form-control, textarea.readonly-input {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  border-style: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   border: 1px solid #dddddd;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .modal-dialog .modal-content .modal-header {
   -webkit-border-radius: 0;
@@ -1733,18 +1750,20 @@ textarea.form-control, textarea.readonly-input {
   -o-border-radius: 0;
   border-radius: 0;
   padding: 15px 20px;
-  background-color: #4280cb;
+  background-color: transparent;
+  border-bottom-color: transparent;
 }
 .modal-dialog .modal-content .modal-header h4 {
   font-weight: bold;
-  color: white;
-  font-size: 18px;
+  color: #2c3e50;
+  font-size: 16px;
 }
 .modal-dialog .modal-content .modal-header .close {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  color: white;
+  color: #2c3e50;
   text-shadow: none;
+  margin-top: -3px;
 }
 .modal-dialog .modal-content .modal-body {
   padding: 20px;
@@ -2615,14 +2634,6 @@ img.img-auto,
   height: 100%;
   max-width: 100%;
   top: 0;
-}
-.profile-phone .mx-progress .mx-progress-indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
 }
 .profile-phone .mx-progress .modal-content {
   -webkit-border-radius: 0;
