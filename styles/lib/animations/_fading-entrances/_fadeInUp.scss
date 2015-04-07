@@ -12,3 +12,5 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+.fade-in-up { @include fadeInUp(); }

@@ -35,3 +35,5 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+.hinge { @include hinge(); }

@@ -14,3 +14,5 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+.bounce-in-down { @include bounceInDown(); }

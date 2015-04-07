@@ -21,3 +21,5 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+.zoom-out-down { @include zoomOutDown(); }

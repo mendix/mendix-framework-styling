@@ -10,13 +10,3 @@
   "_fadeOutRightBig",
   "_fadeOutUp",
   "_fadeOutUpBig";
-
-.fadeOut { @include fadeOut(); }
-.fadeOutDown { @include fadeOutDown(); }
-.fadeOutDownBig { @include fadeOutDownBig(); }
-.fadeOutLeft { @include fadeOutLeft(); }
-.fadeOutLeftBig { @include fadeOutLeftBig(); }
-.fadeOutRight { @include fadeOutRight(); }
-.fadeOutRightBig { @include fadeOutRightBig(); }
-.fadeOutUp { @include fadeOutUp(); }
-.fadeOutUpBig { @include fadeOutUpBig(); }

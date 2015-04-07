@@ -13,3 +13,5 @@
 	@include fill-mode($fill);
 	@include visibility($visibility);
 }
+
+.shake { @include shake(); }

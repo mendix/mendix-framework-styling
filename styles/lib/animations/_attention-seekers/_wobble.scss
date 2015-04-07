@@ -19,3 +19,5 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+.wobble { @include wobble(); }

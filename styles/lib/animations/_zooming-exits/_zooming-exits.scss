@@ -6,9 +6,3 @@
   "_zoomOutLeft",
   "_zoomOutRight",
   "_zoomOutUp";
-
-.zoomOut { @include zoomOut(); }
-.zoomOutDown { @include zoomOutDown(); }
-.zoomOutLeft { @include zoomOutLeft(); }
-.zoomOutRight { @include zoomOutRight(); }
-.zoomOutUp { @include zoomOutUp(); }

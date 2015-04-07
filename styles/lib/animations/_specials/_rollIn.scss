@@ -18,3 +18,5 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+.roll-in { @include rollIn(); }

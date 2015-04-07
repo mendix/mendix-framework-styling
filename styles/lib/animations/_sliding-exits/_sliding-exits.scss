@@ -5,8 +5,3 @@
   "_slideOutLeft",
   "_slideOutRight",
   "_slideOutUp";
-
-.slideOutDown { @include slideOutDown(); }
-.slideOutLeft { @include slideOutLeft(); }
-.slideOutRight { @include slideOutRight(); }
-.slideOutUp { @include slideOutUp(); }

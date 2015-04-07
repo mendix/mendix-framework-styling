@@ -4,7 +4,3 @@
   "_hinge",
   "_rollIn",
   "_rollOut";
-
-.hinge { @include hinge(); }
-.rollIn { @include rollIn(); }
-.rollOut { @include rollOut(); }

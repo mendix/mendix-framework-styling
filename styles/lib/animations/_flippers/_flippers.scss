@@ -6,9 +6,3 @@
   "_flipInY",
   "_flipOutX",
   "_flipOutY";
-
-.flip { @include flip(); }
-.flipInX { @include flipInX(); }
-.flipInY { @include flipInY(); }
-.flipOutX { @include flipOutX(); }
-.flipOutY { @include flipOutY(); }

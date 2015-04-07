@@ -20,3 +20,5 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+.zoom-in-down { @include zoomInDown(); }

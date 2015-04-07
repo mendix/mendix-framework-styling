@@ -37,3 +37,5 @@
 	@include fill-mode($fill);
 	@include visibility($visibility);
 }
+
+.rubber-band { @include rubberBand(); }

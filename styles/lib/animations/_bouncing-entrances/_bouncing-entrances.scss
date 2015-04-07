@@ -7,8 +7,3 @@
   "_bounceInRight",
   "_bounceInUp";
 
-.bounceIn { @include bounceIn() }
-.bounceInDown { @include bounceInDown() }
-.bounceInLeft { @include bounceInLeft() }
-.bounceInRight { @include bounceInRight() }
-.bounceInUp { @include bounceInUp() }

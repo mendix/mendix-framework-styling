@@ -12,3 +12,5 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
+
+.rotate-in { @include rotateIn(); }

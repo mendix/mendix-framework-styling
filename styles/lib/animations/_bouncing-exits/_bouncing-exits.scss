@@ -6,9 +6,3 @@
   "_bounceOutLeft",
   "_bounceOutRight",
   "_bounceOutUp";
-  
-.bounceOut { @include bounceOut() }
-.bounceOutDown { @include bounceOutDown() }
-.bounceOutLeft { @include bounceOutLeft() }
-.bounceOutRight { @include bounceOutRight() }
-.bounceOutUp { @include bounceOutUp() }
