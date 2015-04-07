@@ -8,23 +8,25 @@
 	
 	.modal-content {
 		@include box-shadow(0 2px 4px rgba(0,0,0,.2));
-		@include border-radius(0);
-		border-style: none;
+		@include border-radius(4px);
 		border: 1px solid $gray-primary;
+		border: 1px solid rgba(0,0,0,0);
 
 		.modal-header {
 			@include border-radius(0); // Because of the class .mx-window-active in mxui.css
 			padding: 15px 20px;
-			background-color: $color-modal-default;
+			background-color: $color-modal-header-bg;
+			border-bottom-color: $color-modal-header-border;
 			h4 {
 				@include font(bold);
-				color: $color-modal-text-default;
-				font-size: 18px;
+				color: $color-modal-header-text;
+				font-size: 16px;
 			}
 			.close {
 				@include opacity(1);
-				color: $color-modal-text-default;
+				color: $color-modal-header-text;
 				text-shadow: none;
+				margin-top: -3px;
 			}
 		}
 		.modal-body {

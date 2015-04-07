@@ -1,3 +1,4 @@
+
 // The location where you can set new variables or override the lib variables (give the same name without !default).
 @import "../../custom-variables";
 
@@ -308,7 +309,7 @@ $color-label-border-danger: 			$color-danger !default;
 /////////////////////////////////////////////////////////////////////////////////////
 $color-nav-bg: 							$color-inverse !default;
 $color-nav-bg-hover:					lighten($color-nav-bg, 4) !default;
-$color-nav-bg-active:					lighten($color-nav-bg, 8) !default;
+$color-nav-bg-active:                   lighten($color-nav-bg, 8) !default;
 $color-nav-sub-bg: 						darken($color-nav-bg, 4) !default;
 $color-nav-text:						lighten($color-nav-bg, 50) !default;
 $color-nav-text-active:					#FFF !default;
@@ -349,10 +350,11 @@ $color-tab-bg-active:					$color-primary !default;
 //   Modal Colors (Pop ups)
 /////////////////////////////////////////////////////////////////////////////////////
 // Backgrounds
-$color-modal-default: 					$color-primary !default;
-
+$color-modal-header-bg: 				transparent !default;
+// Border
+$color-modal-header-border: 			transparent !default;
 // Text
-$color-modal-text-default: 				#FFF !default;
+$color-modal-header-text: 				$base-color !default;
 
 
 
