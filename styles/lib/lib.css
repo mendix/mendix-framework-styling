@@ -1541,6 +1541,7 @@ textarea.form-control, textarea.readonly-input {
 }
 .mx-navbar ul.nav > .mx-navbar-item > a:hover,
 .mx-navbar ul.nav > .mx-navbar-item > a:focus,
+.mx-navbar ul.nav > .mx-navbar-item.active a,
 .mx-navbar ul.nav > .mx-navbar-item.open > a,
 .mx-navbar ul.nav > .mx-navbar-item.open > a:hover,
 .mx-navbar ul.nav > .mx-navbar-item.open > a:focus {
@@ -1550,11 +1551,15 @@ textarea.form-control, textarea.readonly-input {
 }
 .mx-navbar ul.nav > .mx-navbar-item > a:hover .caret,
 .mx-navbar ul.nav > .mx-navbar-item > a:focus .caret,
+.mx-navbar ul.nav > .mx-navbar-item.active a .caret,
 .mx-navbar ul.nav > .mx-navbar-item.open > a .caret,
 .mx-navbar ul.nav > .mx-navbar-item.open > a:hover .caret,
 .mx-navbar ul.nav > .mx-navbar-item.open > a:focus .caret {
   border-top-color: white;
   border-bottom-color: white;
+}
+.mx-navbar ul.nav > .mx-navbar-item.active a {
+  background-color: #4b5169;
 }
 @media (max-width: 767px) {
   .mx-navbar .mx-navbar-item.open .dropdown-menu {
